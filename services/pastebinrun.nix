@@ -1,4 +1,7 @@
 { nginxVirtualHostDefaults }:
+  let
+    pastebinrun = import ../packages/pastebinrun.nix;
+  in
   {
     users.users.pastebinrun.isSystemUser = true;
 
@@ -8,6 +11,7 @@
         "pastebin.run" = {
           forceSSL = true;
           locations."/".proxyPass = "http://127.0.0.1:8080";
+          locations."/static".root = pastebinrun;
         };
         "www.pastebin.run" = {
           forceSSL = true;
@@ -27,10 +31,7 @@
       ];
     };
 
-    systemd.services.pastebinrun = let
-      pastebinrun = import ../packages/pastebinrun.nix;
-    in
-    {
+    systemd.services.pastebinrun = {
       wantedBy = [ "multi-user.target" ];
       requires = ["postgresql.service"];
       after = ["postgresql.service"];
