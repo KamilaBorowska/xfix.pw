@@ -7,5 +7,8 @@ with import <nixpkgs> {};
     recommendedOptimisation = true;
     recommendedProxySettings = true;
     recommendedTlsSettings = true;
+    appendHttpConfig = ''
+      add_header Strict-Transport-Security "max-age=63072000; includeSubDomains; preload" always;
+    '';
   };
 }
