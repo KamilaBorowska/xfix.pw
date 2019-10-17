@@ -29,14 +29,18 @@
         npm_package_config_nickname = nickname;
         npm_package_config_room = room;
       };
-      script = ''
+      script = let
+        node = "${(import <nixpkgs> {}).nodejs-12_x}/bin/node";
+      in
+      ''
         export npm_package_config_secret=$(cat /var/keys/githubbot-secret)
         export npm_package_config_password=$(cat /var/keys/githubbot-password)
-        ${import ../packages/githubbot.nix}/bin/githubbot
+        ${node} server.js
       '';
       serviceConfig = {
         User = "githubbot";
         Restart = "always";
+        WorkingDirectory = "${import ../packages/githubbot.nix}/lib/node_modules/psdevbot/built";
       };
     };
 
