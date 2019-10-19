@@ -18,7 +18,7 @@
 
     systemd.services.githubbot = rec {
       wantedBy = [ "multi-user.target" ];
-      after = [ "githubbot-secret-key.service" "githubbot-password-key.service" ];
+      after = [ "githubbot-secret-key.service" "githubbot-password-key.service" "network-online.target" ];
       wants = after;
       enable = true;
       environment = {
