@@ -16,10 +16,10 @@
       };
     };
 
-    systemd.services.githubbot = {
+    systemd.services.githubbot = rec {
       wantedBy = [ "multi-user.target" ];
-      after = [ "my-secret-key.service" ];
-      wants = [ "my-secret-key.service" ];
+      after = [ "githubbot-secret-key.service" "githubbot-password-key.service" ];
+      wants = after;
       enable = true;
       environment = {
         npm_package_config_webhookport = "3420";
