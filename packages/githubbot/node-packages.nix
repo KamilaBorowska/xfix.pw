@@ -22,13 +22,13 @@ let
         sha512 = "6dhZJLbA7aOwkYB2GDGdIqJ20wmHnkDzaxV9PJXe7O02I2dSFTERzRB6JrX6cWKaS+VqhhY7cQUMCbO5kloFUw==";
       };
     };
-    "@types/node-12.11.1" = {
+    "@types/node-12.11.2" = {
       name = "_at_types_slash_node";
       packageName = "@types/node";
-      version = "12.11.1";
+      version = "12.11.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/node/-/node-12.11.1.tgz";
-        sha512 = "TJtwsqZ39pqcljJpajeoofYRfeZ7/I/OMUQ5pR4q5wOKf2ocrUvBAZUMhWsOvKx3dVc/aaV5GluBivt0sWqA5A==";
+        url = "https://registry.npmjs.org/@types/node/-/node-12.11.2.tgz";
+        sha512 = "dsfE4BHJkLQW+reOS6b17xhZ/6FB1rB8eRRvO08nn5o+voxf3i74tuyFWNH6djdfgX7Sm5s6LD8t6mJug4dpDw==";
       };
     };
     "@types/request-2.48.3" = {
@@ -622,7 +622,7 @@ in
     dependencies = [
       sources."@types/caseless-0.12.2"
       sources."@types/escape-html-0.0.20"
-      sources."@types/node-12.11.1"
+      sources."@types/node-12.11.2"
       (sources."@types/request-2.48.3" // {
         dependencies = [
           sources."form-data-2.5.1"
