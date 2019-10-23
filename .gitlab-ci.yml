@@ -1,0 +1,3 @@
+build:
+  image: nixos/nix:2.3
+  script: nix-build --no-out-link packages/*.nix
