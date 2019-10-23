@@ -4,6 +4,7 @@ stdenv.mkDerivation {
   src = fetchzip {
     url = "https://gitlab.com/pastebin.run/server/-/jobs/320356844/artifacts/download.zip";
     sha256 = "09xxxhf2yf9276jvxh1d4n0gklz63jmskv6vymmg374d075zlp62";
+    stripRoot = false;
   };
   nativeBuildInputs = [ autoPatchelfHook ];
   buildInputs = [ openssl postgresql.lib ];
