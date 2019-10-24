@@ -23,6 +23,7 @@
         RestrictNamespaces = true;
         PrivateDevices = true;
         PrivateUsers = true;
+        ProtectControlGroups = true;
         Restart = "always";
       };
     };
