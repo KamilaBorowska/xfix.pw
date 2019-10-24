@@ -19,6 +19,7 @@
       serviceConfig = {
         DynamicUser = true;
         CapabilityBoundingSet = "";
+        RestrictAddressFamilies = "AF_INET";
         Restart = "always";
       };
     };
