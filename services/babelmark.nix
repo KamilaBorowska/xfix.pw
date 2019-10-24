@@ -22,6 +22,7 @@
         RestrictAddressFamilies = "AF_INET";
         RestrictNamespaces = true;
         PrivateDevices = true;
+        PrivateUsers = true;
         Restart = "always";
       };
     };
