@@ -3,8 +3,6 @@
     pastebinrun = import ../packages/pastebinrun.nix;
   in
   {
-    users.users.pastebinrun.isSystemUser = true;
-
     services.nginx = {
       enable = true;
       virtualHosts = nginxVirtualHostDefaults {
