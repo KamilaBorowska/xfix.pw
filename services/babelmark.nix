@@ -27,6 +27,7 @@
         ProtectHome = true;
         ProtectKernelModules = true;
         ProtectKernelTunables = true;
+        SystemCallArchitectures = "native";
         Restart = "always";
       };
     };
