@@ -26,6 +26,7 @@
         ProtectControlGroups = true;
         ProtectHome = true;
         ProtectKernelModules = true;
+        ProtectKernelTunables = true;
         Restart = "always";
       };
     };
