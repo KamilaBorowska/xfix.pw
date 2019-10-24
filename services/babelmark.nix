@@ -28,6 +28,7 @@
         ProtectKernelModules = true;
         ProtectKernelTunables = true;
         SystemCallArchitectures = "native";
+        SystemCallFilter = "@system-service";
         Restart = "always";
       };
     };
