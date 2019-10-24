@@ -1,7 +1,5 @@
 { nginxVirtualHostDefaults }:
   {
-    users.users.babelmark.isSystemUser = true;
-
     services.nginx = {
       enable = true;
       virtualHosts = nginxVirtualHostDefaults {
@@ -19,7 +17,7 @@
       script = "${import ../packages/babelmark.nix}/bin/pulldown-cmark-babelmark";
 
       serviceConfig = {
-        User = "babelmark";
+        DynamicUser = true;
         Restart = "always";
       };
     };
