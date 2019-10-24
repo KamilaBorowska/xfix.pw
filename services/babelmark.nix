@@ -18,6 +18,8 @@
 
       serviceConfig = {
         DynamicUser = true;
+        CapabilityBoundingSet = "";
+        DeviceAllow = "";
         Restart = "always";
       };
     };
