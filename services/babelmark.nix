@@ -21,6 +21,7 @@
         CapabilityBoundingSet = "";
         RestrictAddressFamilies = "AF_INET";
         RestrictNamespaces = true;
+        PrivateDevices = true;
         Restart = "always";
       };
     };
