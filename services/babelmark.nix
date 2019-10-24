@@ -25,6 +25,7 @@
         PrivateUsers = true;
         ProtectControlGroups = true;
         ProtectHome = true;
+        ProtectKernelModules = true;
         Restart = "always";
       };
     };
