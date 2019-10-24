@@ -24,6 +24,7 @@
         PrivateDevices = true;
         PrivateUsers = true;
         ProtectControlGroups = true;
+        ProtectHome = true;
         Restart = "always";
       };
     };
