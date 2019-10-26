@@ -22,13 +22,13 @@ let
         sha512 = "6dhZJLbA7aOwkYB2GDGdIqJ20wmHnkDzaxV9PJXe7O02I2dSFTERzRB6JrX6cWKaS+VqhhY7cQUMCbO5kloFUw==";
       };
     };
-    "@types/node-12.11.2" = {
+    "@types/node-12.11.7" = {
       name = "_at_types_slash_node";
       packageName = "@types/node";
-      version = "12.11.2";
+      version = "12.11.7";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/node/-/node-12.11.2.tgz";
-        sha512 = "dsfE4BHJkLQW+reOS6b17xhZ/6FB1rB8eRRvO08nn5o+voxf3i74tuyFWNH6djdfgX7Sm5s6LD8t6mJug4dpDw==";
+        url = "https://registry.npmjs.org/@types/node/-/node-12.11.7.tgz";
+        sha512 = "JNbGaHFCLwgHn/iCckiGSOZ1XYHsKFwREtzPwSGCVld1SGhOlmZw2D4ZI94HQCrBHbADzW9m4LER/8olJTRGHA==";
       };
     };
     "@types/request-2.48.3" = {
@@ -616,13 +616,13 @@ in
     version = "0.1.0";
     src = fetchgit {
       url = "git://github.com/smogon/GitHub-Bot";
-      rev = "961aa21e4048d2f0fbf71833aa84b8b0a583c305";
-      sha256 = "b5857dfda19d38f53392273b99b5142ab4f2bd6d06d1be7f24f7b19a1c466bbe";
+      rev = "0127f291795b03498282a49a03bcbc6a26cca874";
+      sha256 = "e4bf901e0c324036bdefa887bca59ed9e964e0f29d72b4a69f55cbd816b42b2f";
     };
     dependencies = [
       sources."@types/caseless-0.12.2"
       sources."@types/escape-html-0.0.20"
-      sources."@types/node-12.11.2"
+      sources."@types/node-12.11.7"
       (sources."@types/request-2.48.3" // {
         dependencies = [
           sources."form-data-2.5.1"
