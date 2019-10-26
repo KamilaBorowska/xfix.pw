@@ -1,6 +1,7 @@
 with import <nixpkgs> {};
 
 {
+  boot.tmpOnTmpfs = true;
   services.postgresql.package = pkgs.postgresql_11;
   services.nginx = {
     recommendedGzipSettings = true;
