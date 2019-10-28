@@ -2,16 +2,7 @@ with import <nixpkgs> {};
 
 {
   boot.tmpOnTmpfs = true;
-  services.openssh = {
-    kexAlgorithms = [
-      "curve25519-sha256@libssh.org"
-      "ecdh-sha2-nistp521"
-      "ecdh-sha2-nistp384"
-      "ecdh-sha2-nistp256"
-      "diffie-hellman-group-exchange-sha256"
-    ];
-    extraConfig = "AuthenticationMethods publickey";
-  };
+  services.openssh.extraConfig = "AuthenticationMethods publickey";
   services.postgresql.package = pkgs.postgresql_11;
   services.nginx = {
     recommendedGzipSettings = true;
