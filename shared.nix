@@ -21,6 +21,10 @@ with import <nixpkgs> {};
       "DHE-RSA-AES128-GCM-SHA256"
       "DHE-RSA-AES256-GCM-SHA384"
     ];
+    sslDhparam = fetchurl {
+      url = "https://ssl-config.mozilla.org/ffdhe2048.txt";
+      sha256 = "08dpmhxn8bmmhv7lyd7fxgih2xv4j4xanf5w3pfd0nhqcf2pbxrf";
+    };
     appendHttpConfig = ''
       ssl_session_timeout 1d;
       ssl_session_cache shared:MozSSL:10m;
