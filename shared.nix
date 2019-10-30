@@ -36,4 +36,5 @@ with import <nixpkgs> {};
       add_header X-Content-Type-Options nosniff always;
     '';
   };
+  networking.firewall.allowedTCPPorts = [ 25 80 443 ];
 }

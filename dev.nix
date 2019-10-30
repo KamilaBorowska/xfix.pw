@@ -9,6 +9,7 @@
       in
       [
         ./shared.nix
+        ./services/mail.nix
         (import ./services/babelmark.nix {
           inherit nginxVirtualHostDefaults;
         })
