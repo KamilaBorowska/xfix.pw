@@ -9,115 +9,99 @@ let
 in
 {
   xfix = { lib, pkgs, ... }:
-    {
-      imports = let
-        nginxVirtualHostDefaults = lib.attrsets.mapAttrs (key: value: value // {
-          enableACME = true;
-        });
-      in
-      [
-        ./shared.nix
-        ./services/mail.nix
-        (import ./services/babelmark.nix {
-          inherit nginxVirtualHostDefaults;
-        })
-        (import ./services/borowski.nix {
-          inherit nginxVirtualHostDefaults;
-        })
-        (import ./services/githubbot.nix {
-          nickname = "GitHub Test";
-          password = "";
-          room = "botdevelopment";
-          secret = "";
-          inherit nginxVirtualHostDefaults;
-        })
-        (import ./services/nextcloud.nix {
-          inherit nginxVirtualHostDefaults;
-        })
-        (import ./services/pastebinrun.nix {
-          inherit nginxVirtualHostDefaults;
-        })
-        (import ./services/xfix.nix {
-          inherit nginxVirtualHostDefaults;
-        })
-      ];
+  {
+    imports = [
+    ./shared.nix
+      ./services/mail.nix
+      ./services/babelmark.nix
+      ./services/borowski.nix
+      (import ./services/githubbot.nix {
+        nickname = "GitHub Test";
+        password = "";
+        room = "botdevelopment";
+        secret = "";
+      })
+      ./services/nextcloud.nix
+      ./services/pastebinrun.nix
+      ./services/xfix.nix
+    ];
 
-      security.pki.certificateFiles = [ ca ];
+    security.pki.certificateFiles = [ ca ];
 
-      nixpkgs.overlays = [
-        (self: super: {
-          simp_le = pkgs.writeShellScriptBin "simp_le" ''
-            ${super.simp_le}/bin/simp_le "$@" --server https://pebble:14000/dir
-          '';
-        })
-      ];
+    nixpkgs.overlays = [
+      (self: super: {
+        simp_le = pkgs.writeShellScriptBin "simp_le" ''
+          ${super.simp_le}/bin/simp_le "$@" --server https://pebble:14000/dir
+        '';
+      })
+    ];
 
-      deployment.targetEnv = "virtualbox";
-      deployment.virtualbox.memorySize = 2048;
-      deployment.virtualbox.vcpu = 1;
-      deployment.virtualbox.headless = true;
-    };
+    deployment.targetEnv = "virtualbox";
+    deployment.virtualbox.memorySize = 2048;
+    deployment.virtualbox.vcpu = 1;
+    deployment.virtualbox.headless = true;
+  };
 
   client = { lib, pkgs, nodes, ... }:
-    {
-      deployment.targetEnv = "virtualbox";
-      deployment.virtualbox.memorySize = 2048;
-      deployment.virtualbox.vcpu = 1;
-      security.pki.certificateFiles = [ ca ];
-      services.xserver = {
+  {
+    deployment.targetEnv = "virtualbox";
+    deployment.virtualbox.memorySize = 2048;
+    deployment.virtualbox.vcpu = 1;
+    security.pki.certificateFiles = [ ca ];
+    services.xserver = {
+      enable = true;
+      desktopManager = {
+        plasma5.enable = true;
+        default = "plasma5";
+      };
+      displayManager.auto = {
         enable = true;
-        desktopManager = {
-          plasma5.enable = true;
-          default = "plasma5";
-        };
-        displayManager.auto = {
-          enable = true;
-          user = "client";
-        };
+        user = "client";
       };
-      users.users.client = {
-        isNormalUser = true;
-        password = "";
-      };
-      environment.systemPackages = with pkgs; [ firefox ];
-      networking.extraHosts = hosts nodes;
     };
+    users.users.client = {
+      isNormalUser = true;
+      password = "";
+    };
+    environment.systemPackages = with pkgs; [ firefox ];
+    networking.extraHosts = hosts nodes;
+  };
 
   pebble = { pkgs, nodes, ... }:
-    let
-      pebbleConf.pebble = {
-        listenAddress = "0.0.0.0:14000";
-        managementListenAddress = "0.0.0.0:15000";
-        certificate = pkgs.fetchurl {
-          url = "https://raw.githubusercontent.com/letsencrypt/pebble/b8d114533e42a2f5ad98697225e8b10775384157/test/certs/localhost/cert.pem";
-          sha256 = "1lwnv9gqhyr0n7vbpv2ys2p6ja0hhjls7xg2sgf45bif0mnkq8ik";
-        };
-        privateKey = pkgs.fetchurl {
-          url = "https://raw.githubusercontent.com/letsencrypt/pebble/b8d114533e42a2f5ad98697225e8b10775384157/test/certs/localhost/key.pem";
-          sha256 = "03phxh8v27x8rprm4nkfylya8rkzc9mhap1k2wf75q5han99fxq9";
-        };
-        httpPort = 80;
-        tlsPort = 443;
-        ocspResponderURL = "http://0.0.0.0:4002";
+  let
+    pebbleConf.pebble = {
+      listenAddress = "0.0.0.0:14000";
+      managementListenAddress = "0.0.0.0:15000";
+      certificate = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/letsencrypt/pebble/b8d114533e42a2f5ad98697225e8b10775384157/test/certs/localhost/cert.pem";
+        sha256 = "1lwnv9gqhyr0n7vbpv2ys2p6ja0hhjls7xg2sgf45bif0mnkq8ik";
       };
-    in
-    {
-      deployment.targetEnv = "virtualbox";
-      deployment.virtualbox.memorySize = 1024;
-      deployment.virtualbox.vcpu = 1;
-      deployment.virtualbox.headless = true;
-      systemd.services.pebble = {
-        enable = true;
-        wantedBy = [ "multi-user.target" ];
-        preStart = ''
-          mkdir -p /var/lib/pebble
-        '';
-        script = ''
-          cd /var/lib/pebble
-          ${pkgs.pebble}/bin/pebble -config ${pkgs.writeText "pebble.conf" (builtins.toJSON pebbleConf)}
-        '';
+      privateKey = pkgs.fetchurl {
+        url = "https://raw.githubusercontent.com/letsencrypt/pebble/b8d114533e42a2f5ad98697225e8b10775384157/test/certs/localhost/key.pem";
+        sha256 = "03phxh8v27x8rprm4nkfylya8rkzc9mhap1k2wf75q5han99fxq9";
       };
-      networking.extraHosts = hosts nodes;
-      networking.firewall.allowedTCPPorts = [ 4002 14000 15000 ];
+      httpPort = 80;
+      tlsPort = 443;
+      ocspResponderURL = "http://0.0.0.0:4002";
     };
+  in
+  {
+    deployment.targetEnv = "virtualbox";
+    deployment.virtualbox.memorySize = 1024;
+    deployment.virtualbox.vcpu = 1;
+    deployment.virtualbox.headless = true;
+    systemd.services.pebble = {
+      enable = true;
+      wantedBy = [ "multi-user.target" ];
+      preStart = ''
+        mkdir -p /var/lib/pebble
+      '';
+      script = ''
+        cd /var/lib/pebble
+        ${pkgs.pebble}/bin/pebble -config ${pkgs.writeText "pebble.conf" (builtins.toJSON pebbleConf)}
+      '';
+    };
+    networking.extraHosts = hosts nodes;
+    networking.firewall.allowedTCPPorts = [ 4002 14000 15000 ];
+  };
 }
