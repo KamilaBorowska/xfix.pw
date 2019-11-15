@@ -22,13 +22,13 @@ let
         sha512 = "6dhZJLbA7aOwkYB2GDGdIqJ20wmHnkDzaxV9PJXe7O02I2dSFTERzRB6JrX6cWKaS+VqhhY7cQUMCbO5kloFUw==";
       };
     };
-    "@types/node-12.11.7" = {
+    "@types/node-12.12.8" = {
       name = "_at_types_slash_node";
       packageName = "@types/node";
-      version = "12.11.7";
+      version = "12.12.8";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/node/-/node-12.11.7.tgz";
-        sha512 = "JNbGaHFCLwgHn/iCckiGSOZ1XYHsKFwREtzPwSGCVld1SGhOlmZw2D4ZI94HQCrBHbADzW9m4LER/8olJTRGHA==";
+        url = "https://registry.npmjs.org/@types/node/-/node-12.12.8.tgz";
+        sha512 = "XLla8N+iyfjvsa0KKV+BP/iGSoTmwxsu5Ci5sM33z9TjohF72DEz95iNvD6pPmemvbQgxAv/909G73gUn8QR7w==";
       };
     };
     "@types/request-2.48.3" = {
@@ -373,22 +373,22 @@ let
         sha1 = "313e66bc1e5cc06e438bc1b7499c2e5c56acb6a2";
       };
     };
-    "mime-db-1.40.0" = {
+    "mime-db-1.42.0" = {
       name = "mime-db";
       packageName = "mime-db";
-      version = "1.40.0";
+      version = "1.42.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/mime-db/-/mime-db-1.40.0.tgz";
-        sha512 = "jYdeOMPy9vnxEqFRRo6ZvTZ8d9oPb+k18PKoYNYUe2stVEBPPwsln/qWzdbmaIvnhZ9v2P+CuecK+fpUfsV2mA==";
+        url = "https://registry.npmjs.org/mime-db/-/mime-db-1.42.0.tgz";
+        sha512 = "UbfJCR4UAVRNgMpfImz05smAXK7+c+ZntjaA26ANtkXLlOe947Aag5zdIcKQULAiF9Cq4WxBi9jUs5zkA84bYQ==";
       };
     };
-    "mime-types-2.1.24" = {
+    "mime-types-2.1.25" = {
       name = "mime-types";
       packageName = "mime-types";
-      version = "2.1.24";
+      version = "2.1.25";
       src = fetchurl {
-        url = "https://registry.npmjs.org/mime-types/-/mime-types-2.1.24.tgz";
-        sha512 = "WaFHS3MCl5fapm3oLxU4eYDw77IQM2ACcxQ9RIxfaC3ooc6PFuBMGZZsYpvoXS5D5QTWPieo1jjLdAm3TBP3cQ==";
+        url = "https://registry.npmjs.org/mime-types/-/mime-types-2.1.25.tgz";
+        sha512 = "5KhStqB5xpTAeGqKBAMgwaYMnQik7teQN4IAzC7npDv6kzeU6prfkR67bc87J1kWMPGkoaZSq1npmexMgkmEVg==";
       };
     };
     "ms-2.0.0" = {
@@ -553,13 +553,13 @@ let
         sha512 = "zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==";
       };
     };
-    "typescript-3.6.4" = {
+    "typescript-3.7.2" = {
       name = "typescript";
       packageName = "typescript";
-      version = "3.6.4";
+      version = "3.7.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/typescript/-/typescript-3.6.4.tgz";
-        sha512 = "unoCll1+l+YK4i4F8f22TaNVPRHcD9PA3yCuZ8g5e0qGqlVlJ/8FSateOLLSagn+Yg5+ZwuPkL8LFUc0Jcvksg==";
+        url = "https://registry.npmjs.org/typescript/-/typescript-3.7.2.tgz";
+        sha512 = "ml7V7JfiN2Xwvcer+XAf2csGO1bPBdRbFCkYBczNZggrBZ9c7G3riSUeJmqEU5uOtXNPMhE3n+R4FA/3YOAWOQ==";
       };
     };
     "uri-js-4.2.2" = {
@@ -616,13 +616,13 @@ in
     version = "0.1.0";
     src = fetchgit {
       url = "git://github.com/smogon/GitHub-Bot";
-      rev = "0127f291795b03498282a49a03bcbc6a26cca874";
-      sha256 = "e4bf901e0c324036bdefa887bca59ed9e964e0f29d72b4a69f55cbd816b42b2f";
+      rev = "c1ff4b8576e1735bcdf9fcf6812afd042175ae38";
+      sha256 = "6441c4406941b3caa15b627137c2b102c3a5fc657a9bac637d0ceab711a832d1";
     };
     dependencies = [
       sources."@types/caseless-0.12.2"
       sources."@types/escape-html-0.0.20"
-      sources."@types/node-12.11.7"
+      sources."@types/node-12.12.8"
       (sources."@types/request-2.48.3" // {
         dependencies = [
           sources."form-data-2.5.1"
@@ -664,8 +664,8 @@ in
       sources."json-schema-traverse-0.4.1"
       sources."json-stringify-safe-5.0.1"
       sources."jsprim-1.4.1"
-      sources."mime-db-1.40.0"
-      sources."mime-types-2.1.24"
+      sources."mime-db-1.42.0"
+      sources."mime-types-2.1.25"
       sources."ms-2.0.0"
       sources."multiline-1.0.2"
       sources."nan-2.14.0"
@@ -687,7 +687,7 @@ in
       sources."tunnel-agent-0.6.0"
       sources."tweetnacl-0.14.5"
       sources."typedarray-to-buffer-3.1.5"
-      sources."typescript-3.6.4"
+      sources."typescript-3.7.2"
       sources."uri-js-4.2.2"
       sources."uuid-3.3.3"
       sources."verror-1.10.0"
