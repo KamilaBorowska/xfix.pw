@@ -3,7 +3,7 @@ with import <nixpkgs> {};
 stdenv.mkDerivation rec {
   name = "nixops-shell";
   buildInputs = [ nixops ];
-  revision = "0bf9901ba1e161cd3eda365f15cf6e0ef0c0ef5e";
+  revision = "02380e784167cda7e454120f9bae9dd3618d5fa3";
   shellHook = ''
     export NIX_PATH="nixpkgs=https://github.com/NixOs/nixpkgs/archive/${revision}.tar.gz"
   '';
