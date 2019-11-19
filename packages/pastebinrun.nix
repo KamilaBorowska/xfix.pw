@@ -2,8 +2,8 @@ with import <nixpkgs> {};
 stdenv.mkDerivation {
   name = "pastebinrun";
   src = fetchzip {
-    url = "https://gitlab.com/pastebin.run/server/-/jobs/341126658/artifacts/download.zip";
-    sha256 = "03s1l40iwyvvgz1x0gn16za9zj6n710fd9czg1b1h0i8amspyah5";
+    url = "https://gitlab.com/pastebin.run/server/-/jobs/354939196/artifacts/download.zip";
+    sha256 = "0bfxi6ic889vrr0wvjlmbjz7x5c1r9s3pa87k1l2042vm3vp2dqb";
     stripRoot = false;
   };
   nativeBuildInputs = [ autoPatchelfHook ];
