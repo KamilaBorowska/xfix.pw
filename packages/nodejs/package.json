@@ -1,0 +1,4 @@
+[
+    { "github-bot": "github:smogon/GitHub-Bot" },
+    { "pastebinrun": "git+https://gitlab.com/pastebin.run/server.git" }
+]
