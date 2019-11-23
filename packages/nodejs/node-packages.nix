@@ -49,13 +49,13 @@ let
         sha512 = "EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==";
       };
     };
-    "@types/node-12.12.11" = {
+    "@types/node-12.12.12" = {
       name = "_at_types_slash_node";
       packageName = "@types/node";
-      version = "12.12.11";
+      version = "12.12.12";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/node/-/node-12.12.11.tgz";
-        sha512 = "O+x6uIpa6oMNTkPuHDa9MhMMehlxLAd5QcOvKRjAFsBVpeFWTOPnXbDvILvFgFFZfQ1xh1EZi1FbXxUix+zpsQ==";
+        url = "https://registry.npmjs.org/@types/node/-/node-12.12.12.tgz";
+        sha512 = "MGuvYJrPU0HUwqF7LqvIj50RZUX23Z+m583KBygKYUZLlZ88n6w28XRNJRJgsHukLEnLz6w6SvxZoLgbr5wLqQ==";
       };
     };
     "@types/prismjs-1.16.0" = {
@@ -1174,13 +1174,13 @@ let
         sha1 = "3a83a904e54353287874c564b7549386849a98c9";
       };
     };
-    "elliptic-6.5.1" = {
+    "elliptic-6.5.2" = {
       name = "elliptic";
       packageName = "elliptic";
-      version = "6.5.1";
+      version = "6.5.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/elliptic/-/elliptic-6.5.1.tgz";
-        sha512 = "xvJINNLbTeWQjrl6X+7eQCrIy/YPv5XCpKW6kB5mKvtnGILoLDcySuwomfdzt0BMdLNVnuRNTuzKNHj0bva1Cg==";
+        url = "https://registry.npmjs.org/elliptic/-/elliptic-6.5.2.tgz";
+        sha512 = "f4x70okzZbIQl/NSRLkI/+tteV/9WqL98zx+SQ69KbXxmVrmjwsNUPn/gYJJ0sHvEak24cZgHIPegRePAtA/xw==";
       };
     };
     "emoji-regex-7.0.3" = {
@@ -4132,7 +4132,7 @@ in
     dependencies = [
       sources."@types/caseless-0.12.2"
       sources."@types/escape-html-0.0.20"
-      sources."@types/node-12.12.11"
+      sources."@types/node-12.12.12"
       (sources."@types/request-2.48.3" // {
         dependencies = [
           sources."form-data-2.5.1"
@@ -4219,14 +4219,14 @@ in
     version = "0.1.0";
     src = fetchgit {
       url = "https://gitlab.com/pastebin.run/server.git";
-      rev = "4f6651344754b303cd214b6e959c6d88a7cd08a6";
-      sha256 = "04bffc338399994c21da8cf7ffbb29e6bf542ec777cf03e554c92bd879bdf6d5";
+      rev = "b3a473bef75df7f63c750f79be7c4dcb3b8ca4b7";
+      sha256 = "1a6d8458959110718d15d3b960999395dfff6a54e1f1307a2748344af50534c3";
     };
     dependencies = [
       sources."@types/anymatch-1.3.1"
       sources."@types/codemirror-0.0.78"
       sources."@types/estree-0.0.39"
-      sources."@types/node-12.12.11"
+      sources."@types/node-12.12.12"
       sources."@types/prismjs-1.16.0"
       sources."@types/source-list-map-0.1.2"
       sources."@types/tapable-1.0.4"
@@ -4387,7 +4387,7 @@ in
       sources."diffie-hellman-5.0.3"
       sources."domain-browser-1.2.0"
       sources."duplexify-3.7.1"
-      sources."elliptic-6.5.1"
+      sources."elliptic-6.5.2"
       sources."emoji-regex-7.0.3"
       sources."emojis-list-2.1.0"
       sources."end-of-stream-1.4.4"

@@ -30,6 +30,6 @@ unstable.rustPlatform.buildRustPackage (with import <nixpkgs> {}; {
   installPhase = ''
     mkdir -p $out/bin
     cp $releaseDir/pastebinrun $out/bin
-    cp -r static migrations $out
+    cp -r static migrations languages.json $out
   '';
 })
