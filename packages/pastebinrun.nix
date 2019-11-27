@@ -20,7 +20,7 @@ unstable.rustPlatform.buildRustPackage (with import <nixpkgs> {}; {
   pname = "pastebinrun";
   version = "0.1.0";
   src = client-js-base.src;
-  cargoSha256 = "08h52pb3nv8c1nh750s3kl1qia7l7r0ssszrqxq3b6vh9q6r08z3";
+  cargoSha256 = "0skb22c7di6y9ph5m74d2ccp45j2n41vr09f7lrgx7ssh0kgcgqa";
   nativeBuildInputs = [ pkgconfig ];
   buildInputs = [ openssl postgresql.lib ];
   patchPhase = ''
