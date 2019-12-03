@@ -1,13 +1,7 @@
 build:
   image: nixos/nix:2.3
-  script:
-  - nix-env -iA nixpkgs.cachix
-  - cachix use xfix
-  - nix-build packages/*.nix | if [ ! -z "$CACHIX_SIGNING_KEY" ]; then cachix push xfix; fi
+  script: nix-build --no-out-link packages/*.nix
 
 test:
   image: nixos/nix:2.3
-  script:
-  - nix-env -iA nixpkgs.cachix
-  - cachix use xfix
-  - nix-build tests/*.nix | if [ ! -z "$CACHIX_SIGNING_KEY" ]; then cachix push xfix; fi
+  script: nix-build --no-out-link tests/*.nix
