@@ -571,13 +571,13 @@ let
         sha512 = "Un7MIEDdUC5gNpcGDV97op1Ywk748MpHcFTHoYs6qnj1Z3j7I53VG3nwZhKzoBZmbdRNnb6WRdFlwl7tSDuZGw==";
       };
     };
-    "bluebird-3.7.1" = {
+    "bluebird-3.7.2" = {
       name = "bluebird";
       packageName = "bluebird";
-      version = "3.7.1";
+      version = "3.7.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/bluebird/-/bluebird-3.7.1.tgz";
-        sha512 = "DdmyoGCleJnkbp3nkbxTLJ18rjDsE4yCggEwKNXkeV123sPNfOCYeDoeuOY+F2FrSjO1YXcTU+dsy96KMy+gcg==";
+        url = "https://registry.npmjs.org/bluebird/-/bluebird-3.7.2.tgz";
+        sha512 = "XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==";
       };
     };
     "bn.js-4.11.8" = {
@@ -2902,13 +2902,13 @@ let
         sha512 = "jM/V8eqM4oJ/22j0gx4jrp63GSvDH6v86OqyTHHUvk4/k1vceipZsaymiZ5PvocqZOl5SFHiFJqjs3la0wnfIQ==";
       };
     };
-    "postcss-modules-scope-2.1.0" = {
+    "postcss-modules-scope-2.1.1" = {
       name = "postcss-modules-scope";
       packageName = "postcss-modules-scope";
-      version = "2.1.0";
+      version = "2.1.1";
       src = fetchurl {
-        url = "https://registry.npmjs.org/postcss-modules-scope/-/postcss-modules-scope-2.1.0.tgz";
-        sha512 = "91Rjps0JnmtUB0cujlc8KIKCsJXWjzuxGeT/+Q2i2HXKZ7nBUeF9YQTZZTNvHVoNYj1AthsjnGLtqDUE0Op79A==";
+        url = "https://registry.npmjs.org/postcss-modules-scope/-/postcss-modules-scope-2.1.1.tgz";
+        sha512 = "OXRUPecnHCg8b9xWvldG/jUpRIGPNRka0r4D4j0ESUU2/5IOnpsjfPPmDprM3Ih8CgZ8FXjWqaniK5v4rWt3oQ==";
       };
     };
     "postcss-modules-values-3.0.0" = {
@@ -3298,13 +3298,13 @@ let
         sha512 = "i27Mic4KovM/lnGsy8whRCHhc7VicJajAjTrYg11K9zfZXnYIt4k5F+kZkwjnrhKzLic/HLU4j11mjsz2G/75g==";
       };
     };
-    "schema-utils-2.6.0" = {
+    "schema-utils-2.6.1" = {
       name = "schema-utils";
       packageName = "schema-utils";
-      version = "2.6.0";
+      version = "2.6.1";
       src = fetchurl {
-        url = "https://registry.npmjs.org/schema-utils/-/schema-utils-2.6.0.tgz";
-        sha512 = "UlPB1ME4i/71cih/Rv92gK8043CrJTc2mjkyxDp4pdJ7ZfzY0g0hdGjjDB23jX3X+NXSneCdQbScGhn6K2tbpQ==";
+        url = "https://registry.npmjs.org/schema-utils/-/schema-utils-2.6.1.tgz";
+        sha512 = "0WXHDs1VDJyo+Zqs9TKLKyD/h7yDpHUhEFsM2CzkICFdoX1av+GBq/J2xRTFfsQO5kBfhZzANf2VcIm84jqDbg==";
       };
     };
     "select-1.1.2" = {
@@ -3604,13 +3604,13 @@ let
         sha1 = "0c7962a6adefa7bbd4ac366460a638552ae1a0a2";
       };
     };
-    "style-loader-1.0.0" = {
+    "style-loader-1.0.1" = {
       name = "style-loader";
       packageName = "style-loader";
-      version = "1.0.0";
+      version = "1.0.1";
       src = fetchurl {
-        url = "https://registry.npmjs.org/style-loader/-/style-loader-1.0.0.tgz";
-        sha512 = "B0dOCFwv7/eY31a5PCieNwMgMhVGFe9w+rh7s/Bx8kfFkrth9zfTZquoYvdw8URgiqxObQKcpW51Ugz1HjfdZw==";
+        url = "https://registry.npmjs.org/style-loader/-/style-loader-1.0.1.tgz";
+        sha512 = "CnpEkSR1C+REjudiTWCv4+ssP7SCiuaQZJTZDWBRwTJoS90mdqkB8uOGMHKgVeUzpaU7IfLWoyQbvvs5Joj3Xw==";
       };
     };
     "supports-color-5.5.0" = {
@@ -4219,8 +4219,8 @@ in
     version = "0.1.0";
     src = fetchgit {
       url = "https://gitlab.com/pastebin.run/server.git";
-      rev = "a8ee83739de8c07cf69c6c7cf51c30801749b247";
-      sha256 = "42354ff04d1ff97042f5e8dc6aca78c23d14908511c796a6a41b3e22e6940a37";
+      rev = "5a2c5ee7cb5bc2b5867c269c30e8754b547d49bc";
+      sha256 = "a4d65039c4b3c6789d907f4c768bda350dd1d96fc2b2b6366247f220b12afad6";
     };
     dependencies = [
       sources."@types/anymatch-1.3.1"
@@ -4296,7 +4296,7 @@ in
       sources."base64-js-1.3.1"
       sources."big.js-5.2.2"
       sources."binary-extensions-1.13.1"
-      sources."bluebird-3.7.1"
+      sources."bluebird-3.7.2"
       sources."bn.js-4.11.8"
       sources."brace-expansion-1.1.11"
       sources."braces-3.0.2"
@@ -4614,7 +4614,7 @@ in
       sources."postcss-7.0.23"
       sources."postcss-modules-extract-imports-2.0.0"
       sources."postcss-modules-local-by-default-3.0.2"
-      sources."postcss-modules-scope-2.1.0"
+      sources."postcss-modules-scope-2.1.1"
       sources."postcss-modules-values-3.0.0"
       sources."postcss-selector-parser-6.0.2"
       sources."postcss-value-parser-4.0.2"
@@ -4667,7 +4667,7 @@ in
       sources."run-queue-1.0.3"
       sources."safe-buffer-5.1.2"
       sources."safe-regex-1.1.0"
-      sources."schema-utils-2.6.0"
+      sources."schema-utils-2.6.1"
       sources."select-1.1.2"
       sources."semver-6.3.0"
       sources."serialize-javascript-1.9.1"
@@ -4743,7 +4743,7 @@ in
       sources."string_decoder-1.1.1"
       sources."strip-ansi-5.2.0"
       sources."strip-eof-1.0.0"
-      sources."style-loader-1.0.0"
+      sources."style-loader-1.0.1"
       sources."supports-color-6.1.0"
       sources."tapable-1.1.3"
       sources."terser-4.4.0"
