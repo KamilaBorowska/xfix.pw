@@ -4320,8 +4320,8 @@ in
     version = "0.1.0";
     src = fetchgit {
       url = "https://gitlab.com/pastebin.run/server.git";
-      rev = "8426f1d4fa6bb40ea7ca0f0acd8e40cd153d6b97";
-      sha256 = "0f56b06aed5a344a7967bc684217cf7c3948b0e8fa052add383ad012daca128f";
+      rev = "44299b2998c08237511e609baa0a73f607a5e827";
+      sha256 = "ecb50b15c552c3b37d31680fbbc049dc149f9944bdb9b93d4944f28fb38bcde5";
     };
     dependencies = [
       sources."@types/anymatch-1.3.1"
