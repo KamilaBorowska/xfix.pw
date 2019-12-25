@@ -40,22 +40,31 @@ let
         sha512 = "6dhZJLbA7aOwkYB2GDGdIqJ20wmHnkDzaxV9PJXe7O02I2dSFTERzRB6JrX6cWKaS+VqhhY7cQUMCbO5kloFUw==";
       };
     };
-    "@types/estree-0.0.40" = {
+    "@types/estree-0.0.41" = {
       name = "_at_types_slash_estree";
       packageName = "@types/estree";
-      version = "0.0.40";
+      version = "0.0.41";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/estree/-/estree-0.0.40.tgz";
-        sha512 = "p3KZgMto/JyxosKGmnLDJ/dG5wf+qTRMUjHJcspC2oQKa4jP7mz+tv0ND56lLBu3ojHlhzY33Ol+khLyNmilkA==";
+        url = "https://registry.npmjs.org/@types/estree/-/estree-0.0.41.tgz";
+        sha512 = "rIAmXyJlqw4KEBO7+u9gxZZSQHaCNnIzYrnNmYVpgfJhxTqO0brCX0SYpqUTkVI5mwwUwzmtspLBGBKroMeynA==";
       };
     };
-    "@types/node-12.12.21" = {
+    "@types/node-12.12.22" = {
       name = "_at_types_slash_node";
       packageName = "@types/node";
-      version = "12.12.21";
+      version = "12.12.22";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/node/-/node-12.12.21.tgz";
-        sha512 = "8sRGhbpU+ck1n0PGAUgVrWrWdjSW2aqNeyC15W88GRsMpSwzv6RJGlLhE7s2RhVSOdyDmxbqlWSeThq4/7xqlA==";
+        url = "https://registry.npmjs.org/@types/node/-/node-12.12.22.tgz";
+        sha512 = "r5i93jqbPWGXYXxianGATOxTelkp6ih/U0WVnvaqAvTqM+0U6J3kw6Xk6uq/dWNRkEVw/0SLcO5ORXbVNz4FMQ==";
+      };
+    };
+    "@types/node-13.1.0" = {
+      name = "_at_types_slash_node";
+      packageName = "@types/node";
+      version = "13.1.0";
+      src = fetchurl {
+        url = "https://registry.npmjs.org/@types/node/-/node-13.1.0.tgz";
+        sha512 = "zwrxviZS08kRX40nqBrmERElF2vpw4IUTd5khkhBTfFH8AOaeoLVx48EC4+ZzS2/Iga7NevncqnsUSYjM4OWYA==";
       };
     };
     "@types/prismjs-1.16.0" = {
@@ -3676,13 +3685,13 @@ let
         sha1 = "0c7962a6adefa7bbd4ac366460a638552ae1a0a2";
       };
     };
-    "style-loader-1.1.1" = {
+    "style-loader-1.1.2" = {
       name = "style-loader";
       packageName = "style-loader";
-      version = "1.1.1";
+      version = "1.1.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/style-loader/-/style-loader-1.1.1.tgz";
-        sha512 = "oIVF12trRq0od4Yojg7q0K3Lq/O6Ix/AYgVosykrVg+kWxxxUyk8KhKCCmekyGSUiVK1xxlAQymLWWdh6S9lOg==";
+        url = "https://registry.npmjs.org/style-loader/-/style-loader-1.1.2.tgz";
+        sha512 = "0Mpq1ZHFDCNq1F+6avNBgv+7q8V+mWRuzehxyJT+aKgzyN/yfKTwjYqaYwBgx+11UpQxL21zNQfzzlz+JcGURw==";
       };
     };
     "supports-color-5.5.0" = {
@@ -4222,7 +4231,7 @@ in
     dependencies = [
       sources."@types/caseless-0.12.2"
       sources."@types/escape-html-0.0.20"
-      sources."@types/node-12.12.21"
+      sources."@types/node-12.12.22"
       (sources."@types/request-2.48.4" // {
         dependencies = [
           sources."form-data-2.5.1"
@@ -4320,14 +4329,14 @@ in
     version = "0.1.0";
     src = fetchgit {
       url = "https://gitlab.com/pastebin.run/server.git";
-      rev = "274e904cab4430417c2d035d732ffe5f9be63f2b";
-      sha256 = "14fa5b8f80aab4a52e9b7a7515feee7c554a94662b9e1f6507a8a3197db8e891";
+      rev = "2b2792145b2d090e51c2f798485a2daf4b297dcc";
+      sha256 = "f8ad570232bdde02cd90e9cdddf28e8c745b8bca9e91cd728c77e6f1803725bd";
     };
     dependencies = [
       sources."@types/anymatch-1.3.1"
       sources."@types/codemirror-0.0.78"
-      sources."@types/estree-0.0.40"
-      sources."@types/node-12.12.21"
+      sources."@types/estree-0.0.41"
+      sources."@types/node-13.1.0"
       sources."@types/prismjs-1.16.0"
       sources."@types/source-list-map-0.1.2"
       sources."@types/tapable-1.0.4"
@@ -4846,7 +4855,7 @@ in
       sources."string_decoder-1.1.1"
       sources."strip-ansi-5.2.0"
       sources."strip-eof-1.0.0"
-      sources."style-loader-1.1.1"
+      sources."style-loader-1.1.2"
       sources."supports-color-6.1.0"
       sources."tapable-1.1.3"
       sources."terser-4.4.3"
