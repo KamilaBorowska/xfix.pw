@@ -58,13 +58,13 @@ let
         sha512 = "r5i93jqbPWGXYXxianGATOxTelkp6ih/U0WVnvaqAvTqM+0U6J3kw6Xk6uq/dWNRkEVw/0SLcO5ORXbVNz4FMQ==";
       };
     };
-    "@types/node-13.1.0" = {
+    "@types/node-13.1.2" = {
       name = "_at_types_slash_node";
       packageName = "@types/node";
-      version = "13.1.0";
+      version = "13.1.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/node/-/node-13.1.0.tgz";
-        sha512 = "zwrxviZS08kRX40nqBrmERElF2vpw4IUTd5khkhBTfFH8AOaeoLVx48EC4+ZzS2/Iga7NevncqnsUSYjM4OWYA==";
+        url = "https://registry.npmjs.org/@types/node/-/node-13.1.2.tgz";
+        sha512 = "B8emQA1qeKerqd1dmIsQYnXi+mmAzTB7flExjmy5X1aVAKFNNNDubkavwR13kR6JnpeLp3aLoJhwn9trWPAyFQ==";
       };
     };
     "@types/prismjs-1.16.0" = {
@@ -130,13 +130,13 @@ let
         sha512 = "SudIN9TRJ+v8g5pTG8RRCqfqTMNqgWCKKd3vtynhGzkIIjxaicNAMuY5TRadJ6tzDu3Dotf3ngaMILtmOdmWEQ==";
       };
     };
-    "@types/webpack-4.41.0" = {
+    "@types/webpack-4.41.1" = {
       name = "_at_types_slash_webpack";
       packageName = "@types/webpack";
-      version = "4.41.0";
+      version = "4.41.1";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/webpack/-/webpack-4.41.0.tgz";
-        sha512 = "tWkdf9nO0zFgAY/EumUKwrDUhraHKDqCPhwfFR/R8l0qnPdgb9le0Gzhvb7uzVpouuDGBgiE//ZdY+5jcZy2TA==";
+        url = "https://registry.npmjs.org/@types/webpack/-/webpack-4.41.1.tgz";
+        sha512 = "n9fP8UrMxOi1wiM3oM+vMZHMJJ7WoQohqd63C20cmKOFkNEy9Q8hyZyDR6PWdvSYt3V3A7cwDq/kWxHlRYYZEg==";
       };
     };
     "@types/webpack-sources-0.1.5" = {
@@ -2956,13 +2956,13 @@ let
         sha1 = "01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab";
       };
     };
-    "postcss-7.0.25" = {
+    "postcss-7.0.26" = {
       name = "postcss";
       packageName = "postcss";
-      version = "7.0.25";
+      version = "7.0.26";
       src = fetchurl {
-        url = "https://registry.npmjs.org/postcss/-/postcss-7.0.25.tgz";
-        sha512 = "NXXVvWq9icrm/TgQC0O6YVFi4StfJz46M1iNd/h6B26Nvh/HKI+q4YZtFN/EjcInZliEscO/WL10BXnc1E5nwg==";
+        url = "https://registry.npmjs.org/postcss/-/postcss-7.0.26.tgz";
+        sha512 = "IY4oRjpXWYshuTDFxMVkJDtWIk2LhsTlu8bZnbEJA4+bYT16Lvpo8Qv6EvDumhYRgzjZl489pmsY3qVgJQ08nA==";
       };
     };
     "postcss-modules-extract-imports-2.0.0" = {
@@ -3064,13 +3064,13 @@ let
         sha1 = "d3fc114ba06995a45ec6893f484ceb1d78f5f476";
       };
     };
-    "psl-1.6.0" = {
+    "psl-1.7.0" = {
       name = "psl";
       packageName = "psl";
-      version = "1.6.0";
+      version = "1.7.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/psl/-/psl-1.6.0.tgz";
-        sha512 = "SYKKmVel98NCOYXpkwUqZqh0ahZeeKfmisiLIcEZdsb+WbLv02g/dI5BUmZnIyOe7RzZtLax81nnb2HbvC2tzA==";
+        url = "https://registry.npmjs.org/psl/-/psl-1.7.0.tgz";
+        sha512 = "5NsSEDv8zY70ScRnOTn7bK7eanl2MvFrOrS/R6x+dBt5g1ghnj9Zv90kO8GwT8gxcu2ANyFprnFYB85IogIJOQ==";
       };
     };
     "public-encrypt-4.0.3" = {
@@ -3541,13 +3541,13 @@ let
         sha512 = "UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==";
       };
     };
-    "source-map-resolve-0.5.2" = {
+    "source-map-resolve-0.5.3" = {
       name = "source-map-resolve";
       packageName = "source-map-resolve";
-      version = "0.5.2";
+      version = "0.5.3";
       src = fetchurl {
-        url = "https://registry.npmjs.org/source-map-resolve/-/source-map-resolve-0.5.2.tgz";
-        sha512 = "MjqsvNwyz1s0k81Goz/9vRBe9SZdB09Bdw+/zYyO+3CuPk6fouTaxscHkgtE8jKvf01kVfl8riHzERQ/kefaSA==";
+        url = "https://registry.npmjs.org/source-map-resolve/-/source-map-resolve-0.5.3.tgz";
+        sha512 = "Htz+RnsXWk5+P2slx5Jh3Q66vhQj1Cllm0zvnaY98+NFx+Dv2CF/f5O/t8x+KaNdrdIAsruNzoh/KpialbqAnw==";
       };
     };
     "source-map-support-0.5.16" = {
@@ -4072,13 +4072,13 @@ let
         sha512 = "i6dHe3EyLjMmDlU1/bGQpEw25XSjkJULPuAVKCbNRefQVq48yXKUpwg538F7AZTf9kyr57zj++pQFltUa5H7yA==";
       };
     };
-    "webpack-4.41.4" = {
+    "webpack-4.41.5" = {
       name = "webpack";
       packageName = "webpack";
-      version = "4.41.4";
+      version = "4.41.5";
       src = fetchurl {
-        url = "https://registry.npmjs.org/webpack/-/webpack-4.41.4.tgz";
-        sha512 = "Lc+2uB6NjpCWsHI3trkoISOI64h9QYIXenbEWj3bn3oyjfB1lEBXjWAfAyY2sM0rZn41oD5V91OLwKRwS6Wp8Q==";
+        url = "https://registry.npmjs.org/webpack/-/webpack-4.41.5.tgz";
+        sha512 = "wp0Co4vpyumnp3KlkmpM5LWuzvZYayDwM2n17EHFr4qxBBbRokC7DJawPJC7TfSFZ9HZ6GsdH40EBj4UV0nmpw==";
       };
     };
     "webpack-cli-3.3.10" = {
@@ -4290,7 +4290,7 @@ in
       sources."next-tick-1.0.0"
       sources."oauth-sign-0.9.0"
       sources."performance-now-2.1.0"
-      sources."psl-1.6.0"
+      sources."psl-1.7.0"
       sources."punycode-2.1.1"
       sources."qs-6.5.2"
       sources."request-2.88.0"
@@ -4329,20 +4329,20 @@ in
     version = "0.1.0";
     src = fetchgit {
       url = "https://gitlab.com/pastebin.run/server.git";
-      rev = "2b2792145b2d090e51c2f798485a2daf4b297dcc";
-      sha256 = "f8ad570232bdde02cd90e9cdddf28e8c745b8bca9e91cd728c77e6f1803725bd";
+      rev = "70e484786f4cc981f6d26ea9f9838d05c6cf973e";
+      sha256 = "4f4ae6a0d4b8b57ac4fb0ac0a17be97a899d19b7763f9a5f9eae5034507a4ef9";
     };
     dependencies = [
       sources."@types/anymatch-1.3.1"
       sources."@types/codemirror-0.0.78"
       sources."@types/estree-0.0.41"
-      sources."@types/node-13.1.0"
+      sources."@types/node-13.1.2"
       sources."@types/prismjs-1.16.0"
       sources."@types/source-list-map-0.1.2"
       sources."@types/tapable-1.0.4"
       sources."@types/tern-0.23.3"
       sources."@types/uglify-js-3.0.4"
-      sources."@types/webpack-4.41.0"
+      sources."@types/webpack-4.41.1"
       sources."@types/webpack-sources-0.1.5"
       sources."@webassemblyjs/ast-1.8.5"
       sources."@webassemblyjs/floating-point-hex-parser-1.8.5"
@@ -4723,7 +4723,7 @@ in
       sources."pify-4.0.1"
       sources."pkg-dir-3.0.0"
       sources."posix-character-classes-0.1.1"
-      sources."postcss-7.0.25"
+      sources."postcss-7.0.26"
       sources."postcss-modules-extract-imports-2.0.0"
       sources."postcss-modules-local-by-default-3.0.2"
       sources."postcss-modules-scope-2.1.1"
@@ -4825,7 +4825,7 @@ in
       })
       sources."source-list-map-2.0.1"
       sources."source-map-0.6.1"
-      sources."source-map-resolve-0.5.2"
+      sources."source-map-resolve-0.5.3"
       sources."source-map-support-0.5.16"
       sources."source-map-url-0.4.0"
       sources."split-string-3.1.0"
@@ -4912,7 +4912,7 @@ in
       sources."v8-compile-cache-2.0.3"
       sources."vm-browserify-1.1.2"
       sources."watchpack-1.6.0"
-      (sources."webpack-4.41.4" // {
+      (sources."webpack-4.41.5" // {
         dependencies = [
           (sources."braces-2.3.2" // {
             dependencies = [
