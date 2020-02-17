@@ -4,15 +4,6 @@
 
 let
   sources = {
-    "@types/anymatch-1.3.1" = {
-      name = "_at_types_slash_anymatch";
-      packageName = "@types/anymatch";
-      version = "1.3.1";
-      src = fetchurl {
-        url = "https://registry.npmjs.org/@types/anymatch/-/anymatch-1.3.1.tgz";
-        sha512 = "/+CRPXpBDpo2RK9C68N3b2cOvO0Cf5B9aPijHsoDQTHivnGSObdOF2BRQOYjojWTDy6nQvMjmqRXIxH55VjxxA==";
-      };
-    };
     "@types/caseless-0.12.2" = {
       name = "_at_types_slash_caseless";
       packageName = "@types/caseless";
@@ -22,13 +13,13 @@ let
         sha512 = "6ckxMjBBD8URvjB6J3NcnuAn5Pkl7t3TizAg+xdlzzQGSPSmBcXf8KoIH0ua/i+tio+ZRUHEXp0HEmvaR4kt0w==";
       };
     };
-    "@types/codemirror-0.0.84" = {
+    "@types/codemirror-0.0.85" = {
       name = "_at_types_slash_codemirror";
       packageName = "@types/codemirror";
-      version = "0.0.84";
+      version = "0.0.85";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/codemirror/-/codemirror-0.0.84.tgz";
-        sha512 = "W78ZhfHPGYoYGCpAcEa268QUU3CVMA8BwcybxUMhEs2v5Rj58/7lGeRh3P7tauWRnSg3Pyn5ymw2lt65AyrVUw==";
+        url = "https://registry.npmjs.org/@types/codemirror/-/codemirror-0.0.85.tgz";
+        sha512 = "ZAVyNzXAHu/mkvvZlq2IYPBjm4X3mEno27epXpBRXwWbX75zAAeGZfubXxft1kWNqBSI2f50kvuJTG+fRwHaNg==";
       };
     };
     "@types/escape-html-0.0.20" = {
@@ -76,24 +67,6 @@ let
         sha512 = "W1t1MTKYR8PxICH+A4HgEIPuAC3sbljoEVfyZbeFJJDbr30guDspJri2XOaM2E+Un7ZjrihaDi7cf6fPa2tbgw==";
       };
     };
-    "@types/source-list-map-0.1.2" = {
-      name = "_at_types_slash_source-list-map";
-      packageName = "@types/source-list-map";
-      version = "0.1.2";
-      src = fetchurl {
-        url = "https://registry.npmjs.org/@types/source-list-map/-/source-list-map-0.1.2.tgz";
-        sha512 = "K5K+yml8LTo9bWJI/rECfIPrGgxdpeNbj+d53lwN4QjW1MCwlkhUms+gtdzigTeUyBr09+u8BwOIY3MXvHdcsA==";
-      };
-    };
-    "@types/tapable-1.0.5" = {
-      name = "_at_types_slash_tapable";
-      packageName = "@types/tapable";
-      version = "1.0.5";
-      src = fetchurl {
-        url = "https://registry.npmjs.org/@types/tapable/-/tapable-1.0.5.tgz";
-        sha512 = "/gG2M/Imw7cQFp8PGvz/SwocNrmKFjFsm5Pb8HdbHkZ1K8pmuPzOX4VeVoiEecFCVf4CsN1r3/BRvx+6sNqwtQ==";
-      };
-    };
     "@types/tern-0.23.3" = {
       name = "_at_types_slash_tern";
       packageName = "@types/tern";
@@ -110,33 +83,6 @@ let
       src = fetchurl {
         url = "https://registry.npmjs.org/@types/tough-cookie/-/tough-cookie-2.3.6.tgz";
         sha512 = "wHNBMnkoEBiRAd3s8KTKwIuO9biFtTf0LehITzBhSco+HQI0xkXZbLOD55SW3Aqw3oUkHstkm5SPv58yaAdFPQ==";
-      };
-    };
-    "@types/uglify-js-3.0.4" = {
-      name = "_at_types_slash_uglify-js";
-      packageName = "@types/uglify-js";
-      version = "3.0.4";
-      src = fetchurl {
-        url = "https://registry.npmjs.org/@types/uglify-js/-/uglify-js-3.0.4.tgz";
-        sha512 = "SudIN9TRJ+v8g5pTG8RRCqfqTMNqgWCKKd3vtynhGzkIIjxaicNAMuY5TRadJ6tzDu3Dotf3ngaMILtmOdmWEQ==";
-      };
-    };
-    "@types/webpack-4.41.6" = {
-      name = "_at_types_slash_webpack";
-      packageName = "@types/webpack";
-      version = "4.41.6";
-      src = fetchurl {
-        url = "https://registry.npmjs.org/@types/webpack/-/webpack-4.41.6.tgz";
-        sha512 = "iWRpV5Ej+8uKrgxp6jXz3v7ZTjgtuMXY+rsxQjFNU0hYCnHkpA7vtiNffgxjuxX4feFHBbz0IF76OzX2OqDYPw==";
-      };
-    };
-    "@types/webpack-sources-0.1.6" = {
-      name = "_at_types_slash_webpack-sources";
-      packageName = "@types/webpack-sources";
-      version = "0.1.6";
-      src = fetchurl {
-        url = "https://registry.npmjs.org/@types/webpack-sources/-/webpack-sources-0.1.6.tgz";
-        sha512 = "FtAWR7wR5ocJ9+nP137DV81tveD/ZgB1sadnJ/axUGM3BUVfRPx8oQNMtv3JNfTeHx3VP7cXiyfR/jmtEsVHsQ==";
       };
     };
     "@webassemblyjs/ast-1.8.5" = {
@@ -2551,24 +2497,6 @@ let
         sha1 = "30057438eac6cf7f8c4767f38648d6697d75c903";
       };
     };
-    "monaco-editor-0.18.1" = {
-      name = "monaco-editor";
-      packageName = "monaco-editor";
-      version = "0.18.1";
-      src = fetchurl {
-        url = "https://registry.npmjs.org/monaco-editor/-/monaco-editor-0.18.1.tgz";
-        sha512 = "fmL+RFZ2Hrezy+X/5ZczQW51LUmvzfcqOurnkCIRFTyjdVjzR7JvENzI6+VKBJzJdPh6EYL4RoWl92b2Hrk9fw==";
-      };
-    };
-    "monaco-editor-webpack-plugin-1.7.0" = {
-      name = "monaco-editor-webpack-plugin";
-      packageName = "monaco-editor-webpack-plugin";
-      version = "1.7.0";
-      src = fetchurl {
-        url = "https://registry.npmjs.org/monaco-editor-webpack-plugin/-/monaco-editor-webpack-plugin-1.7.0.tgz";
-        sha512 = "oItymcnlL14Sjd7EF7q+CMhucfwR/2BxsqrXIBrWL6LQplFfAfV+grLEQRmVHeGSBZ/Gk9ptzfueXnWcoEcFuA==";
-      };
-    };
     "move-concurrently-1.0.1" = {
       name = "move-concurrently";
       packageName = "move-concurrently";
@@ -4316,21 +4244,14 @@ in
     version = "0.1.0";
     src = fetchgit {
       url = "https://gitlab.com/pastebin.run/server.git";
-      rev = "a691f9510f289dd5b004e781e0bbf2feb603917f";
-      sha256 = "446898a8592a55c3bed5f80e40b2b94dd354e5c44819251d0dd792a61a941ade";
+      rev = "53455e21c73547162603b938250ebfb47029dc4a";
+      sha256 = "5458ae6bf4ebec9fb4fdabbc2b28d5a34314f5333c80e5de81714eb57f2dfe40";
     };
     dependencies = [
-      sources."@types/anymatch-1.3.1"
-      sources."@types/codemirror-0.0.84"
+      sources."@types/codemirror-0.0.85"
       sources."@types/estree-0.0.42"
-      sources."@types/node-13.7.1"
       sources."@types/prismjs-1.16.0"
-      sources."@types/source-list-map-0.1.2"
-      sources."@types/tapable-1.0.5"
       sources."@types/tern-0.23.3"
-      sources."@types/uglify-js-3.0.4"
-      sources."@types/webpack-4.41.6"
-      sources."@types/webpack-sources-0.1.6"
       sources."@webassemblyjs/ast-1.8.5"
       sources."@webassemblyjs/floating-point-hex-parser-1.8.5"
       sources."@webassemblyjs/helper-api-error-1.8.5"
@@ -4655,8 +4576,6 @@ in
           sources."minimist-0.0.8"
         ];
       })
-      sources."monaco-editor-0.18.1"
-      sources."monaco-editor-webpack-plugin-1.7.0"
       sources."move-concurrently-1.0.1"
       sources."ms-2.0.0"
       sources."nan-2.14.0"
