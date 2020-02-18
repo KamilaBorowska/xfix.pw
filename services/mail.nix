@@ -9,6 +9,9 @@
       smtp_tls_security_level = "may";
     };
     rootAlias = "postmaster@borowski.pw";
+    extraAliases = ''
+      contact: konrad@borowski.pw
+    '';
   };
 
   users.users.postfix.extraGroups = [ "opendkim" ];
