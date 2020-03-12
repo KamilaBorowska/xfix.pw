@@ -1,8 +1,4 @@
 let
-  unstable = import (fetchTarball {
-    url = https://github.com/NixOS/nixpkgs-channels/archive/e89b21504f3e61e535229afa0b121defb52d2a50.tar.gz;
-    sha256 = "0jqcv3rfki3mwda00g66d27k6q2y7ca5mslrnshfpbdm7j8ya0kj";
-  }) {};
   client-js-base = (import ./nodejs {})."pastebinrun-git+https://gitlab.com/pastebin.run/server.git";
   client-js = client-js-base.override {
     version = "0.1.0";
@@ -16,7 +12,8 @@ let
     '';
   };
 in
-unstable.rustPlatform.buildRustPackage (with import <nixpkgs> {}; {
+with import <nixpkgs> {};
+rustPlatform.buildRustPackage.override { rustc = rustc_1_41; } {
   pname = "pastebinrun";
   version = "0.1.0";
   src = client-js-base.src;
@@ -32,4 +29,4 @@ unstable.rustPlatform.buildRustPackage (with import <nixpkgs> {}; {
     cp $releaseDir/pastebinrun $out/bin
     cp -r static migrations languages.json $out
   '';
-})
+}
