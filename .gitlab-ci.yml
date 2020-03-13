@@ -1,3 +1,6 @@
+variables:
+  NIX_PATH: nixpkgs=https://nixos.org/channels/nixos-19.09-small/nixexprs.tar.xz
+
 build:
   image: nixos/nix:2.3
   script: nix-build --no-out-link packages/*.nix
