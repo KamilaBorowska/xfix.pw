@@ -1,6 +1,6 @@
 with import <nixpkgs> {};
 
-rustPlatform.buildRustPackage.override { rustc = rustc_1_41; } {
+rustPlatform.buildRustPackage {
   name = "pulldown-cmark-babelmark";
 
   src = fetchFromGitLab {

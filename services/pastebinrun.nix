@@ -52,4 +52,6 @@ in
       WorkingDirectory = pastebinrun;
     };
   };
+
+  imports = [ ./acme.nix ];
 }

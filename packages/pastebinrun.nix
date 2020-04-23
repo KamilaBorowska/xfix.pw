@@ -13,7 +13,7 @@ let
   };
 in
 with import <nixpkgs> {};
-rustPlatform.buildRustPackage.override { rustc = rustc_1_41; } {
+rustPlatform.buildRustPackage {
   pname = "pastebinrun";
   version = "0.1.0";
   src = client-js-base.src;
