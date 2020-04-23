@@ -2,9 +2,6 @@
   security.acme.certs."xfix.pw" = {
     allowKeysForGroup = true;
     group = "quassel";
-    postRun = ''
-      systemctl reload quassel
-    '';
   };
   services.quassel = {
     certificateFile = "/var/lib/acme/xfix.pw/full.pem";
