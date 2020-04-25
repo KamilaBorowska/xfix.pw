@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   services.nextcloud = {
     enable = true;
@@ -11,6 +12,7 @@
       adminuser = "xfix";
       adminpass = "password";
     };
+    package = pkgs.nextcloud18;
   };
   services.postgresql = {
     enable = true;
