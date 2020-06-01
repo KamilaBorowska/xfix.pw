@@ -17,7 +17,7 @@ rustPlatform.buildRustPackage {
   pname = "pastebinrun";
   version = "0.1.0";
   src = client-js-base.src;
-  cargoSha256 = "0kwwnk5sbzi29jrdm1h2mdmhmi03himam96lf7m8h7c4f25x8aq3";
+  cargoSha256 = "0k2y777wmh22lmm54w7v1agvz4kvqsn1cir4zbgmz6k6zy5azaif";
   nativeBuildInputs = [ pkgconfig ];
   buildInputs = [ openssl postgresql.lib ];
   patchPhase = ''
