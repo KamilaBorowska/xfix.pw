@@ -40,13 +40,22 @@ let
         sha512 = "iaIVzr+w2ZJ5HkidlZ3EJM8VTZb2MJLCjw3V+505yVts0gRC4UMvjw0d1HPtGqI/HQC/KdsYtayfzl+AXY2R8g==";
       };
     };
-    "@types/node-14.0.4" = {
+    "@types/json-schema-7.0.4" = {
+      name = "_at_types_slash_json-schema";
+      packageName = "@types/json-schema";
+      version = "7.0.4";
+      src = fetchurl {
+        url = "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.4.tgz";
+        sha512 = "8+KAKzEvSUdeo+kmqnKrqgeE+LcA0tjYWFY7RPProVYwnqDjukzO+3b6dLD56rYX5TdWejnEOLJYOIeh4CXKuA==";
+      };
+    };
+    "@types/node-14.0.6" = {
       name = "_at_types_slash_node";
       packageName = "@types/node";
-      version = "14.0.4";
+      version = "14.0.6";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/node/-/node-14.0.4.tgz";
-        sha512 = "k3NqigXWRzQZVBDS5D1U70A5E8Qk4Kh+Ha/x4M8Bt9pF0X05eggfnC9+63Usc9Q928hRUIpIhTQaXsZwZBl4Ew==";
+        url = "https://registry.npmjs.org/@types/node/-/node-14.0.6.tgz";
+        sha512 = "FbNmu4F67d3oZMWBV6Y4MaPER+0EpE9eIYf2yaHhCWovc1dlXCZkqGX4NLHfVVr6umt20TNBdRzrNJIzIKfdbw==";
       };
     };
     "@types/prismjs-1.16.0" = {
@@ -463,13 +472,13 @@ let
         sha1 = "b46e890934a9591f2d2f6f86d7e6a9f1b3fe76a8";
       };
     };
-    "aws4-1.9.1" = {
+    "aws4-1.10.0" = {
       name = "aws4";
       packageName = "aws4";
-      version = "1.9.1";
+      version = "1.10.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/aws4/-/aws4-1.9.1.tgz";
-        sha512 = "wMHVg2EOHaMRxbzgFJ9gtjOOCrI80OHLG14rxi28XwOW8ux6IiEbRCGGGqCtdAIg4FQCbW20k9RsT4y3gJlFug==";
+        url = "https://registry.npmjs.org/aws4/-/aws4-1.10.0.tgz";
+        sha512 = "3YDiu347mtVtjpyV3u5kVqQLP242c06zwDOgpeRnybmXlYYsLbtTrUBUm8i8srONt+FWobl5aibnU1030PeeuA==";
       };
     };
     "balanced-match-1.0.0" = {
@@ -553,22 +562,22 @@ let
         sha512 = "XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==";
       };
     };
-    "bn.js-4.11.8" = {
+    "bn.js-4.11.9" = {
       name = "bn.js";
       packageName = "bn.js";
-      version = "4.11.8";
+      version = "4.11.9";
       src = fetchurl {
-        url = "https://registry.npmjs.org/bn.js/-/bn.js-4.11.8.tgz";
-        sha512 = "ItfYfPLkWHUjckQCk8xC+LwxgK8NYcXywGigJgSwOP8Y2iyWT4f2vsZnoOXTTbo+o5yXmIUJ4gn5538SO5S3gA==";
+        url = "https://registry.npmjs.org/bn.js/-/bn.js-4.11.9.tgz";
+        sha512 = "E6QoYqCKZfgatHTdHzs1RRKP7ip4vvm+EyRUeE2RF0NblwVvb0p6jSVeNTOFxPn26QXN2o6SMfNxKp6kU8zQaw==";
       };
     };
-    "bn.js-5.1.1" = {
+    "bn.js-5.1.2" = {
       name = "bn.js";
       packageName = "bn.js";
-      version = "5.1.1";
+      version = "5.1.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/bn.js/-/bn.js-5.1.1.tgz";
-        sha512 = "IUTD/REb78Z2eodka1QZyyEk66pciRcP6Sroka0aI3tG/iwIdYLrBD62RsubR7vqdt3WyX8p4jxeatzmRSphtA==";
+        url = "https://registry.npmjs.org/bn.js/-/bn.js-5.1.2.tgz";
+        sha512 = "40rZaf3bUNKTVYu9sIeeEGOg7g14Yvnj9kH7b50EiwX0Q7A6umbvfI5tvHaOERH0XigqKkfLkFQxzb4e6CIXnA==";
       };
     };
     "brace-expansion-1.1.11" = {
@@ -2956,13 +2965,13 @@ let
         sha1 = "01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab";
       };
     };
-    "postcss-7.0.30" = {
+    "postcss-7.0.31" = {
       name = "postcss";
       packageName = "postcss";
-      version = "7.0.30";
+      version = "7.0.31";
       src = fetchurl {
-        url = "https://registry.npmjs.org/postcss/-/postcss-7.0.30.tgz";
-        sha512 = "nu/0m+NtIzoubO+xdAlwZl/u5S5vi/y6BCsoL8D+8IxsD3XvBS8X4YEADNIVXKVuQvduiucnRv+vPIqj56EGMQ==";
+        url = "https://registry.npmjs.org/postcss/-/postcss-7.0.31.tgz";
+        sha512 = "a937VDHE1ftkjk+8/7nj/mrjtmkn69xxzJgRETXdAUU+IgOYPQNJF17haGWbeDxSyk++HA14UA98FurvPyBJOA==";
       };
     };
     "postcss-modules-extract-imports-2.0.0" = {
@@ -3397,13 +3406,13 @@ let
         sha512 = "i27Mic4KovM/lnGsy8whRCHhc7VicJajAjTrYg11K9zfZXnYIt4k5F+kZkwjnrhKzLic/HLU4j11mjsz2G/75g==";
       };
     };
-    "schema-utils-2.6.6" = {
+    "schema-utils-2.7.0" = {
       name = "schema-utils";
       packageName = "schema-utils";
-      version = "2.6.6";
+      version = "2.7.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/schema-utils/-/schema-utils-2.6.6.tgz";
-        sha512 = "wHutF/WPSbIi9x6ctjGGk2Hvl0VOz5l3EKEuKbjPlB30mKZUzb9A5k9yEXRX3pwyqVLPvpfZZEllaFq/M718hA==";
+        url = "https://registry.npmjs.org/schema-utils/-/schema-utils-2.7.0.tgz";
+        sha512 = "0ilKFI6QQF5nxDZLFn2dMjvc4hjg/Wkg7rHd3jK6/A4a1Hl9VFdQWvgB1UMGoU94pad1P/8N7fMcEnLnSiju8A==";
       };
     };
     "select-1.1.2" = {
@@ -3928,13 +3937,13 @@ let
         sha512 = "MYlEfn5VrLNsgudQTVJeNaQFUAI7DkhnOjdpAp4T+ku1TfQClewlbSuTVHiA+8skNBgaf02TL/kLOvig4y3G8w==";
       };
     };
-    "typescript-3.9.3" = {
+    "typescript-3.9.4" = {
       name = "typescript";
       packageName = "typescript";
-      version = "3.9.3";
+      version = "3.9.4";
       src = fetchurl {
-        url = "https://registry.npmjs.org/typescript/-/typescript-3.9.3.tgz";
-        sha512 = "D/wqnB2xzNFIcoBG9FG8cXRDjiqSTbG2wd8DMZeQyJlP1vfTkIxH4GKveWaEBYySKIg+USu+E+EDIR47SqnaMQ==";
+        url = "https://registry.npmjs.org/typescript/-/typescript-3.9.4.tgz";
+        sha512 = "9OL+r0KVHqsYVH7K18IBR9hhC82YwLNlpSZfQDupGcfg8goB9p/s/9Okcy+ztnTeHR2U68xq21/igW9xpoGTgA==";
       };
     };
     "union-value-1.0.1" = {
@@ -4261,13 +4270,13 @@ in
     version = "0.1.0";
     src = fetchgit {
       url = "git://github.com/smogon/GitHub-Bot";
-      rev = "795c7b800cbb7d69ae2b0a8e7713dcc711edb490";
-      sha256 = "21a839fe0374a7e5714acbd215a65f940e19d118aa3fa2b3e0e7fad830f0dace";
+      rev = "4c6011991fce328f033073b1668f1068d3ba0f52";
+      sha256 = "908849e855fafc727431e888d04707738e0355865bb99ede12f3b2291fe584fe";
     };
     dependencies = [
       sources."@types/caseless-0.12.2"
       sources."@types/escape-html-0.0.20"
-      sources."@types/node-14.0.4"
+      sources."@types/node-14.0.6"
       (sources."@types/request-2.48.5" // {
         dependencies = [
           sources."form-data-2.5.1"
@@ -4279,7 +4288,7 @@ in
       sources."assert-plus-1.0.0"
       sources."asynckit-0.4.0"
       sources."aws-sign2-0.7.0"
-      sources."aws4-1.9.1"
+      sources."aws4-1.10.0"
       sources."bcrypt-pbkdf-1.0.2"
       sources."caseless-0.12.0"
       sources."combined-stream-1.0.8"
@@ -4339,7 +4348,7 @@ in
       sources."tweetnacl-0.14.5"
       sources."type-1.2.0"
       sources."typedarray-to-buffer-3.1.5"
-      sources."typescript-3.9.3"
+      sources."typescript-3.9.4"
       sources."uri-js-4.2.2"
       sources."uuid-3.4.0"
       sources."verror-1.10.0"
@@ -4361,12 +4370,13 @@ in
     version = "0.1.0";
     src = fetchgit {
       url = "https://gitlab.com/pastebin.run/server.git";
-      rev = "c900085a68c5eca236fa25586a8929c5f59866a6";
-      sha256 = "576dc677675a50c2695be7a1a7945e05d745654e72cd431bcc551b32b7071c27";
+      rev = "169cef294dce6c85046ba27fada32d8dd56a8700";
+      sha256 = "e46660247e8e5c1f257f544d1e3f445636a39bf8b6763441cb94da9f835840ec";
     };
     dependencies = [
       sources."@types/codemirror-0.0.91"
       sources."@types/estree-0.0.44"
+      sources."@types/json-schema-7.0.4"
       sources."@types/prismjs-1.16.0"
       sources."@types/tern-0.23.3"
       sources."@webassemblyjs/ast-1.9.0"
@@ -4403,7 +4413,7 @@ in
       sources."array-unique-0.3.2"
       (sources."asn1.js-4.10.1" // {
         dependencies = [
-          sources."bn.js-4.11.8"
+          sources."bn.js-4.11.9"
         ];
       })
       (sources."assert-1.5.0" // {
@@ -4426,7 +4436,7 @@ in
       sources."binary-extensions-2.0.0"
       sources."bindings-1.5.0"
       sources."bluebird-3.7.2"
-      sources."bn.js-5.1.1"
+      sources."bn.js-5.1.2"
       sources."brace-expansion-1.1.11"
       sources."braces-3.0.2"
       sources."brorand-1.1.0"
@@ -4435,7 +4445,7 @@ in
       sources."browserify-des-1.0.2"
       (sources."browserify-rsa-4.0.1" // {
         dependencies = [
-          sources."bn.js-4.11.8"
+          sources."bn.js-4.11.9"
         ];
       })
       (sources."browserify-sign-4.2.0" // {
@@ -4496,7 +4506,7 @@ in
       sources."core-util-is-1.0.2"
       (sources."create-ecdh-4.0.3" // {
         dependencies = [
-          sources."bn.js-4.11.8"
+          sources."bn.js-4.11.9"
         ];
       })
       sources."create-hash-1.2.0"
@@ -4519,14 +4529,14 @@ in
       sources."detect-file-1.0.0"
       (sources."diffie-hellman-5.0.3" // {
         dependencies = [
-          sources."bn.js-4.11.8"
+          sources."bn.js-4.11.9"
         ];
       })
       sources."domain-browser-1.2.0"
       sources."duplexify-3.7.1"
       (sources."elliptic-6.5.2" // {
         dependencies = [
-          sources."bn.js-4.11.8"
+          sources."bn.js-4.11.9"
         ];
       })
       sources."emoji-regex-7.0.3"
@@ -4683,7 +4693,7 @@ in
       sources."micromatch-4.0.2"
       (sources."miller-rabin-4.0.1" // {
         dependencies = [
-          sources."bn.js-4.11.8"
+          sources."bn.js-4.11.9"
         ];
       })
       sources."mimic-fn-2.1.0"
@@ -4751,7 +4761,7 @@ in
       sources."pify-4.0.1"
       sources."pkg-dir-3.0.0"
       sources."posix-character-classes-0.1.1"
-      sources."postcss-7.0.30"
+      sources."postcss-7.0.31"
       sources."postcss-modules-extract-imports-2.0.0"
       sources."postcss-modules-local-by-default-3.0.2"
       sources."postcss-modules-scope-2.2.0"
@@ -4765,7 +4775,7 @@ in
       sources."prr-1.0.1"
       (sources."public-encrypt-4.0.3" // {
         dependencies = [
-          sources."bn.js-4.11.8"
+          sources."bn.js-4.11.9"
         ];
       })
       sources."pump-3.0.0"
@@ -4801,7 +4811,7 @@ in
       sources."run-queue-1.0.3"
       sources."safe-buffer-5.1.2"
       sources."safe-regex-1.1.0"
-      sources."schema-utils-2.6.6"
+      sources."schema-utils-2.7.0"
       sources."select-1.1.2"
       sources."semver-6.3.0"
       sources."serialize-javascript-2.1.2"
