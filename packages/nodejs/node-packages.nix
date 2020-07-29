@@ -4270,8 +4270,8 @@ in
     version = "0.1.0";
     src = fetchgit {
       url = "git://github.com/smogon/GitHub-Bot";
-      rev = "a9b31b6bde8d731c24133612b88a0c7b10068615";
-      sha256 = "43039c6122ef625634b467aa2139960f24766ff84379aab51f805b5726da9bcd";
+      rev = "72db68daf26aa33fc82f9c78ec04c914340c7380";
+      sha256 = "a0b3c02a33a7435b0008c727b83b38c7444446baa01cb7ac0d8d4a2024cf94ae";
     };
     dependencies = [
       sources."@types/caseless-0.12.2"
