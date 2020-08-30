@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   imports = [
     ./shared.nix
@@ -24,5 +25,14 @@
   services.zfs.autoSnapshot = {
     enable = true;
     monthly = 1;
+  };
+
+  users.users.xfix = {
+    isNormalUser = true;
+    extraGroups = [ "wheel" ];
+    shell = pkgs.fish;
+    openssh.authorizedKeys.keys = [
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKShN/DjYQVzJwGMc/N/RjvZKBMrJeUpNN6oaxYTPHb0"
+    ];
   };
 }
