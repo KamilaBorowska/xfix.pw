@@ -15,12 +15,6 @@ in
       ./services/mail.nix
       ./services/babelmark.nix
       ./services/borowski.nix
-      (import ./services/githubbot.nix {
-        nickname = "GitHub Test";
-        password = "";
-        room = "botdevelopment";
-        secret = "";
-      })
       ./services/nextcloud.nix
       ./services/pastebinrun.nix
       ./services/quassel.nix
