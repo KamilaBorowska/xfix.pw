@@ -4,7 +4,3 @@ variables:
 build:
   image: nixos/nix:2.3
   script: nix-build --no-out-link packages/*.nix
-
-test:
-  image: nixos/nix:2.3
-  script: nix-build --no-out-link tests/*.nix
