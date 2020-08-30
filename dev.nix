@@ -17,7 +17,6 @@ in
       ./services/borowski.nix
       ./services/nextcloud.nix
       ./services/pastebinrun.nix
-      ./services/quassel.nix
       ./services/xfix.nix
     ];
 
