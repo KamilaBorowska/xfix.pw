@@ -1,7 +1,6 @@
 with import <nixpkgs> {};
 
 {
-  boot.tmpOnTmpfs = true;
   services.openssh = {
     kexAlgorithms = [ "curve25519-sha256@libssh.org" ];
     extraConfig = "AuthenticationMethods publickey";
