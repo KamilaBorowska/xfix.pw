@@ -32,4 +32,6 @@
       Restart = "always";
     };
   };
+
+  imports = [ ./acme.nix ];
 }
