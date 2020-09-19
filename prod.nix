@@ -8,6 +8,7 @@
     ./services/nextcloud.nix
     ./services/pastebinrun.nix
     ./services/xfix.nix
+    ./services/zfsbackup.nix
   ];
 
   services.nginx = {
