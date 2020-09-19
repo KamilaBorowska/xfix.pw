@@ -3,7 +3,7 @@ with import <nixpkgs> {};
 buildGoPackage rec {
   pname = "zfsbackup";
   version = "unstable-2020-06-16";
-  rev = "18fea6e99f0a5a4c8513d3a3d1d45fb6750cfddf";
+  rev = "ec89e865f4413a6a9d88e0ef1917261135e9e37e";
 
   goPackagePath = "github.com/someone1/zfsbackup-go";
 
