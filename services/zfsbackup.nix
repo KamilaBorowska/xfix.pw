@@ -10,10 +10,7 @@ in
     };
     path = [ pkgs.zfs zfsbackup ];
     script = ''
-      for path in rpool/root/var{,/postgresql}
-      do
-        zfsbackup-go send --fullIfOlderThan 360h --snapshotPrefix zfs-auto-snap_daily- "$path" b2://xfix-pw
-      done
+      zfsbackup-go send --replication --fullIfOlderThan 360h --snapshotPrefix zfs-auto-snap_daily- rpool/root/var b2://xfix-pw
     '';
   };
 
