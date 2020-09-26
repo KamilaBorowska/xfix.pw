@@ -36,6 +36,7 @@
     enable = true;
     config = ''
       /var/spool/nginx/logs/access.log {
+        su nginx nginx
         daily
         maxage 7
       }
