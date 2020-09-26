@@ -1,6 +1,5 @@
 {
   services.nginx = {
-    enable = true;
     virtualHosts = {
       "xfix.pw" = {
         enableACME = true;
@@ -14,4 +13,6 @@
       };
     };
   };
+
+  imports = [ ./nginx.nix ];
 }

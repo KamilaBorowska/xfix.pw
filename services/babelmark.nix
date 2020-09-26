@@ -1,13 +1,8 @@
 {
-  services.nginx = {
-    enable = true;
-    virtualHosts = {
-      "www.xfix.pw" = {
-        enableACME = true;
-        forceSSL = true;
-        locations."/api/babelmark/pulldown-cmark".proxyPass = "http://127.0.0.1:8081";
-      };
-    };
+  services.nginx.virtualHosts."www.xfix.pw" = {
+    enableACME = true;
+    forceSSL = true;
+    locations."/api/babelmark/pulldown-cmark".proxyPass = "http://127.0.0.1:8081";
   };
 
   systemd.services.babelmark = {
@@ -33,5 +28,5 @@
     };
   };
 
-  imports = [ ./acme.nix ];
+  imports = [ ./nginx.nix ];
 }

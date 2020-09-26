@@ -1,7 +1,6 @@
 { pkgs, ... }:
 {
   services.nextcloud = {
-    enable = true;
     hostName = "nc.xfix.pw";
     nginx.enable = true;
     config = {
@@ -34,4 +33,6 @@
     requires = ["postgresql.service"];
     after = ["postgresql.service"];
   };
+
+  imports = [ ./nginx.nix ];
 }

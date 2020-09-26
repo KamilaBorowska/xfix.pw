@@ -3,7 +3,6 @@ let
 in
 {
   services.nginx = {
-    enable = true;
     virtualHosts = {
       "pastebin.run" = {
         enableACME = true;
@@ -53,5 +52,5 @@ in
     };
   };
 
-  imports = [ ./acme.nix ];
+  imports = [ ./nginx.nix ];
 }
