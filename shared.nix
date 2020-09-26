@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   services.openssh = {
     kexAlgorithms = [ "curve25519-sha256@libssh.org" ];
