@@ -38,6 +38,7 @@
       /var/spool/nginx/logs/access.log {
         su nginx nginx
         daily
+        rotate 7
         maxage 7
       }
     '';
