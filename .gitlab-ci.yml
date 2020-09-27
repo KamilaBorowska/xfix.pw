@@ -4,4 +4,11 @@ variables:
 
 build:
   image: nixos/nix:2.3.6
-  script: nix-build '<nixpkgs/nixos>' -A vm
+  before_script:
+    - nix-env -iA nixpkgs.cachix nixpkgs.bash
+    - cachix use xfix-pw
+    - nix path-info --all > /tmp/store-path-pre-build
+  script:
+    - nix-build '<nixpkgs/nixos>' -A vm
+  after_script:
+    - bash -c "comm -13 <(sort /tmp/store-path-pre-build | grep -v '\.drv$') <(nix path-info --all | grep -v '\.drv$' | sort) | cachix push xfix-pw"
