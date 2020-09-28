@@ -40,6 +40,9 @@
         daily
         rotate 7
         maxage 7
+        postrotate
+          kill -USR1 `cat /run/nginx/nginx.pid`
+        endscript
       }
     '';
   };
