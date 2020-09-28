@@ -6,9 +6,9 @@ rustPlatform.buildRustPackage {
   src = fetchFromGitLab {
     owner = "KonradBorowski";
     repo = "pulldown-cmark-babelmark";
-    rev = "9bd725eefc60ba732ca7108565abe3566584d18b";
-    sha256 = "04q7n0f9b0y2j0nbc2qr2xznpv7wg9q24zh5w9zjnkliigqgjm4k";
+    rev = "e15ad53616625b2b142c07dbe3878477b1bd63e3";
+    sha256 = "16qinliscmrlj8r1nz0ky8nmckkq64v1l6wr3sjqsi3sr2g70gyk";
   };
 
-  cargoSha256 = "16f8plgkwj4wycqgm7637z0ykhr0mz93vsnsbhdx5q2aqmmcwf53";
+  cargoSha256 = "1p803cvdkank2d3jrbaq8qyvsk91bj2m91zl746d3dsx0g2zk4qg";
 }
