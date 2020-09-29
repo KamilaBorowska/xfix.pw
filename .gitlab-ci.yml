@@ -3,7 +3,7 @@ variables:
   NIXOS_CONFIG: $CI_PROJECT_DIR/prod.nix
 
 build:
-  image: nixos/nix:2.3.6
+  image: nixos/nix
   before_script:
     - nix-env -iA nixpkgs.cachix nixpkgs.bash
     - cachix use xfix-pw
