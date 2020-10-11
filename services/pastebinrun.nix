@@ -11,9 +11,6 @@ in
         locations."/static".root = pastebinrun;
         locations."/static/js" = {
           root = pastebinrun;
-          extraConfig = ''
-            expires max;
-          '';
         };
       };
       "www.pastebin.run" = {
