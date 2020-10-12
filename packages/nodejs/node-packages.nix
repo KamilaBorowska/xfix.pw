@@ -1777,13 +1777,13 @@ let
         sha512 = "WCMml9ivU60+8rEJgELlFp1gxFcEGxwYleE3bziHEDeqsqAWGHdimB7beBFGjLzVNgPGyDsfgXLQEYMpmIFnVQ==";
       };
     };
-    "caniuse-lite-1.0.30001147" = {
+    "caniuse-lite-1.0.30001148" = {
       name = "caniuse-lite";
       packageName = "caniuse-lite";
-      version = "1.0.30001147";
+      version = "1.0.30001148";
       src = fetchurl {
-        url = "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001147.tgz";
-        sha512 = "CPyN875geYk46eIqPl5jlmotCr5YZC2KxIVfb4z0FrNfLxPM+MyodWD2irJGDG8vUUE1fmg3De9vt8uaC6Nf6w==";
+        url = "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001148.tgz";
+        sha512 = "E66qcd0KMKZHNJQt9hiLZGE3J4zuTqE1OnU53miEVtylFbwOEmeA5OsRu90noZful+XGSQOni1aT2tiqu/9yYw==";
       };
     };
     "capture-stack-trace-1.0.1" = {
@@ -5899,13 +5899,13 @@ let
         sha512 = "s0ZZzd0BzYv5tLSptZooSjK8oj6C+c19p7Vqta9+6NPOf7r+fxq0cJe6/oN4LTC79sy5NY8ucOJNgwsKCSbfqg==";
       };
     };
-    "terser-5.3.4" = {
+    "terser-5.3.5" = {
       name = "terser";
       packageName = "terser";
-      version = "5.3.4";
+      version = "5.3.5";
       src = fetchurl {
-        url = "https://registry.npmjs.org/terser/-/terser-5.3.4.tgz";
-        sha512 = "dxuB8KQo8Gt6OVOeLg/rxfcxdNZI/V1G6ze1czFUzPeCFWZRtvZMgSzlZZ5OYBZ4HoG607F6pFPNLekJyV+yVw==";
+        url = "https://registry.npmjs.org/terser/-/terser-5.3.5.tgz";
+        sha512 = "Qw3CZAMmmfU824AoGKalx+riwocSI5Cs0PoGp9RdSLfmxkmJgyBxqLBP/isDNtFyhHnitikvRMZzyVgeq+U+Tg==";
       };
     };
     "terser-webpack-plugin-4.2.3" = {
@@ -6475,8 +6475,8 @@ in
     version = "0.1.0";
     src = fetchgit {
       url = "https://gitlab.com/pastebin.run/server.git";
-      rev = "580af8b07646ffd8c79d459f6286a628f385d582";
-      sha256 = "174428a53c9c1c57e7359101396131fd1ee5bbefb667ec570e3ec086dd351968";
+      rev = "f219569cb1df4e2cdf542790cfb1cb5eaf7afeb5";
+      sha256 = "ec29bf68164d9b80f39d8c3db52a39e45cb500139f616b769a895d8da1b717be";
     };
     dependencies = [
       sources."@babel/code-frame-7.10.4"
@@ -6735,7 +6735,7 @@ in
       })
       sources."call-me-maybe-1.0.1"
       sources."camelcase-6.1.0"
-      sources."caniuse-lite-1.0.30001147"
+      sources."caniuse-lite-1.0.30001148"
       sources."capture-stack-trace-1.0.1"
       sources."caseless-0.12.0"
       (sources."chalk-2.4.2" // {
@@ -7408,7 +7408,7 @@ in
           sources."rimraf-2.6.3"
         ];
       })
-      (sources."terser-5.3.4" // {
+      (sources."terser-5.3.5" // {
         dependencies = [
           sources."source-map-0.7.3"
         ];
