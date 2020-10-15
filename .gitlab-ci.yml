@@ -5,6 +5,7 @@ variables:
 build:
   image: nixos/nix
   before_script:
+    - echo sandbox = true > /etc/nix/nix.conf
     - nix-env -f '<nixpkgs>' -iA cachix bash
     - cachix use xfix-pw
     - nix path-info --all > /tmp/store-path-pre-build
