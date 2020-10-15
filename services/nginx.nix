@@ -34,17 +34,18 @@
 
   services.logrotate = {
     enable = true;
-    config = ''
-      /var/spool/nginx/logs/access.log {
-        su nginx nginx
-        daily
-        rotate 7
+    paths.nginx = {
+      path = "/var/spool/nginx/logs/access.log";
+      keep = 7;
+      user = "nginx";
+      group = "nginx";
+      extraConfig = ''
         maxage 7
         postrotate
           kill -USR1 `cat /run/nginx/nginx.pid`
         endscript
-      }
-    '';
+      '';
+    };
   };
 
   security.acme = {
