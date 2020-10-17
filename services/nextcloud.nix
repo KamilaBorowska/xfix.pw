@@ -3,7 +3,6 @@
   services.nextcloud = {
     enable = true;
     hostName = "nc.xfix.pw";
-    nginx.enable = true;
     config = {
       dbtype = "pgsql";
       dbuser = "nextcloud";
