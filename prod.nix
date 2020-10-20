@@ -9,7 +9,6 @@
     ./services/pastebinrun.nix
     ./services/xfix.nix
     ./services/zfsbackup.nix
-    <nixpkgs/nixos/modules/profiles/hardened.nix>
   ];
 
   security.allowUserNamespaces = true;
