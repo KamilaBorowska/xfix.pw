@@ -11,8 +11,6 @@
     ./services/zfsbackup.nix
   ];
 
-  security.allowUserNamespaces = true;
-
   services.nginx = {
     enable = true;
     virtualHosts = {
