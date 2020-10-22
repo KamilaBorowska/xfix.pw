@@ -29,4 +29,17 @@ rustPlatform.buildRustPackage {
     cp $releaseDir/pastebinrun $out/bin
     cp -r static migrations languages.json $out
   '';
+  doCheck = true;
+  checkInputs = [ postgresql ];
+  checkPhase = ''
+    export PGDATA=$TMP/db
+    export PGHOST=$TMP/socketdir
+    pg_ctl initdb
+    echo "unix_socket_directories = '$PGHOST'" >> $PGDATA/postgresql.conf
+    mkdir $PGHOST
+    pg_ctl start
+    createdb pastebinrun
+    export DATABASE_URL=postgresql:///pastebinrun
+    cargo test --release --frozen --features database_tests
+  '';
 }
