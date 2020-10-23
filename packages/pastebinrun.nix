@@ -1,45 +1,51 @@
 let
-  client-js-base = (import ./nodejs {})."pastebinrun-git+https://gitlab.com/pastebin.run/server.git";
-  client-js = client-js-base.override {
-    version = "0.1.0";
-    postInstall = ''
-      patchShebangs .
+  pkgs = import <nixpkgs> {};
+  sources = import ../nix/sources.nix;
+  napalm = pkgs.callPackage sources.napalm { };
+  naersk = pkgs.callPackage sources.naersk { };
+  src = pkgs.fetchFromGitLab {
+    owner = "pastebinrun";
+    repo = "pastebinrun";
+    rev = "f219569cb1df4e2cdf542790cfb1cb5eaf7afeb5";
+    sha256 = "1ghpnyhqspc9k9v6nqcz2c0bap7474mbagcckprq16sd2rlbyagc";
+  };
+  client-js-base = napalm.buildPackage src {};
+  client-js = pkgs.stdenv.mkDerivation {
+    name = "client-js";
+    inherit src;
+    buildPhase = ''
+      ln -s ${client-js-base}/_napalm-install/node_modules .
       node_modules/.bin/webpack
-      mv $out/lib/node_modules/pastebinrun/entry $out
-      mkdir -p $out/static
-      mv $out/lib/node_modules/pastebinrun/static/js $out/static
-      rm -r $out/lib
+    '';
+    installPhase = ''
+      mkdir $out
+      mv entry languages.json migrations static $out
     '';
   };
+  pastebinrun = naersk.buildPackage {
+    name = "pastebinrun";
+    src = pkgs.symlinkJoin {
+      name = "src";
+      paths = [ client-js src ];
+    };
+    nativeBuildInputs = [ pkgs.pkgconfig ];
+    buildInputs = [ pkgs.openssl pkgs.postgresql_11.lib ];
+    doCheck = true;
+    checkInputs = [ pkgs.postgresql_11 ];
+    preCheck = ''
+      export PGDATA=$TMP/db
+      export PGHOST=$TMP/socketdir
+      pg_ctl initdb
+      echo "unix_socket_directories = '$PGHOST'" >> $PGDATA/postgresql.conf
+      mkdir $PGHOST
+      pg_ctl start
+      createdb pastebinrun
+      export DATABASE_URL=postgresql:///pastebinrun
+    '';
+    cargoTestOptions = xs: xs ++ [ "--features database_tests" ];
+  };
 in
-with import <nixpkgs> {};
-rustPlatform.buildRustPackage {
-  pname = "pastebinrun";
-  version = "0.1.0";
-  src = client-js-base.src;
-  cargoSha256 = "07pnx3b3gn1pzdcx92hjbl3cqmpwikkbhgp062m9lc3bzzdmrj5b";
-  nativeBuildInputs = [ pkgconfig ];
-  buildInputs = [ openssl postgresql.lib ];
-  patchPhase = ''
-    ln -s ${client-js}/entry entry
-    ln -s ${client-js}/static/js static/js
-  '';
-  installPhase = ''
-    mkdir -p $out/bin
-    cp $releaseDir/pastebinrun $out/bin
-    cp -r static migrations languages.json $out
-  '';
-  doCheck = true;
-  checkInputs = [ postgresql ];
-  checkPhase = ''
-    export PGDATA=$TMP/db
-    export PGHOST=$TMP/socketdir
-    pg_ctl initdb
-    echo "unix_socket_directories = '$PGHOST'" >> $PGDATA/postgresql.conf
-    mkdir $PGHOST
-    pg_ctl start
-    createdb pastebinrun
-    export DATABASE_URL=postgresql:///pastebinrun
-    cargo test --release --frozen --features database_tests
-  '';
+pkgs.symlinkJoin {
+  name = "pastebinrun-full";
+  paths = [ client-js pastebinrun ];
 }
