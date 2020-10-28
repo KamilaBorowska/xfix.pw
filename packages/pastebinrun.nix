@@ -1,7 +1,11 @@
 let
   pkgs = import <nixpkgs> {};
   sources = import ../nix/sources.nix;
-  napalm = pkgs.callPackage sources.napalm { };
+  napalm = pkgs.callPackage sources.napalm {
+    pkgs = (pkgs // {
+      nodejs = pkgs.nodejs-14_x;
+    });
+  };
   naersk = pkgs.callPackage sources.naersk { };
   src = pkgs.fetchFromGitLab {
     owner = "pastebinrun";
