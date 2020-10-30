@@ -7,6 +7,7 @@
     ./services/borowski.nix
     ./services/nextcloud.nix
     ./services/pastebinrun.nix
+    ./services/psdevbot-rust.nix
     ./services/xfix.nix
     ./services/zfsbackup.nix
     <nixpkgs/nixos/modules/profiles/headless.nix>
