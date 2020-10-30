@@ -7,6 +7,8 @@
 
   systemd.services.psdevbot-rust = {
     wantedBy = [ "multi-user.target" ];
+    after = [ "network-online.target" ];
+    wants = [ "network-online.target" ];
     enable = true;
     environment = {
       RUST_LOG = "info";
