@@ -17,6 +17,7 @@
     };
     script = "${import ../packages/psdevbot-rust.nix}/bin/psdevbot-rust";
     serviceConfig = {
+      DynamicUser = true;
       EnvironmentFile = "/var/lib/keys/psdevbot-rust";
       Restart = "always";
     };
