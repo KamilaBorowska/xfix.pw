@@ -35,7 +35,7 @@
   services.logrotate = {
     enable = true;
     paths.nginx = {
-      path = "/var/spool/nginx/logs/access.log";
+      path = "/var/log/nginx/access.log";
       keep = 7;
       user = "nginx";
       group = "nginx";
