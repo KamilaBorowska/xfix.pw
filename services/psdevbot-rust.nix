@@ -16,6 +16,10 @@
       PSDEVBOT_USER = "GitHub Staging";
       PSDEVBOT_SECRET = "";
       PSDEVBOT_ROOM = "botdevelopment";
+      PSDEVBOT_PROJECT_CONFIGURATION = builtins.toJSON {
+        "smogon/pokemon-showdown".rooms = [];
+        "smogon/pokemon-showdown-client".rooms = [];
+      };
     };
     script = "${import ../packages/psdevbot-rust.nix}/bin/psdevbot-rust";
     serviceConfig = {
