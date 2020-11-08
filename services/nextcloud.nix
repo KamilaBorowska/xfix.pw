@@ -11,13 +11,7 @@
       adminuser = "xfix";
       adminpass = "password";
     };
-    package = pkgs.nextcloud20.overrideAttrs(_: rec {
-      version = "20.0.1";
-      src = pkgs.fetchurl {
-        url = "https://download.nextcloud.com/server/releases/nextcloud-${version}.tar.bz2";
-        sha256 = "1z1fzz1i41k4dhdhi005l3gzkvnmmgqqz3rdr374cvk73q7bbiln";
-      };
-    });
+    package = pkgs.nextcloud20;
   };
   services.postgresql = {
     enable = true;
