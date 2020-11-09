@@ -22,6 +22,7 @@
       DynamicUser = true;
       EnvironmentFile = "/var/lib/keys/psdevbot-rust";
       Restart = "always";
+      RestartSec = "5s";
     };
   };
 
