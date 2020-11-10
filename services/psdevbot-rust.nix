@@ -13,7 +13,7 @@
     environment = {
       RUST_LOG = "info";
       PSDEVBOT_SERVER = "wss://sim3.psim.us/showdown/websocket";
-      PSDEVBOT_USER = "GitHub Staging";
+      PSDEVBOT_USER = "GitHub";
       PSDEVBOT_SECRET = "";
       PSDEVBOT_ROOM = "botdevelopment";
     };
