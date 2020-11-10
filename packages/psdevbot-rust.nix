@@ -7,8 +7,8 @@ naersk.buildPackage {
   src = pkgs.fetchFromGitLab {
     owner = "KonradBorowski";
     repo = "psdevbot-rust";
-    rev = "9d6a5b970b74c66486c6d6cb4486fd445023a5bf";
-    sha256 = "1h48lqqrah7lv342dcd7mnfw4jcs0pf0g376izr57jyjjxkmycs7";
+    rev = "4ae081bec9836a8f089af78e9c8b3d99a85f0889";
+    sha256 = "1b9z6ikcy33b6dsm8vijldyp4m8ag9dvl20r9aj468hwlayqfwi4";
   };
 
   nativeBuildInputs = [ pkgs.pkgconfig ];
