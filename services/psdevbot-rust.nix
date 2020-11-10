@@ -16,6 +16,24 @@
       PSDEVBOT_USER = "GitHub";
       PSDEVBOT_SECRET = "";
       PSDEVBOT_ROOM = "botdevelopment";
+      PSDEVBOT_USERNAME_ALIASES = builtins.toJSON {
+        AnnikaCodes = "Annika";
+        AustinXII = "Austin";
+        HoeenCoder = "HoeenHero";
+        Kaiepi = "Morfent";
+        KrisXV = "Kris";
+        Lusamine = "Anubis";
+        mia-pi-git = "Mia";
+        monsanto = "chaos";
+        PartMan7 = "PartMan";
+        QuiteQuiet = "Quite Quiet";
+        scheibo = "pre";
+        Spandamn = "Spandan";
+        TheImmortal = "The Immortal";
+        TheJetOU = "jetou";
+        TheMezStrikes = "Felucia";
+        xInstruct = "Instruct";
+      };
     };
     script = "${import ../packages/psdevbot-rust.nix}/bin/psdevbot-rust";
     serviceConfig = {
