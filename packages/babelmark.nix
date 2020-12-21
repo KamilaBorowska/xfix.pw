@@ -4,8 +4,6 @@ let
   naersk = pkgs.callPackage sources.naersk { };
 in
 naersk.buildPackage {
-  name = "pulldown-cmark-babelmark";
-
   src = pkgs.fetchFromGitLab {
     owner = "KonradBorowski";
     repo = "pulldown-cmark-babelmark";
