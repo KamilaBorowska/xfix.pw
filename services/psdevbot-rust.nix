@@ -35,7 +35,20 @@
         xInstruct = "Instruct";
       };
     };
-    script = "${import ../packages/psdevbot-rust.nix}/bin/psdevbot-rust";
+    script = let
+      config = {
+        rooms = ["development"];
+        simple_rooms = ["staff"];
+        secret = "$SECRET";
+      };
+    in
+    ''
+      export PSDEVBOT_PROJECT_CONFIGURATION='${builtins.replaceStrings ["$SECRET"] ["'\"$SECRET\"'"] (builtins.toJSON {
+        "smogon/pokemon-showdown" = config;
+        "smogon/pokemon-showdown-client" = config;
+      })}'
+      exec ${import ../packages/psdevbot-rust.nix}/bin/psdevbot-rust
+    '';
     serviceConfig = {
       DynamicUser = true;
       EnvironmentFile = "/var/lib/keys/psdevbot-rust";
