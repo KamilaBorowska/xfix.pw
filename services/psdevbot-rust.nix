@@ -47,7 +47,7 @@
         "smogon/pokemon-showdown" = config;
         "smogon/pokemon-showdown-client" = config;
       })}'
-      exec ${import ../packages/psdevbot-rust.nix}/bin/psdevbot-rust
+      exec ${import ../packages/psdevbot-rust.nix}/bin/psdevbot
     '';
     serviceConfig = {
       DynamicUser = true;
