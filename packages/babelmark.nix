@@ -7,7 +7,7 @@ naersk.buildPackage {
   src = pkgs.fetchFromGitLab {
     owner = "KonradBorowski";
     repo = "pulldown-cmark-babelmark";
-    rev = "a0da5a5b66b62c10429d1834ada0708a8fa57dde";
-    sha256 = "0agq4s9p8zs5d8cf2mm7aqh77cn7br61kmlv9qbxymrn58l5xwi3";
+    rev = "6f2fef7b3fddf17ad6168c9bc41a866cef81c991";
+    sha256 = "1p535x59vndf27gy3llpcm6qvzcz6gdldy3daz4ikp8aamakijld";
   };
 }
