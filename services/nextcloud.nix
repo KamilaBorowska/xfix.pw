@@ -11,7 +11,7 @@
       adminuser = "xfix";
       adminpass = "password";
     };
-    package = pkgs.nextcloud20;
+    package = pkgs.nextcloud21;
   };
   services.postgresql = {
     enable = true;
