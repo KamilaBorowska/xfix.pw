@@ -43,4 +43,9 @@
   programs.fish.enable = true;
 
   zramSwap.enable = true;
+
+  nix.gc = {
+    automatic = true;
+    options = "--delete-older-than 14d";
+  };
 }
