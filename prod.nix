@@ -5,6 +5,7 @@
     ./services/mail.nix
     ./services/babelmark.nix
     ./services/borowski.nix
+    ./services/grafana.nix
     ./services/nextcloud.nix
     ./services/pastebinrun.nix
     ./services/psdevbot-rust.nix
