@@ -5,7 +5,7 @@ in
   services.nginx = {
     virtualHosts = {
       "pastebin.run" = {
-        enableACME = true;
+        useACMEHost = "xfix.pw";
         forceSSL = true;
         locations."/".proxyPass = "http://127.0.0.1:8080";
         locations."/static".root = pastebinrun;
@@ -14,7 +14,7 @@ in
         };
       };
       "www.pastebin.run" = {
-        enableACME = true;
+        useACMEHost = "xfix.pw";
         forceSSL = true;
         globalRedirect = "pastebin.run";
       };
