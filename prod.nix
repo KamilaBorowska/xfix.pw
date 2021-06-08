@@ -18,7 +18,7 @@
     enable = true;
     virtualHosts = {
       "i.xfix.pw" = {
-        useACMEHost = "xfix.pw";
+        enableACME = true;
         forceSSL = true;
         root = "/var/lib/nextcloud/data/xfix/files/i.xfix.pw";
       };

@@ -25,7 +25,7 @@
   };
   services.nginx.virtualHosts = {
     "nc.xfix.pw" = {
-      useACMEHost = "xfix.pw";
+      enableACME = true;
       forceSSL = true;
     };
   };

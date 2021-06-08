@@ -1,6 +1,6 @@
 {
   services.nginx.virtualHosts."www.xfix.pw" = {
-    useACMEHost = "xfix.pw";
+    enableACME = true;
     forceSSL = true;
     locations."/api/babelmark/pulldown-cmark".proxyPass = "http://127.0.0.1:8081";
   };

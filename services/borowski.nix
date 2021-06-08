@@ -1,12 +1,12 @@
 {
   services.nginx.virtualHosts = {
     "borowski.pw" = {
-      useACMEHost = "xfix.pw";
+      enableACME = true;
       forceSSL = true;
       globalRedirect = "www.borowski.pw";
     };
     "www.borowski.pw" = {
-      useACMEHost = "xfix.pw";
+      enableACME = true;
       forceSSL = true;
       root = ./borowski;
     };
