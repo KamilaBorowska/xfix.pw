@@ -8,7 +8,7 @@
   systemd.services.babelmark = {
     wantedBy = [ "multi-user.target" ];
     enable = true;
-    environment.RUST_LOG = "info";
+    environment.ROCKET_PORT = "8081";
     script = "${import ../packages/babelmark.nix}/bin/pulldown-cmark-babelmark";
 
     serviceConfig = {
