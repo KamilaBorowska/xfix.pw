@@ -38,7 +38,7 @@ in
     after = ["postgresql.service"];
     enable = true;
     environment.DATABASE_URL = "postgresql:///";
-    environment.SANDBOX_URL = "http://sandbox.pastebin.run:8888";
+    environment.SANDBOX_URL = "http://localhost:8082";
     environment.RUST_LOG = "info";
     script = "${pastebinrun}/bin/pastebinrun";
 
