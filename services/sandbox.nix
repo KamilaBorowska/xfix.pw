@@ -46,9 +46,7 @@ with pkgs;
       python
       
       # Rust
-      cargo
-      clippy
-      rustfmt
+      rustChannels.stable.rust
     ];
 
     environment = {
