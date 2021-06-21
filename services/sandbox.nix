@@ -62,6 +62,7 @@ with pkgs;
       User = "sandbox";
       PrivateTmp = true;
       Restart = "always";
+      WorkingDirectory = "/var/lib/sandbox";
     };
   };
 }
