@@ -8,7 +8,7 @@ with pkgs;
 
   users.users.sandbox = {
     createHome = true;
-    home = "/var/lib/sandbox";
+    home = "/run/sandbox";
     isSystemUser = true;
   };
 
@@ -60,7 +60,7 @@ with pkgs;
       User = "sandbox";
       PrivateTmp = true;
       Restart = "always";
-      WorkingDirectory = "/var/lib/sandbox";
+      WorkingDirectory = "/run/sandbox";
     };
   };
 }
