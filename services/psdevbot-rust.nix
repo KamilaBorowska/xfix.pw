@@ -34,10 +34,10 @@
         TheMezStrikes = "Felucia";
         xInstruct = "Instruct";
       };
-    };
-    PSDEVBOT_PROJECT_CONFIGURATION = builtins.toJSON {
-      "smogon/pokemon-showdown" = {};
-      "smogon/pokemon-showdown-client" = {};
+      PSDEVBOT_PROJECT_CONFIGURATION = builtins.toJSON {
+        "smogon/pokemon-showdown" = {};
+        "smogon/pokemon-showdown-client" = {};
+      };
     };
     script = ''
       exec ${import ../packages/psdevbot-rust.nix}/bin/psdevbot
