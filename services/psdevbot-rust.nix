@@ -37,8 +37,8 @@
     };
     script = let
       config = {
-        rooms = ["development"];
-        simple_rooms = ["staff"];
+        rooms = [];
+        simple_rooms = [];
         secret = "$SECRET";
       };
     in
