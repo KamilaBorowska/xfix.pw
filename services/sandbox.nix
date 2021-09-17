@@ -21,6 +21,8 @@ with pkgs;
     '';
 
     path = [
+      bubblewrap
+
       bash
       dotnet-sdk_5
       ghc

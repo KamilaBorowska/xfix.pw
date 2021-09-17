@@ -7,7 +7,7 @@ naersk.buildPackage {
   src = pkgs.fetchFromGitLab {
     owner = "pastebinrun";
     repo = "nix-based-sandbox";
-    rev = "2b9160a5aee8ab8154054ba09ce7767b4d636b0e";
-    sha256 = "15lkfjaxan3nm2gqs0nc1gz3ir1913karayk7xb3f8gv32c8598m";
+    rev = "14c862be090eec0809f9e81e0494facdfd27dc57";
+    sha256 = "09b14mj6qngvzsr97l6mdf7pk4ybvipxn2y1790j52d9rdgzz1w7";
   };
 }
