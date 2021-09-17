@@ -4,8 +4,6 @@ let
 in
 with pkgs;
 {
-  programs.firejail.enable = true;
-
   users.users.sandbox = {
     createHome = true;
     home = "/run/sandbox";
