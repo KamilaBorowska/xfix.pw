@@ -21,6 +21,33 @@ with pkgs;
     path = [
       bubblewrap
 
+      # Basic programs that could be expected in PATH
+      acl
+      attr
+      bzip2
+      coreutils-full
+      curl
+      diffutils
+      findutils
+      gawk
+      getent
+      getconf
+      gnugrep
+      gnupatch
+      gnused
+      gnutar
+      gzip
+      xz
+      less
+      netcat
+      mkpasswd
+      procps
+      su
+      time
+      util-linux
+      which
+      zstd
+
       bash
       dotnet-sdk_5
       ghc
