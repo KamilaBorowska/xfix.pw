@@ -6,8 +6,8 @@ let
   src = pkgs.fetchFromGitLab {
     owner = "pastebinrun";
     repo = "pastebinrun";
-    rev = "7f6d8b7e90376341603afa72fedc402d868cd545";
-    sha256 = "1pqg8y0fh9swb8qyfpq17mxh3x4xwqf7w0z0l6494lcamsyhwki9";
+    rev = "f328a4821bdb268390bdf446210cedcb9ed226c8";
+    sha256 = "1640jvf9x8g3cv4sd8rgiy3ckjgfpk0cp8lvqirxxy0nibwbgc2x";
   };
   client-js-base = napalm.buildPackage src {};
   client-js = pkgs.stdenv.mkDerivation {
@@ -19,7 +19,7 @@ let
     '';
     installPhase = ''
       mkdir $out
-      mv entry languages.json migrations static $out
+      mv entry languages.json migrations static templates $out
     '';
   };
   pastebinrun = naersk.buildPackage {

@@ -37,7 +37,8 @@ in
     requires = ["postgresql.service"];
     after = ["postgresql.service"];
     enable = true;
-    environment.DATABASE_URL = "postgresql:///";
+    environment.ROCKET_DATABASES = ''{main={url="postgresql:///"}}'';
+    environment.ROCKET_PORT = "8080";
     environment.SANDBOX_URL = "http://localhost:8082";
     environment.RUST_LOG = "info";
     script = "${pastebinrun}/bin/pastebinrun";
