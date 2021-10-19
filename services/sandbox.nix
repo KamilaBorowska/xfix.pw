@@ -70,7 +70,7 @@ with pkgs;
 
       # Python
       black
-      python
+      python3
       
       # Rust
       rustChannels.stable.rust
