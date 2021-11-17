@@ -7,7 +7,7 @@ naersk.buildPackage {
   src = pkgs.fetchFromGitLab {
     owner = "KonradBorowski";
     repo = "psdevbot-rust";
-    rev = "90882620cd28b74278777a264d9999c5d1859de1";
-    sha256 = "0p2aidw5hz7gki8zkxyayhgrcg6b0830j6drnc2xnjjxn4n4sq4r";
+    rev = "984d3cc345972bcab093b731cb6bfdd6a705ea8c";
+    sha256 = "1l1pky13wxz02ic2r5hpfqxhrmi4qazjw045v6ghn5kkzw7d6s0y";
   };
 }
