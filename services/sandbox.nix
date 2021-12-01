@@ -8,7 +8,9 @@ with pkgs;
     createHome = true;
     home = "/run/sandbox";
     isSystemUser = true;
+    group = "sandbox";
   };
+  users.groups.sandbox = {};
 
   systemd.services.sandbox = {
     wantedBy = [ "multi-user.target" ];

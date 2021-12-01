@@ -9,7 +9,7 @@
       dbhost = "/run/postgresql";
       dbname = "nextcloud";
       adminuser = "xfix";
-      adminpass = "password";
+      adminpassFile = pkgs.writeText "password" "password";
     };
     package = pkgs.nextcloud22;
   };
