@@ -8,7 +8,6 @@
     ./services/grafana.nix
     ./services/nextcloud.nix
     ./services/pastebinrun.nix
-    ./services/psdevbot-rust.nix
     ./services/sandbox.nix
     ./services/xfix.nix
     ./services/zfsbackup.nix
