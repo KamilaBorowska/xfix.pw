@@ -2,6 +2,12 @@ let
   pastebinrun = import ../packages/pastebinrun.nix;
 in
 {
+  users.users.pastebinrun = {
+    isSystemUser = true;
+    group = "pastebinrun";
+  };
+  users.groups.pastebinrun = {};
+
   services.nginx = {
     virtualHosts = {
       "pastebin.run" = {
