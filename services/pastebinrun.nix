@@ -44,7 +44,7 @@ in
     script = "${pastebinrun}/bin/pastebinrun";
 
     serviceConfig = {
-      DynamicUser = true;
+      User = "pastebinrun";
       Restart = "always";
       WorkingDirectory = pastebinrun;
     };
