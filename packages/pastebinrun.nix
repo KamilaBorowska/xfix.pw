@@ -29,9 +29,9 @@ let
       paths = [ client-js src ];
     };
     nativeBuildInputs = [ pkgs.pkgconfig ];
-    buildInputs = [ pkgs.openssl pkgs.postgresql_11.lib ];
+    buildInputs = [ pkgs.openssl pkgs.postgresql_14.lib ];
     doCheck = true;
-    checkInputs = [ pkgs.postgresql_11 ];
+    checkInputs = [ pkgs.postgresql_14 ];
     preCheck = ''
       export PGDATA=$TMP/db
       export PGHOST=$TMP/socketdir
