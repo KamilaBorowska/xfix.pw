@@ -14,7 +14,7 @@ with pkgs;
 
   systemd.services.sandbox = {
     wantedBy = [ "multi-user.target" ];
-    enable = false;
+    enable = true;
     environment.ROCKET_PORT = "8082";
     script = ''
       ${import ../packages/sandbox.nix}/bin/sandbox
