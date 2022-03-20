@@ -7,8 +7,8 @@ naersk.buildPackage {
   src = pkgs.fetchFromGitLab {
     owner = "KonradBorowski";
     repo = "xbot";
-    rev = "342859cad9e098ad223809c2498ea5dcc086d630";
-    sha256 = "sha256-cy8qi22OcJ1e4Pd0agWvekYqSVP2Kvg6dLOqheSZrD8=";
+    rev = "cf4a3ba398d5973f231725b14fa826f0b726d041";
+    sha256 = "sha256-GiSqcIX51pKAyCJlnpINDCPLIk8hEajkFyPL0uNr52M=";
   };
   nativeBuildInputs = [ pkgs.pkgconfig ];
   buildInputs = [ pkgs.openssl ];
