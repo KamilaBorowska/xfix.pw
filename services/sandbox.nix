@@ -59,7 +59,7 @@ with pkgs;
       sqlite
 
       # C/C++
-      clang
+      clang_13
       gcc
 
       # Go
