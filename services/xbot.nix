@@ -1,6 +1,7 @@
 {
   systemd.services.xbot = {
     wantedBy = [ "multi-user.target" ];
+    after = [ "network-online.target" ];
     enable = true;
     environment.SANDBOX_URL = "http://localhost:8082";
     environment.RUST_LOG = "warn";
