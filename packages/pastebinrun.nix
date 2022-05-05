@@ -6,8 +6,8 @@ let
   src = pkgs.fetchFromGitLab {
     owner = "pastebinrun";
     repo = "pastebinrun";
-    rev = "47acb1678c6026fe30f50ab6f77e8f527959aadc";
-    sha256 = "sha256-f9Jgycbr0Vrn3wfDJTmcsNYmP+LLtilQmsTkjc1CBJs=";
+    rev = "983c75d06beb1342e8ad302875557f66fabe5fe5";
+    sha256 = "sha256-/HV7QXiYtMSC1MhYZlAX87Ux9FvJNfwnfCnBSWncNe8=";
   };
   client-js-base = napalm.buildPackage src {};
   client-js = pkgs.stdenv.mkDerivation {
