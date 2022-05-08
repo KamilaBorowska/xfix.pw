@@ -6,8 +6,8 @@ let
   src = pkgs.fetchFromGitLab {
     owner = "pastebinrun";
     repo = "pastebinrun";
-    rev = "38b2f31a96f86b0481aa40037cc1e51471e15299";
-    sha256 = "1j4wf0qqz1yg7imqrl625g9y0hci7y64qhk792xi57x3xd9zi2wb";
+    rev = "d110c2db7c3bff1892493db937d00890854ae4e8";
+    sha256 = "sha256-+KOtMHCPL00o8wKS5uqJKx1qDYFwiP1mNCwsHqwxl78=";
   };
   client-js-base = napalm.buildPackage src {};
   client-js = pkgs.stdenv.mkDerivation {
@@ -15,11 +15,11 @@ let
     inherit src;
     buildPhase = ''
       ln -s ${client-js-base}/_napalm-install/node_modules .
-      node_modules/.bin/webpack
+      node_modules/.bin/vite build
     '';
     installPhase = ''
       mkdir $out
-      mv entry languages.json migrations static templates $out
+      mv dist $out
     '';
   };
   pastebinrun = naersk.buildPackage {
