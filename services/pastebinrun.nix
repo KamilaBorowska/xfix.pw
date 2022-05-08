@@ -14,7 +14,7 @@ in
         enableACME = true;
         forceSSL = true;
         locations."/".proxyPass = "http://127.0.0.1:8080";
-        locations."/assets".root = {
+        locations."/assets" = {
           root = "${pastebinrun}/dist";
           extraConfig = ''
             expires max;
