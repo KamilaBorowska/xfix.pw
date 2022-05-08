@@ -42,6 +42,7 @@
     ];
   };
 
+  environment.systemPackages = [ pkgs.htop pkgs.git ];
   programs.fish.enable = true;
 
   zramSwap.enable = true;
