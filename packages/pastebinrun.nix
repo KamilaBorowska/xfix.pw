@@ -19,7 +19,7 @@ let
     '';
     installPhase = ''
       mkdir $out
-      mv dist $out
+      mv dist languages.json migrations templates $out
     '';
   };
   pastebinrun = naersk.buildPackage {
