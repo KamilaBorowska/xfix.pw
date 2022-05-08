@@ -26,13 +26,13 @@
     "nix-based-sandbox": {
         "branch": "master",
         "repo": "https://gitlab.com/pastebinrun/nix-based-sandbox.git",
-        "rev": "876ed366ed852173e8286d4bb7f9c9519e7e88f6",
+        "rev": "5c74d8ad179e1b96208875b1a5a8630d6494dbbf",
         "type": "git"
     },
     "pastebinrun": {
         "branch": "master",
         "repo": "https://gitlab.com/pastebinrun/pastebinrun.git",
-        "rev": "7d9b9bdd4b9113571f6e4e47a7abb63f53bcb5f1",
+        "rev": "a3b5b49b0f5feea708b8059d953586c2444a566e",
         "type": "git"
     },
     "pulldown-cmark-babelmark": {

@@ -68,6 +68,7 @@ with pkgs;
 
       # Node.js
       nodejs
+      nodePackages.prettier
       nodePackages.typescript
 
       # Python
