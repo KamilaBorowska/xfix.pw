@@ -22,5 +22,29 @@
         "type": "tarball",
         "url": "https://github.com/nmattia/napalm/archive/dcb6e93c8b6945dc854bdce691a1bf99c8b701ca.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "nix-based-sandbox": {
+        "branch": "master",
+        "repo": "https://gitlab.com/pastebinrun/nix-based-sandbox.git",
+        "rev": "876ed366ed852173e8286d4bb7f9c9519e7e88f6",
+        "type": "git"
+    },
+    "pastebinrun": {
+        "branch": "master",
+        "repo": "https://gitlab.com/pastebinrun/pastebinrun.git",
+        "rev": "903af38d047e18d208bb4b8cb1ac0bc67991311d",
+        "type": "git"
+    },
+    "pulldown-cmark-babelmark": {
+        "branch": "master",
+        "repo": "https://gitlab.com/KonradBorowski/pulldown-cmark-babelmark.git",
+        "rev": "a63e6ff9f20932d7ca94f9566467d24fd9cfd767",
+        "type": "git"
+    },
+    "xbot": {
+        "branch": "master",
+        "repo": "https://gitlab.com/KonradBorowski/xbot.git",
+        "rev": "c9de516e9dc24feb03a0efae20c4aba6ad9330d8",
+        "type": "git"
     }
 }
