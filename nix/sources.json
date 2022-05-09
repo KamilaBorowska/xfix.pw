@@ -32,7 +32,7 @@
     "pastebinrun": {
         "branch": "master",
         "repo": "https://gitlab.com/pastebinrun/pastebinrun.git",
-        "rev": "a3b5b49b0f5feea708b8059d953586c2444a566e",
+        "rev": "d56ba0d2a087f8f8da3edbdccbbdac82aa835f1c",
         "type": "git"
     },
     "pulldown-cmark-babelmark": {
