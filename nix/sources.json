@@ -38,7 +38,7 @@
     "pulldown-cmark-babelmark": {
         "branch": "master",
         "repo": "https://gitlab.com/KonradBorowski/pulldown-cmark-babelmark.git",
-        "rev": "a63e6ff9f20932d7ca94f9566467d24fd9cfd767",
+        "rev": "d0abb95fa53fa93edea4c29943abb3894cb4f0ea",
         "type": "git"
     },
     "xbot": {
