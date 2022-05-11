@@ -28,7 +28,6 @@
       ssl_stapling_verify on;
       ssl_early_data on;
       add_header Strict-Transport-Security "max-age=63072000; includeSubDomains; preload";
-      add_header X-Content-Type-Options nosniff always;
     '';
   };
 
