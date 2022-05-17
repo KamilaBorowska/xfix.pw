@@ -5,10 +5,10 @@
         "homepage": "",
         "owner": "nmattia",
         "repo": "naersk",
-        "rev": "f21309b38e1da0d61b881b6b6d41b81c1aed4e1d",
-        "sha256": "0khccz4d2zznmbbbfgc3l741p9xzwr29hlv80w5qz3ni3cwla261",
+        "rev": "94beb7a3edfeb3bcda65fa3f2ebc48ec6b40bf72",
+        "sha256": "065kn8mmpg47dgvg6l4klgy3z9mf4gbrwh25hmswzxc7i20ws70p",
         "type": "tarball",
-        "url": "https://github.com/nmattia/naersk/archive/f21309b38e1da0d61b881b6b6d41b81c1aed4e1d.tar.gz",
+        "url": "https://github.com/nmattia/naersk/archive/94beb7a3edfeb3bcda65fa3f2ebc48ec6b40bf72.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "napalm": {
@@ -26,25 +26,25 @@
     "nix-based-sandbox": {
         "branch": "master",
         "repo": "https://gitlab.com/pastebinrun/nix-based-sandbox.git",
-        "rev": "5c74d8ad179e1b96208875b1a5a8630d6494dbbf",
+        "rev": "7ddf3f7cb597720eb18c9ce647db0ba81ef35760",
         "type": "git"
     },
     "pastebinrun": {
         "branch": "master",
         "repo": "https://gitlab.com/pastebinrun/pastebinrun.git",
-        "rev": "e5879dbbb6bde494fbc7619f44079e346a9dbd53",
+        "rev": "f489d07da5aa2411e8a3e3f96cd02a1a49eaffd0",
         "type": "git"
     },
     "pulldown-cmark-babelmark": {
         "branch": "master",
         "repo": "https://gitlab.com/KonradBorowski/pulldown-cmark-babelmark.git",
-        "rev": "d0abb95fa53fa93edea4c29943abb3894cb4f0ea",
+        "rev": "dfefde9807915ee1d1acf1c299390864b4527b76",
         "type": "git"
     },
     "xbot": {
         "branch": "master",
         "repo": "https://gitlab.com/KonradBorowski/xbot.git",
-        "rev": "c9de516e9dc24feb03a0efae20c4aba6ad9330d8",
+        "rev": "8e16fa8fe83b9b70b5267e0ecff2b6e89aab735c",
         "type": "git"
     }
 }
