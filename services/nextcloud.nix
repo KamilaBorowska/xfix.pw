@@ -11,7 +11,7 @@
       adminuser = "xfix";
       adminpassFile = toString (pkgs.writeText "password" "password");
     };
-    package = pkgs.nextcloud23;
+    package = pkgs.nextcloud24;
   };
   services.postgresql = {
     enable = true;
