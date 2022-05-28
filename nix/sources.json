@@ -25,26 +25,50 @@
     },
     "nix-based-sandbox": {
         "branch": "master",
-        "repo": "https://gitlab.com/pastebinrun/nix-based-sandbox.git",
+        "description": null,
+        "homepage": null,
+        "owner": "pastebinrun",
+        "repo": "nix-based-sandbox",
         "rev": "7ddf3f7cb597720eb18c9ce647db0ba81ef35760",
-        "type": "git"
+        "sha256": "1sjv7y9xn6aq2klm0519fv2rl699hxpn6jp2s5lf0di6x6hrlb1c",
+        "type": "tarball",
+        "url": "https://github.com/pastebinrun/nix-based-sandbox/archive/7ddf3f7cb597720eb18c9ce647db0ba81ef35760.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "pastebinrun": {
         "branch": "master",
-        "repo": "https://gitlab.com/pastebinrun/pastebinrun.git",
-        "rev": "f8d7027fc96d5e39c3359c258a4d72fbf9a9b305",
-        "type": "git"
+        "description": null,
+        "homepage": null,
+        "owner": "pastebinrun",
+        "repo": "pastebinrun",
+        "rev": "15bbe95971b45642d9055ecb7b0341c44f033cd4",
+        "sha256": "132wf650x2j7qjwp05z7m623pf3vb2nq67078fwp8vy6sqfpfjvp",
+        "type": "tarball",
+        "url": "https://github.com/pastebinrun/pastebinrun/archive/15bbe95971b45642d9055ecb7b0341c44f033cd4.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "pulldown-cmark-babelmark": {
         "branch": "master",
-        "repo": "https://gitlab.com/KonradBorowski/pulldown-cmark-babelmark.git",
+        "description": null,
+        "homepage": null,
+        "owner": "xfix",
+        "repo": "pulldown-cmark-babelmark",
         "rev": "dfefde9807915ee1d1acf1c299390864b4527b76",
-        "type": "git"
+        "sha256": "0w5zh4r1cg9f78ln2957agmjn95sq7z9isbm2s7v7avf6bs8zy77",
+        "type": "tarball",
+        "url": "https://github.com/xfix/pulldown-cmark-babelmark/archive/dfefde9807915ee1d1acf1c299390864b4527b76.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "xbot": {
         "branch": "master",
-        "repo": "https://gitlab.com/KonradBorowski/xbot.git",
-        "rev": "8e16fa8fe83b9b70b5267e0ecff2b6e89aab735c",
-        "type": "git"
+        "description": null,
+        "homepage": null,
+        "owner": "xfix",
+        "repo": "xbot",
+        "rev": "29c6168ef47a146432484eeebac20b3dbdfbd940",
+        "sha256": "03j60if082zl708a0cqdnihks5hr0cp9cck73i16bicid8hnsw8g",
+        "type": "tarball",
+        "url": "https://github.com/xfix/xbot/archive/29c6168ef47a146432484eeebac20b3dbdfbd940.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     }
 }
