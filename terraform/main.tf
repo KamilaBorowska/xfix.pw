@@ -37,7 +37,7 @@ resource "hcloud_firewall" "firewall" {
     source_ips = ["0.0.0.0/0"]
   }
   dynamic "rule" {
-    for_each = [22, 25, 80, 443]
+    for_each = [22, 25, 80, 443, 4242]
     content {
       direction  = "in"
       protocol   = "tcp"
