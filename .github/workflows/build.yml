@@ -27,3 +27,24 @@ jobs:
           name: xfix-pw
           signingKey: ${{ secrets.CACHIX_SIGNING_KEY }}
       - run: nix-build packages/${{ matrix.package }}.nix
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        test:
+          - babelmark
+          - pastebinrun
+          - sandbox
+    steps:
+      - uses: actions/checkout@v3
+      - uses: cachix/install-nix-action@v17
+        with:
+          nix_path: nixpkgs=channel:nixos-21.11-small
+          extra_nix_config: system-features = nixos-test benchmark big-parallel kvm
+      - uses: cachix/cachix-action@v10
+        with:
+          name: xfix-pw
+          signingKey: ${{ secrets.CACHIX_SIGNING_KEY }}
+      - run: nix-build tests/${{ matrix.test }}.nix
