@@ -8,6 +8,7 @@
     ./services/grafana.nix
     ./services/nextcloud.nix
     ./services/pastebinrun.nix
+    ./services/quassel.nix
     ./services/sandbox.nix
     ./services/xbot.nix
     ./services/xfix.nix
