@@ -24,22 +24,17 @@
 
   services.logrotate = {
     enable = true;
-    paths.nginx = {
-      path = "/var/log/nginx/access.log";
-      keep = 7;
-      user = "nginx";
-      group = "nginx";
-      extraConfig = ''
-        maxage 7
-        postrotate
-          kill -USR1 `cat /run/nginx/nginx.pid`
-        endscript
-      '';
+    settings.nginx = {
+      files = "/var/log/nginx/access.log";
+      frequency = "daily";
+      rotate = 7;
+      maxage = 7;
+      postrotate = "kill -USR1 `cat /run/nginx/nginx.pid`";
     };
   };
 
   security.acme = {
     acceptTerms = true;
-    email = "konrad@borowski.pw";
+    defaults.email = "konrad@borowski.pw";
   };
 }

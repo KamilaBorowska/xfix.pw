@@ -1,5 +1,5 @@
 import <nixpkgs/nixos/tests/make-test-python.nix> {
-  machine = ../services/babelmark.nix;
+  nodes.machine = ../services/babelmark.nix;
 
   testScript = ''
     machine.wait_for_open_port(8081)

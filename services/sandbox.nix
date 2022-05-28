@@ -64,7 +64,7 @@ with pkgs;
 
       # Go
       go
-      goimports
+      gotools
 
       # Node.js
       nodejs
