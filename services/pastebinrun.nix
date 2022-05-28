@@ -20,6 +20,7 @@ in
             expires max;
           '';
         };
+        locations."/metrics".return = "403";
       };
       "www.pastebin.run" = {
         enableACME = true;
