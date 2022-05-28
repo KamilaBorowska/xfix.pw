@@ -1,8 +1,5 @@
 {
-  security.acme.certs."xfix.pw" = {
-    allowKeysForGroup = true;
-    group = "quassel";
-  };
+  users.users.quassel.extraGroups = ["nginx"];
   services.quassel = {
     certificateFile = "/var/lib/acme/xfix.pw/full.pem";
     enable = true;
