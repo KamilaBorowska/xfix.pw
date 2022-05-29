@@ -1,10 +1,16 @@
 {
   services.prometheus = {
     enable = true;
-    scrapeConfigs = [{
-      job_name = "node";
-      static_configs = [{ targets = [ "127.0.0.1:9100" ]; }];
-    }];
+    scrapeConfigs = [
+      {
+        job_name = "node";
+        static_configs = [{ targets = [ "127.0.0.1:9100" ]; }];
+      }
+      {
+        job_name = "pastebinrun";
+        static_configs = [{ targets = [ "127.0.0.1:8080" ]; }];
+      }
+    ];
     exporters.node.enable = true;
   };
   services.grafana = {
