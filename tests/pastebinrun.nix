@@ -1,5 +1,5 @@
 import <nixpkgs/nixos/tests/make-test-python.nix> {
-  machine = ../services/pastebinrun.nix;
+  nodes.machine = ../services/pastebinrun.nix;
 
   testScript = ''
     machine.wait_for_open_port(8080)
