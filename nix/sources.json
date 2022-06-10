@@ -5,10 +5,10 @@
         "homepage": "",
         "owner": "nmattia",
         "repo": "naersk",
-        "rev": "69daaceebe12c070cd5ae69ba38f277bbf033695",
-        "sha256": "1ip749p9g0prmrwiz0845x9n4j9b39sdrzpi60s4yygy6qgc7262",
+        "rev": "14997a79cd78fe34ad6390f18a327ee0593e5eec",
+        "sha256": "1g8r0idblr4qv0xc79z2qxk2x44kh2bqxjx95li1lqn96264g318",
         "type": "tarball",
-        "url": "https://github.com/nmattia/naersk/archive/69daaceebe12c070cd5ae69ba38f277bbf033695.tar.gz",
+        "url": "https://github.com/nmattia/naersk/archive/14997a79cd78fe34ad6390f18a327ee0593e5eec.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "napalm": {
@@ -29,10 +29,10 @@
         "homepage": null,
         "owner": "pastebinrun",
         "repo": "nix-based-sandbox",
-        "rev": "a605c9665f6fd55260c9793e8a7dad36fe2c977f",
-        "sha256": "15638jp0c7shk6q5ms0rvwl6p7bmmcyazkabvhvbjl954fws393x",
+        "rev": "285f689365c80a53a023190723c60cdf2303fe85",
+        "sha256": "0wvm7b7s0x1q50valspvqn3spknaidnv4b0jysdk94ah6n44jw1c",
         "type": "tarball",
-        "url": "https://github.com/pastebinrun/nix-based-sandbox/archive/a605c9665f6fd55260c9793e8a7dad36fe2c977f.tar.gz",
+        "url": "https://github.com/pastebinrun/nix-based-sandbox/archive/285f689365c80a53a023190723c60cdf2303fe85.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "pastebinrun": {
@@ -41,10 +41,10 @@
         "homepage": null,
         "owner": "pastebinrun",
         "repo": "pastebinrun",
-        "rev": "a6bbac035f1c13fdb2533bee1266994d2ef237f2",
-        "sha256": "0m83by62dv0xrb0l68y91rvl6kxxkn53mpi4vrv4iq7vlmkydskx",
+        "rev": "f19bac35d2a06c423f9e0b3b5e0375296be512cf",
+        "sha256": "1qgfzm61m86s3l9ig23pdcrphhn4mdlsnnwfvapz64fcddcf8f6j",
         "type": "tarball",
-        "url": "https://github.com/pastebinrun/pastebinrun/archive/a6bbac035f1c13fdb2533bee1266994d2ef237f2.tar.gz",
+        "url": "https://github.com/pastebinrun/pastebinrun/archive/f19bac35d2a06c423f9e0b3b5e0375296be512cf.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "pulldown-cmark-babelmark": {
