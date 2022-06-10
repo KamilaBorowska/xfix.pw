@@ -16,5 +16,6 @@
       }
     ];
   };
+  systemd.services.quassel.after = [ "network-online.target" ];
   networking.firewall.allowedTCPPorts = [ 4242 ];
 }
