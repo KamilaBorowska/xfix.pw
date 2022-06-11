@@ -5,4 +5,5 @@ let
 in
 naersk.buildPackage {
   src = sources.pulldown-cmark-babelmark;
+  doCheck = true;
 }
