@@ -35,7 +35,7 @@ let
       mkdir $PGHOST
       pg_ctl start
       createdb pastebinrun
-      export DATABASE_URL=postgresql:///pastebinrun
+      export ROCKET_DATABASES='{ main = { url = "postgresql:///pastebinrun" } }'
     '';
     cargoTestOptions = xs: xs ++ [ "--features database_tests" ];
   };
