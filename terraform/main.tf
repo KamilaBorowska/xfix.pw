@@ -13,7 +13,7 @@ terraform {
     }
     hcloud = {
       source  = "hetznercloud/hcloud"
-      version = "1.34.1"
+      version = "1.34.3"
     }
     gandi = {
       source  = "go-gandi/gandi"
