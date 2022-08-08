@@ -1,0 +1,25 @@
+name: Update niv packages
+
+on:
+  push:
+    branches: [master]
+  schedule:
+    - cron: 30 3 * * *
+
+jobs:
+  update-niv-packages:
+    name: Update Niv packages
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: cachix/install-nix-action@v17
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+      - run: nix-shell -p niv --run 'niv update'
+      - uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: Update niv packages
+          title: Update niv packages
