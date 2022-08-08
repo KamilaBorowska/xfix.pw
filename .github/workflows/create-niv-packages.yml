@@ -19,7 +19,13 @@ jobs:
         with:
           nix_path: nixpkgs=channel:nixos-unstable
       - run: nix-shell -p niv --run 'niv update'
+      - uses: tibdex/github-app-token@v1
+        id: generate-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - uses: peter-evans/create-pull-request@v4
         with:
+          token: ${{ steps.generate-token.outputs.token }}
           commit-message: Update niv packages
           title: Update niv packages
