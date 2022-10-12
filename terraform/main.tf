@@ -17,7 +17,7 @@ terraform {
     }
     gandi = {
       source  = "go-gandi/gandi"
-      version = "2.1.0"
+      version = "2.2.0"
     }
   }
 }
