@@ -1,4 +1,6 @@
 import <nixpkgs/nixos/tests/make-test-python.nix> {
+  name = "pastebinrun";
+
   nodes.machine = ../services/pastebinrun.nix;
 
   testScript = ''
