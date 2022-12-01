@@ -1,4 +1,6 @@
 import <nixpkgs/nixos/tests/make-test-python.nix> {
+  name = "sandbox";
+
   nodes.machine = ../services/sandbox.nix;
 
   testScript = ''

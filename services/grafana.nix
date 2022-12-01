@@ -15,8 +15,10 @@
   };
   services.grafana = {
     enable = true;
-    domain = "grafana.xfix.pw";
-    rootUrl = "https://grafana.xfix.pw/";
+    settings.server = {
+      domain = "grafana.xfix.pw";
+      root_url = "https://grafana.xfix.pw/";
+    };
   };
   services.nginx.virtualHosts."grafana.xfix.pw" = {
     enableACME = true;

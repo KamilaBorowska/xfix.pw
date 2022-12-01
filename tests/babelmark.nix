@@ -1,4 +1,6 @@
 import <nixpkgs/nixos/tests/make-test-python.nix> {
+  name = "babelmark";
+
   nodes.machine = ../services/babelmark.nix;
 
   testScript = ''
