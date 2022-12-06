@@ -22,7 +22,7 @@
       "i.xfix.pw" = {
         enableACME = true;
         forceSSL = true;
-        root = "/var/lib/nextcloud/data/xfix/files/i.xfix.pw";
+        root = "/home/xfix/i.xfix.pw";
       };
     };
   };
