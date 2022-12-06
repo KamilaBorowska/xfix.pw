@@ -22,7 +22,7 @@
       "i.xfix.pw" = {
         enableACME = true;
         forceSSL = true;
-        root = "/home/xfix/i.xfix.pw";
+        root = "/var/i.xfix.pw";
       };
     };
   };
