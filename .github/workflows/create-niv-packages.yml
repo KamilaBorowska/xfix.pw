@@ -16,6 +16,8 @@ jobs:
         with:
           nix_path: nixpkgs=channel:nixos-unstable
       - run: nix-shell -p niv --run 'niv update'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: tibdex/github-app-token@v1
         id: generate-token
         with:
