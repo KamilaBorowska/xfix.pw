@@ -53,10 +53,10 @@
         "homepage": null,
         "owner": "xfix",
         "repo": "pulldown-cmark-babelmark",
-        "rev": "8c384ff57a8abe142eaa9304ee075537911cca64",
-        "sha256": "0razwvfv71rxh895i13h1ndad1a48pqw28riwzwgyb8clhp6hhfk",
+        "rev": "729a6017fed9c434c95e709c2f93e35a79f59ffd",
+        "sha256": "0hy3x4r5s247s4zcknjd8l56cirk4mly9rxj056ml4m5g1hn3fwq",
         "type": "tarball",
-        "url": "https://github.com/xfix/pulldown-cmark-babelmark/archive/8c384ff57a8abe142eaa9304ee075537911cca64.tar.gz",
+        "url": "https://github.com/xfix/pulldown-cmark-babelmark/archive/729a6017fed9c434c95e709c2f93e35a79f59ffd.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "xbot": {
