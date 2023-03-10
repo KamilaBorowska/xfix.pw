@@ -29,10 +29,10 @@
         "homepage": null,
         "owner": "pastebinrun",
         "repo": "nix-based-sandbox",
-        "rev": "ad5719751a9694103323caaa021bff551187eeea",
-        "sha256": "1z5minixgsskgdyjqfdlzw4qqmm5bjvpr6y2cqjm454a7438y4an",
+        "rev": "2801afa95e15166a5ee81b0aac89f3ce779e572c",
+        "sha256": "110vsdghyqbks76mlriyvdzv4d7j9n9xnl583249789nvpn0ifml",
         "type": "tarball",
-        "url": "https://github.com/pastebinrun/nix-based-sandbox/archive/ad5719751a9694103323caaa021bff551187eeea.tar.gz",
+        "url": "https://github.com/pastebinrun/nix-based-sandbox/archive/2801afa95e15166a5ee81b0aac89f3ce779e572c.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "pastebinrun": {
@@ -41,10 +41,10 @@
         "homepage": null,
         "owner": "pastebinrun",
         "repo": "pastebinrun",
-        "rev": "d6a8844cb1ba3469c65eb98feb40f0800d72fab0",
-        "sha256": "0lmimkdw4dh8qnc7a9k6kqspz6cdyq4dh7a3cksb1hz0kkmjr38v",
+        "rev": "bc6a669b107085d54c9dfd9f65ed402c3431460e",
+        "sha256": "0ciz3wyz8jljfzjykl4g61rch63cc9b2b0yx6xg5v9f4zpxanw3z",
         "type": "tarball",
-        "url": "https://github.com/pastebinrun/pastebinrun/archive/d6a8844cb1ba3469c65eb98feb40f0800d72fab0.tar.gz",
+        "url": "https://github.com/pastebinrun/pastebinrun/archive/bc6a669b107085d54c9dfd9f65ed402c3431460e.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "pulldown-cmark-babelmark": {
@@ -65,10 +65,10 @@
         "homepage": null,
         "owner": "xfix",
         "repo": "xbot",
-        "rev": "d0fd6f82f89065565d8e371f463ffc5a376880c8",
-        "sha256": "00kd5l2l020zv08y99wj02qs3z04bv2l46zkm6ckvn3d8iw5m8gx",
+        "rev": "393afafb05a6e0b1905c2397f815dc1cc008abb9",
+        "sha256": "0fy3hqj414708z7cq31cma0lyifpl1d9m92n05v4psxhimirbiks",
         "type": "tarball",
-        "url": "https://github.com/xfix/xbot/archive/d0fd6f82f89065565d8e371f463ffc5a376880c8.tar.gz",
+        "url": "https://github.com/xfix/xbot/archive/393afafb05a6e0b1905c2397f815dc1cc008abb9.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     }
 }
