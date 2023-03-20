@@ -1,0 +1,18 @@
+name: Auto merge
+
+on:
+  check_suite:
+    types:
+      - completed
+
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+    if: github.actor == 'update-niv-packages[bot]'
+    permissions:
+      contents: write
+    steps:
+      - uses: pascalgn/automerge-action@22948e0bc22f0aa673800da838595a3e7347e584
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          MERGE_LABELS: ""
