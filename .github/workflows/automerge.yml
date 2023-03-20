@@ -1,8 +1,7 @@
 name: Auto merge
 
 on:
-  check_suite:
-  check_run:
+  pull_request:
 
 jobs:
   automerge:
@@ -10,8 +9,9 @@ jobs:
     if: github.actor == 'update-niv-packages[bot]'
     permissions:
       contents: write
+      pull-requests: write
     steps:
-      - uses: pascalgn/automerge-action@22948e0bc22f0aa673800da838595a3e7347e584
+      - run: gh pr merge --auto --merge "$PR_URL"
         env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          MERGE_LABELS: ""
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
