@@ -1,9 +1,7 @@
 name: Auto merge
 
 on:
-  check_suite:
-    types:
-      - completed
+  status:
 
 jobs:
   automerge:
