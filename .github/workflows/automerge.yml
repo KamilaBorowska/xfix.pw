@@ -1,7 +1,9 @@
 name: Auto merge
 
 on:
-  status:
+  check_suite:
+  check_run:
+  workflow_run:
 
 jobs:
   automerge:
