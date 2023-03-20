@@ -29,10 +29,10 @@
         "homepage": null,
         "owner": "pastebinrun",
         "repo": "nix-based-sandbox",
-        "rev": "58ff87c39542b76b1a71a0636dd0735d2ee62f22",
-        "sha256": "0728v88xcgjx0bhzg85z3fw3swqlch0ppanfi61slg0azqxgpdzm",
+        "rev": "8ce31b9b75c8e647f2923355b22ddce3c0823fc5",
+        "sha256": "0n70qai7kf7nhgg4hjwl5x902l63a7caf9ayinmqd0gbvfnfzxkz",
         "type": "tarball",
-        "url": "https://github.com/pastebinrun/nix-based-sandbox/archive/58ff87c39542b76b1a71a0636dd0735d2ee62f22.tar.gz",
+        "url": "https://github.com/pastebinrun/nix-based-sandbox/archive/8ce31b9b75c8e647f2923355b22ddce3c0823fc5.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "pastebinrun": {
@@ -41,10 +41,10 @@
         "homepage": null,
         "owner": "pastebinrun",
         "repo": "pastebinrun",
-        "rev": "d18650a7a2acadf07c3e27ae8cfce2f1107e8f96",
-        "sha256": "1b5s9cmh9bhji300082ikp6kyy46bfqvqbvq1xfhvkigpn6qbrpx",
+        "rev": "e1bf094db18ba5052bb535e03859ea446b2cd4c1",
+        "sha256": "1cd3hkiwap9b5j3jwbi4512y9yv2wrxng71vwziws144m2js3fyg",
         "type": "tarball",
-        "url": "https://github.com/pastebinrun/pastebinrun/archive/d18650a7a2acadf07c3e27ae8cfce2f1107e8f96.tar.gz",
+        "url": "https://github.com/pastebinrun/pastebinrun/archive/e1bf094db18ba5052bb535e03859ea446b2cd4c1.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "pulldown-cmark-babelmark": {
@@ -53,10 +53,10 @@
         "homepage": null,
         "owner": "xfix",
         "repo": "pulldown-cmark-babelmark",
-        "rev": "fb114d855ababe7320c2e883a8d55fc637471d6a",
-        "sha256": "1h5bpqxzarcrxk1b2baqakpzaapsdmihrkcv6275zldbx0qwg20k",
+        "rev": "1d3b7eb85fc791fc26912c322a5f5c51107c9209",
+        "sha256": "1qyqv038c56bxl6g1fcmi3bw304csa88zrkis6yyx9a0v4xn2xd7",
         "type": "tarball",
-        "url": "https://github.com/xfix/pulldown-cmark-babelmark/archive/fb114d855ababe7320c2e883a8d55fc637471d6a.tar.gz",
+        "url": "https://github.com/xfix/pulldown-cmark-babelmark/archive/1d3b7eb85fc791fc26912c322a5f5c51107c9209.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "xbot": {
