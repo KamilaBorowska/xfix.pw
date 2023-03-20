@@ -3,7 +3,6 @@ name: Auto merge
 on:
   check_suite:
   check_run:
-  workflow_run:
 
 jobs:
   automerge:
