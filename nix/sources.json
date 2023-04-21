@@ -41,10 +41,10 @@
         "homepage": null,
         "owner": "pastebinrun",
         "repo": "pastebinrun",
-        "rev": "fa48f19ac9dfbb15da99c3337396ba13870e4760",
-        "sha256": "0y03gbwm3s49r30bnnisck3v68fd2mkhq8kd3zc18y2p7wagyqxl",
+        "rev": "5182ea11ad82db84a3e81e5fed630327f380893d",
+        "sha256": "1rslixd32qvi8nq6wz3xqsdyb5fxqa05pwmpnfnrcsdzbv2dcvic",
         "type": "tarball",
-        "url": "https://github.com/pastebinrun/pastebinrun/archive/fa48f19ac9dfbb15da99c3337396ba13870e4760.tar.gz",
+        "url": "https://github.com/pastebinrun/pastebinrun/archive/5182ea11ad82db84a3e81e5fed630327f380893d.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "pulldown-cmark-babelmark": {
@@ -65,10 +65,10 @@
         "homepage": null,
         "owner": "xfix",
         "repo": "xbot",
-        "rev": "0c744d035e14fd9c26637aa4f158f6e36beb961d",
-        "sha256": "0wk7srbmlnjs85rinv4wha6cpfgwfw3nahx71m9hbmaflfyg5lxv",
+        "rev": "c1c9a32a38b4b8d6761f1616271fcff6408d3fc7",
+        "sha256": "0k2r8rdx4zhmxqbdkpllcgdaj47ivxq1qvw48404mwl5nvm5y844",
         "type": "tarball",
-        "url": "https://github.com/xfix/xbot/archive/0c744d035e14fd9c26637aa4f158f6e36beb961d.tar.gz",
+        "url": "https://github.com/xfix/xbot/archive/c1c9a32a38b4b8d6761f1616271fcff6408d3fc7.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     }
 }
