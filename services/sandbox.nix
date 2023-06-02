@@ -51,7 +51,7 @@ with pkgs;
       zstd
 
       bash
-      dotnet-sdk_5
+      dotnet-sdk_7
       ghc
       perl
       php
