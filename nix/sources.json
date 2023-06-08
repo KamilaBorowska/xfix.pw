@@ -29,10 +29,10 @@
         "homepage": null,
         "owner": "pastebinrun",
         "repo": "nix-based-sandbox",
-        "rev": "8b607e7d46413e907eeac5f59bc39fa9e4831403",
-        "sha256": "01whdjc0gp5m36cbd5saqlv5wp5bqr357mnn5rpjq7k5qv8922d9",
+        "rev": "96391c3141d275d4ab26c88a259a413e5038e34f",
+        "sha256": "18j80kz6q8p43hkhll1qw6phnlp9p7ii35s9g2cdx8j96377rynv",
         "type": "tarball",
-        "url": "https://github.com/pastebinrun/nix-based-sandbox/archive/8b607e7d46413e907eeac5f59bc39fa9e4831403.tar.gz",
+        "url": "https://github.com/pastebinrun/nix-based-sandbox/archive/96391c3141d275d4ab26c88a259a413e5038e34f.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "pastebinrun": {
