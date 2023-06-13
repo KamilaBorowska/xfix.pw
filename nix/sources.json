@@ -5,10 +5,10 @@
         "homepage": "",
         "owner": "nmattia",
         "repo": "naersk",
-        "rev": "88cd22380154a2c36799fe8098888f0f59861a15",
-        "sha256": "1wxi05lz4p2484w7iyw4k4fkxsqq8lkcsyjb87i34i40yz6fxwk6",
+        "rev": "8507af04eb40c5520bd35d9ce6f9d2342cea5ad1",
+        "sha256": "0x024pcj1jwnsdx2lkm12q9zclmrsd74xrvghb2a4qjjnsvywx4d",
         "type": "tarball",
-        "url": "https://github.com/nmattia/naersk/archive/88cd22380154a2c36799fe8098888f0f59861a15.tar.gz",
+        "url": "https://github.com/nmattia/naersk/archive/8507af04eb40c5520bd35d9ce6f9d2342cea5ad1.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "napalm": {
@@ -65,10 +65,10 @@
         "homepage": null,
         "owner": "xfix",
         "repo": "xbot",
-        "rev": "8b63ace8a647af5ca0f26d7dc1c38cd3fc4817e2",
-        "sha256": "0324fk30s2fn47z4zhyg6k9sh7hqsjr21a64mraa01ignw5q5j5w",
+        "rev": "91917670fc3aaf58c50cce64ed50e1f949b1245f",
+        "sha256": "1qrdkxq7i9gig6ab6g00jf09d1v34vhvpdxssg0szq4c0s0z3aq8",
         "type": "tarball",
-        "url": "https://github.com/xfix/xbot/archive/8b63ace8a647af5ca0f26d7dc1c38cd3fc4817e2.tar.gz",
+        "url": "https://github.com/xfix/xbot/archive/91917670fc3aaf58c50cce64ed50e1f949b1245f.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     }
 }
