@@ -5,10 +5,10 @@
         "homepage": "",
         "owner": "nmattia",
         "repo": "naersk",
-        "rev": "714e701eb4ca2491d34d794b98be4b994a796ae7",
-        "sha256": "1hs23g8fdv05j6d8f80wm9dgkpc1bp5qvn0w9v9jh0dmqa1q6lgn",
+        "rev": "abca1fb7a6cfdd355231fc220c3d0302dbb4369a",
+        "sha256": "1f2vy2kpc6xbajjgxksrwdwz0xz4ax7iwznc9q8cfpm8r2z3kcpx",
         "type": "tarball",
-        "url": "https://github.com/nmattia/naersk/archive/714e701eb4ca2491d34d794b98be4b994a796ae7.tar.gz",
+        "url": "https://github.com/nmattia/naersk/archive/abca1fb7a6cfdd355231fc220c3d0302dbb4369a.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "napalm": {
@@ -53,10 +53,10 @@
         "homepage": null,
         "owner": "xfix",
         "repo": "pulldown-cmark-babelmark",
-        "rev": "a5adb519078b7f19964bf315188ff15edb0fee35",
-        "sha256": "1r3bjq9ldc3vk52pj6x3pgggz82pzakxslq6k97rlxqran01xbmx",
+        "rev": "4e9154117377df853c21a92ad8a8e49ec16e292a",
+        "sha256": "11z5dppcmddkyxbsvh9qd9jpmjr6lyf87n9y4263bp2pf5pr94dx",
         "type": "tarball",
-        "url": "https://github.com/xfix/pulldown-cmark-babelmark/archive/a5adb519078b7f19964bf315188ff15edb0fee35.tar.gz",
+        "url": "https://github.com/xfix/pulldown-cmark-babelmark/archive/4e9154117377df853c21a92ad8a8e49ec16e292a.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "xbot": {
