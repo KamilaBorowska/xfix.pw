@@ -77,6 +77,9 @@ with pkgs;
       
       # Rust
       rustChannels.stable.rust
+
+      # Programs used by xbot
+      python3Packages.ftfy
     ];
 
     environment = {
