@@ -73,13 +73,13 @@ with pkgs;
 
       # Python
       black
-      python3
+      python311
       
       # Rust
       rustChannels.stable.rust
 
       # Programs used by xbot
-      python3Packages.ftfy
+      python311Packages.ftfy
     ];
 
     environment = {
