@@ -6,10 +6,6 @@
     recommendedOptimisation = true;
     recommendedProxySettings = true;
     sslCiphers = null;
-    sslDhparam = pkgs.fetchurl {
-      url = "https://ssl-config.mozilla.org/ffdhe2048.txt";
-      sha256 = "08dpmhxn8bmmhv7lyd7fxgih2xv4j4xanf5w3pfd0nhqcf2pbxrf";
-    };
     sslProtocols = "TLSv1.3";
     appendHttpConfig = ''
       ssl_session_timeout 1d;
