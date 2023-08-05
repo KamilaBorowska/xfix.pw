@@ -41,10 +41,10 @@
         "homepage": null,
         "owner": "pastebinrun",
         "repo": "pastebinrun",
-        "rev": "b2e2aa3bf3fe75fd2fbe45a4a888f3643c4137f4",
-        "sha256": "075ax9l28sjjia9p1gsszk0140rp4iyy9yp8nrci69h23x1vvf75",
+        "rev": "9526a254b3218d4fcdc7a28369dc82c8219caf72",
+        "sha256": "09hddvvyp7c9ji3l24wyzn5mzk1snrcnk53431i28z4syb5c3ng1",
         "type": "tarball",
-        "url": "https://github.com/pastebinrun/pastebinrun/archive/b2e2aa3bf3fe75fd2fbe45a4a888f3643c4137f4.tar.gz",
+        "url": "https://github.com/pastebinrun/pastebinrun/archive/9526a254b3218d4fcdc7a28369dc82c8219caf72.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "pulldown-cmark-babelmark": {
