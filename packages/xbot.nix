@@ -6,5 +6,5 @@ in
 naersk.buildPackage {
   src = sources.xbot;
   nativeBuildInputs = [ pkgs.pkgconfig ];
-  buildInputs = [ pkgs.openssl ];
+  buildInputs = [ pkgs.cairo pkgs.pango pkgs.openssl ];
 }
