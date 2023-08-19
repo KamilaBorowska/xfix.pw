@@ -1,7 +1,11 @@
 let
-  pkgs = import <nixpkgs> {};
   sources = import ../nix/sources.nix;
-  naersk = pkgs.callPackage sources.naersk { };
+  pkgs = import <nixpkgs> { overlays = [ (import sources.nixpkgs-mozilla) ]; };
+  toolchain = (pkgs.rustChannelOf { channel = "1.71.1"; }).rust;
+  naersk = pkgs.callPackage sources.naersk {
+    cargo = toolchain;
+    rustc = toolchain;
+  };
 in
 naersk.buildPackage {
   src = sources.xbot;
