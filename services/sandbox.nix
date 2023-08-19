@@ -1,6 +1,6 @@
 let
-  moz_overlay = import (builtins.fetchTarball "https://github.com/mozilla/nixpkgs-mozilla/archive/master.tar.gz");
-  pkgs = import <nixpkgs> { overlays = [ moz_overlay ]; };
+  sources = import ../nix/sources.nix;
+  pkgs = import <nixpkgs> { overlays = [ (import sources.nixpkgs-mozilla) ]; };
 in
 with pkgs;
 {
@@ -74,7 +74,7 @@ with pkgs;
       # Python
       black
       python311
-      
+
       # Rust
       rustChannels.stable.rust
 
