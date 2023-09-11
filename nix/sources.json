@@ -77,10 +77,10 @@
         "homepage": null,
         "owner": "xfix",
         "repo": "xbot",
-        "rev": "0fbef24f62d8a74dc99f2f8df7d411560f9de8eb",
-        "sha256": "15f6lgh7qgzbhsw5nldvvn83x5pyahqzfsmry4p7klf5vffc206k",
+        "rev": "ac3d102c019e7ec5c8c67bd68dab35d4ba4e6eb7",
+        "sha256": "109lk9kdiv9srqaavy73dh4ggvmyrcs4bv6szqdq11jrqiwyr8f9",
         "type": "tarball",
-        "url": "https://github.com/xfix/xbot/archive/0fbef24f62d8a74dc99f2f8df7d411560f9de8eb.tar.gz",
+        "url": "https://github.com/xfix/xbot/archive/ac3d102c019e7ec5c8c67bd68dab35d4ba4e6eb7.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     }
 }
