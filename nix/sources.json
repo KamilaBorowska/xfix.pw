@@ -67,14 +67,8 @@
     },
     "xbot": {
         "branch": "master",
-        "description": null,
-        "homepage": null,
-        "owner": "xfix",
-        "repo": "xbot",
-        "rev": "8dbedc882866a39d619fb26b46366f9dee30a75a",
-        "sha256": "0hwmyia8dwyqr0mvy8z05yfbcw2skipcq3bgbzl18k4m83sx34r8",
-        "type": "tarball",
-        "url": "https://github.com/xfix/xbot/archive/8dbedc882866a39d619fb26b46366f9dee30a75a.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+        "repo": "https://codeberg.org/xfix/xbot.git",
+        "rev": "e3190f19eb907fb7e000270138b2b9287fc85368",
+        "type": "git"
     }
 }
