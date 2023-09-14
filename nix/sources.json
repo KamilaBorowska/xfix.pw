@@ -62,13 +62,13 @@
     "pulldown-cmark-babelmark": {
         "branch": "master",
         "repo": "https://codeberg.org/xfix/pulldown-cmark-babelmark.git",
-        "rev": "2520a8c7a0db8ed85681c9725c3b120c73ea1a01",
+        "rev": "3b4a9e06238ad0dc92c8e161f0b3feaeaf2b528d",
         "type": "git"
     },
     "xbot": {
         "branch": "master",
         "repo": "https://codeberg.org/xfix/xbot.git",
-        "rev": "e3190f19eb907fb7e000270138b2b9287fc85368",
+        "rev": "b44e686d8a7ef220dc0446e5ec35107d6b19600c",
         "type": "git"
     }
 }
