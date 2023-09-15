@@ -68,7 +68,7 @@
     "xbot": {
         "branch": "master",
         "repo": "https://codeberg.org/xfix/xbot.git",
-        "rev": "b44e686d8a7ef220dc0446e5ec35107d6b19600c",
+        "rev": "a2a83210d909092066dac88c846369932b873d51",
         "type": "git"
     }
 }
