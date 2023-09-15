@@ -53,22 +53,22 @@
         "homepage": null,
         "owner": "pastebinrun",
         "repo": "pastebinrun",
-        "rev": "b37b31479ede6afb536088644d8cf6b1428b7980",
-        "sha256": "1kpa51hqi5b2ys26qfx8wh1yfldiywv8ygc072wlhx8m1ziryi2f",
+        "rev": "316c471e06d07662497667db7ce7cbf5ce454437",
+        "sha256": "1ni9d1hk5r07ysm56f8775y4mgsln15f9ppsp6gnla9sq0xk3jc3",
         "type": "tarball",
-        "url": "https://github.com/pastebinrun/pastebinrun/archive/b37b31479ede6afb536088644d8cf6b1428b7980.tar.gz",
+        "url": "https://github.com/pastebinrun/pastebinrun/archive/316c471e06d07662497667db7ce7cbf5ce454437.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "pulldown-cmark-babelmark": {
         "branch": "master",
         "repo": "https://codeberg.org/xfix/pulldown-cmark-babelmark.git",
-        "rev": "3b4a9e06238ad0dc92c8e161f0b3feaeaf2b528d",
+        "rev": "3d09059e037bf92f35100dd8d883e0e1c9dfe783",
         "type": "git"
     },
     "xbot": {
         "branch": "master",
         "repo": "https://codeberg.org/xfix/xbot.git",
-        "rev": "a2a83210d909092066dac88c846369932b873d51",
+        "rev": "1d3528ec8b811d08bf0f7089db6fe85d4afe538e",
         "type": "git"
     }
 }
