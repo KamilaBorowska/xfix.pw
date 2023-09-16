@@ -2,7 +2,7 @@
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
-name: Check formatting
+name: REUSE
 
 on:
   pull_request:
@@ -10,9 +10,8 @@ on:
       - master
 
 jobs:
-  alejandra:
+  reuse-lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: cachix/install-nix-action@6a9a9e84a173d90b3ffb42c5ddaf9ea033fad011 # v23
       - uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac # v4.0.0
-      - run: nix fmt -- --check .
+      - uses: fsfe/reuse-action@4f2804894b54004c8ed4b8a62b7c649e54a3aa4b # v2.0.0
