@@ -9,5 +9,6 @@
     ./zfs.nix
     ./state-version.nix
     ./user.nix
+    ./github-actions.nix
   ];
 }
