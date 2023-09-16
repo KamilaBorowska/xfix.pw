@@ -11,6 +11,7 @@
     ./borowski
     ./xfix
     ./ssh
+    ./grafana
     ./nextcloud
   ];
 }
