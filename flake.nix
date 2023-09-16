@@ -81,6 +81,10 @@
         ];
       };
     };
+    apps.x86_64-linux.colmena = {
+      type = "app";
+      program = "${nixpkgs.legacyPackages.x86_64-linux.colmena}/bin/colmena";
+    };
     formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.alejandra;
   };
 }
