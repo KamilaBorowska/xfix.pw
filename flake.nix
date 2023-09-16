@@ -73,7 +73,7 @@
       xfix-pw = {modulesPath, ...}: {
         deployment = {
           targetHost = "xfix.pw";
-          targetUser = "xfix";
+          targetUser = null;
         };
         imports = [
           (modulesPath + "/profiles/headless.nix")
