@@ -24,11 +24,11 @@
       flake = false;
     };
     pulldown-cmark-babelmark-src = {
-      url = "https://codeberg.org/xfix/pulldown-cmark-babelmark/archive/master.tar.gz";
+      url = "git+https://codeberg.org/xfix/pulldown-cmark-babelmark.git";
       flake = false;
     };
     xbot-src = {
-      url = "https://codeberg.org/xfix/xbot/archive/master.tar.gz";
+      url = "git+https://codeberg.org/xfix/xbot.git";
       flake = false;
     };
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.05-small";

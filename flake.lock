@@ -125,13 +125,17 @@
     "pulldown-cmark-babelmark-src": {
       "flake": false,
       "locked": {
+        "lastModified": 1694876298,
         "narHash": "sha256-bpYpSIWzY8jX2JLe9Yu/jokRt5y3hBXQJ2hA0orHNSM=",
-        "type": "tarball",
-        "url": "https://codeberg.org/xfix/pulldown-cmark-babelmark/archive/master.tar.gz"
+        "ref": "refs/heads/master",
+        "rev": "5d8fdffc82ce3093ef86b12f346e62be23860841",
+        "revCount": 110,
+        "type": "git",
+        "url": "https://codeberg.org/xfix/pulldown-cmark-babelmark.git"
       },
       "original": {
-        "type": "tarball",
-        "url": "https://codeberg.org/xfix/pulldown-cmark-babelmark/archive/master.tar.gz"
+        "type": "git",
+        "url": "https://codeberg.org/xfix/pulldown-cmark-babelmark.git"
       }
     },
     "root": {
@@ -185,13 +189,17 @@
     "xbot-src": {
       "flake": false,
       "locked": {
+        "lastModified": 1694876344,
         "narHash": "sha256-+TW60na/tkm/92AUbQCWLQDsc875IVYPQPY0cxEUXbU=",
-        "type": "tarball",
-        "url": "https://codeberg.org/xfix/xbot/archive/master.tar.gz"
+        "ref": "refs/heads/master",
+        "rev": "b0154f5d2cce87d2fc6c37c22f3106e016a4b71f",
+        "revCount": 342,
+        "type": "git",
+        "url": "https://codeberg.org/xfix/xbot.git"
       },
       "original": {
-        "type": "tarball",
-        "url": "https://codeberg.org/xfix/xbot/archive/master.tar.gz"
+        "type": "git",
+        "url": "https://codeberg.org/xfix/xbot.git"
       }
     }
   },
