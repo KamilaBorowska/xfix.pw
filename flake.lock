@@ -125,11 +125,11 @@
     "pulldown-cmark-babelmark-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1694876298,
-        "narHash": "sha256-bpYpSIWzY8jX2JLe9Yu/jokRt5y3hBXQJ2hA0orHNSM=",
+        "lastModified": 1695064746,
+        "narHash": "sha256-55QTwnru0VkXtSpYgiHkxOQlQua+Jn9wcMTFy2btXnk=",
         "ref": "refs/heads/master",
-        "rev": "5d8fdffc82ce3093ef86b12f346e62be23860841",
-        "revCount": 110,
+        "rev": "1520d35fdb0152f84f1c7f75f22fe132c5b3ac5f",
+        "revCount": 112,
         "type": "git",
         "url": "https://codeberg.org/xfix/pulldown-cmark-babelmark.git"
       },
