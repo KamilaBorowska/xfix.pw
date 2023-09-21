@@ -109,11 +109,11 @@
     "pastebinrun-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1694868751,
-        "narHash": "sha256-RO5M70ti3XUygqI6+al4V3DYyytCAjd1DOVWc2+oUZY=",
+        "lastModified": 1695248303,
+        "narHash": "sha256-MRbB6atBid+V5fqVo6eVszgFnENkIxYAZemsow6CpTc=",
         "owner": "pastebinrun",
         "repo": "pastebinrun",
-        "rev": "80a144b20c76f8c807274bbd7a4ed2c23b781676",
+        "rev": "013f7a0d08ae3051007bb27c2a00be44432e3189",
         "type": "github"
       },
       "original": {
