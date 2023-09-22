@@ -13,4 +13,10 @@
         schedule: ["before 4am"],
         automerge: true,
     },
+    packageRules: [
+        {
+            matchPackageNames: ["actions/checkout"],
+            automerge: true,
+        },
+    ],
 }
