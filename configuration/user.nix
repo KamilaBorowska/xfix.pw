@@ -12,6 +12,5 @@
     ];
   };
   programs.fish.enable = true;
-  nix.settings.trusted-users = ["xfix"];
   security.sudo.wheelNeedsPassword = false;
 }
