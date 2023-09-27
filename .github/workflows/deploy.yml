@@ -22,4 +22,4 @@ jobs:
       - uses: cachix/install-nix-action@6a9a9e84a173d90b3ffb42c5ddaf9ea033fad011 # v23
       - uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4.1.0
       - run: echo User github-actions > ~/.ssh/config
-      - run: nix run .#colmena apply --build-on-target
+      - run: nix run .#colmena apply -- --build-on-target
