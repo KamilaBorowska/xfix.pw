@@ -92,11 +92,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1695967337,
-        "narHash": "sha256-b7THJ+7u3wii045NhQqymQAMMWLBzaMqrbBc6Y6y8tk=",
+        "lastModified": 1696115311,
+        "narHash": "sha256-JPZNLVgzVp6Z3Lv5h9kUWOX8jeBD1FLVTd2zXIfbaU0=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "ce210c81d3677233bedc9b70c70ab6d3e7f828f8",
+        "rev": "15c4fb651d5306d01e485063121aa5411b2d9b6c",
         "type": "github"
       },
       "original": {
@@ -189,11 +189,11 @@
     "xbot-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1695741448,
-        "narHash": "sha256-dF2vQjCk5VGo1l48J8K5Pc4U1BBm3KxsWTd/m/KTmUE=",
+        "lastModified": 1696134432,
+        "narHash": "sha256-GPMtkFZhU/isTAh6J+WgN8KL6F/5SFpQSdSre4jMlx8=",
         "ref": "refs/heads/master",
-        "rev": "8c15c3315c88b153d7f9d94409c2de4eec5ef7a3",
-        "revCount": 346,
+        "rev": "77e2fb3a6144172ec2611874d8775ae02e0b9ae4",
+        "revCount": 348,
         "type": "git",
         "url": "https://codeberg.org/xfix/xbot.git"
       },
