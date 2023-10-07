@@ -78,7 +78,6 @@
       rust-bin.stable.latest.default
 
       # Programs used by xbot
-      firefox
       python311Packages.ftfy
     ];
 
