@@ -77,11 +77,11 @@
     "nix-based-sandbox-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1693854143,
-        "narHash": "sha256-gGpa3bmIv+TAC/VpDvW69t6tynUqL2MJwknwvT/CAuA=",
+        "lastModified": 1696901685,
+        "narHash": "sha256-/DtcRVJIRx/3BPekRu1DRhV8oxONx93ylJHqVHnUbtc=",
         "owner": "pastebinrun",
         "repo": "nix-based-sandbox",
-        "rev": "304b2f90f1be5d72ea616fdcbba78a4567773330",
+        "rev": "4cc72c0a19a33f4c29ba37f24f4aa4a6c7136a25",
         "type": "github"
       },
       "original": {
@@ -92,11 +92,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1696323343,
-        "narHash": "sha256-u7WLUrh5eb+6SBYwtkaGL2ryHpLcHzmLml+a+VqKJWE=",
+        "lastModified": 1697054011,
+        "narHash": "sha256-uowS4WURfDAOCp0JmeCTn8fPvqORndNLoFuTd/s4TTg=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "3b79cc4bcd9c09b5aa68ea1957c25e437dc6bc58",
+        "rev": "ea972ba0bc16cfebc7b84fa85e06127bfe20f4bf",
         "type": "github"
       },
       "original": {
@@ -109,11 +109,11 @@
     "pastebinrun-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1696050657,
-        "narHash": "sha256-hR0xW4JVscIG7JyfZZwwbv55iM3jb2QJ0eLQDdZBotI=",
+        "lastModified": 1697123978,
+        "narHash": "sha256-AWdCMjGdoGbEyxcLXws12wyWXULZ64Bs1hfWTL6kYYM=",
         "owner": "pastebinrun",
         "repo": "pastebinrun",
-        "rev": "677e275faee4769badc84e0a7f96b0872c7be1ab",
+        "rev": "76215368138e72afa1c6b10289b7f90557e9ec2e",
         "type": "github"
       },
       "original": {
@@ -158,11 +158,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1696385562,
-        "narHash": "sha256-5JSgA1JZUZyXFx5ZQoF0y7rUQetlAm0LTkoff3jcsmo=",
+        "lastModified": 1697076655,
+        "narHash": "sha256-NcCtVUOd0X81srZkrdP8qoA1BMsPdO2tGtlZpsGijeU=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "f144d5022c94a893d14c2b0e632672935dc83662",
+        "rev": "aa7584f5bbf5947716ad8ec14eccc0334f0d28f0",
         "type": "github"
       },
       "original": {
@@ -189,11 +189,11 @@
     "xbot-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1696317606,
-        "narHash": "sha256-FsxjNOJoXAURETXscO5oCTrzX8y0Rq/WkLSkIbQpuCs=",
+        "lastModified": 1696926115,
+        "narHash": "sha256-2mMHRGmMdWCPDgw+/rGsoXCZEDgpy3Y/a+jiKskcXTQ=",
         "ref": "refs/heads/master",
-        "rev": "449571955cd6df05f658fccff3a38ef762c5348d",
-        "revCount": 350,
+        "rev": "46cb592bfe5372ab385c9da0fc5cfe4edf57a15e",
+        "revCount": 360,
         "type": "git",
         "url": "https://codeberg.org/xfix/xbot.git"
       },
