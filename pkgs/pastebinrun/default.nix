@@ -30,6 +30,7 @@
       name = "src";
       paths = [client-js src];
     };
+    root = src;
     nativeBuildInputs = [pkgconfig];
     buildInputs = [openssl postgresql_14.lib];
     doCheck = true;
