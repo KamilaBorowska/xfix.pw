@@ -77,17 +77,17 @@
     "nix-based-sandbox-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1696901685,
-        "narHash": "sha256-/DtcRVJIRx/3BPekRu1DRhV8oxONx93ylJHqVHnUbtc=",
-        "owner": "pastebinrun",
-        "repo": "nix-based-sandbox",
-        "rev": "4cc72c0a19a33f4c29ba37f24f4aa4a6c7136a25",
-        "type": "github"
+        "lastModified": 1697648452,
+        "narHash": "sha256-Dk+3yMfZEgF7sU2sTtt6ThcE0iEXrrryFOC83tTDShk=",
+        "ref": "refs/heads/master",
+        "rev": "64f6e77b8d1d1ca59c524a4c4ed36d6a68680c06",
+        "revCount": 169,
+        "type": "git",
+        "url": "https://codeberg.org/xfix/nix-based-sandbox.git"
       },
       "original": {
-        "owner": "pastebinrun",
-        "repo": "nix-based-sandbox",
-        "type": "github"
+        "type": "git",
+        "url": "https://codeberg.org/xfix/nix-based-sandbox.git"
       }
     },
     "nixpkgs": {

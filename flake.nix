@@ -16,7 +16,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-based-sandbox-src = {
-      url = "github:pastebinrun/nix-based-sandbox";
+      url = "git+https://codeberg.org/xfix/nix-based-sandbox.git";
       flake = false;
     };
     pastebinrun-src = {
