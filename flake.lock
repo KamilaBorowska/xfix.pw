@@ -109,17 +109,17 @@
     "pastebinrun-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1697562492,
-        "narHash": "sha256-aFV+VFcmnS255Dder+KMVMYs4gqPWodDG3GkRGIgQiw=",
-        "owner": "pastebinrun",
-        "repo": "pastebinrun",
-        "rev": "4c218d75e21077d3c34e2ebc3f763e74f85cad62",
-        "type": "github"
+        "lastModified": 1697568068,
+        "narHash": "sha256-ROmQmFyi4nFsi2hpEIH/s2D4xbyo8dG0fy7IFVQxEi8=",
+        "ref": "refs/heads/master",
+        "rev": "f707adc7e684a1504341c36c036a431d1069e0a7",
+        "revCount": 1833,
+        "type": "git",
+        "url": "https://codeberg.org/xfix/pastebinrun.git"
       },
       "original": {
-        "owner": "pastebinrun",
-        "repo": "pastebinrun",
-        "type": "github"
+        "type": "git",
+        "url": "https://codeberg.org/xfix/pastebinrun.git"
       }
     },
     "pulldown-cmark-babelmark-src": {

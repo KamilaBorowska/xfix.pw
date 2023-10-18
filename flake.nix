@@ -20,7 +20,7 @@
       flake = false;
     };
     pastebinrun-src = {
-      url = "github:pastebinrun/pastebinrun";
+      url = "git+https://codeberg.org/xfix/pastebinrun.git";
       flake = false;
     };
     pulldown-cmark-babelmark-src = {
