@@ -189,11 +189,11 @@
     "xbot-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1697526250,
-        "narHash": "sha256-30L1NaPsID83teDPc6ghO81wQOcj3ZJKTSG+FEsHfKM=",
+        "lastModified": 1697997086,
+        "narHash": "sha256-NMn5OyG9yo+oS/wbxlyQzaWxZU465ch1gRZBQdsWbp8=",
         "ref": "refs/heads/master",
-        "rev": "774e0499000dff3a60c9c98895c89815c33b4381",
-        "revCount": 366,
+        "rev": "865f2486ccaad8098329e4e215d2ed4ba431920e",
+        "revCount": 368,
         "type": "git",
         "url": "https://codeberg.org/xfix/xbot.git"
       },
