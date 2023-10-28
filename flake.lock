@@ -40,11 +40,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1698153314,
-        "narHash": "sha256-TunvZMCxXHvU6fz5kq3XTLfojIvTDlbFGfPUFtwCU5o=",
+        "lastModified": 1698420672,
+        "narHash": "sha256-/TdeHMPRjjdJub7p7+w55vyABrsJlt5QkznPYy55vKA=",
         "owner": "nix-community",
         "repo": "naersk",
-        "rev": "06a99941d72e2202ed62b8aa08b9869817fea56f",
+        "rev": "aeb58d5e8faead8980a807c840232697982d47b9",
         "type": "github"
       },
       "original": {
@@ -77,11 +77,11 @@
     "nix-based-sandbox-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1698333560,
-        "narHash": "sha256-z+ApC1ue+DWG+7Yoh8EnoSxr280hDwL8H+j0xQ4DyZ0=",
+        "lastModified": 1698385031,
+        "narHash": "sha256-te0tuO/yK3aeuKpy9Eu5T2ID2ZDlR9VgX7z0pVr6L2k=",
         "ref": "refs/heads/master",
-        "rev": "86f41a1c83cf541bc681b4aa693fe947f0276472",
-        "revCount": 175,
+        "rev": "93d2f2c0c3092774cf778cf1e47c9a5a7bad4210",
+        "revCount": 177,
         "type": "git",
         "url": "https://codeberg.org/xfix/nix-based-sandbox.git"
       },
@@ -109,11 +109,11 @@
     "pastebinrun-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1698333639,
-        "narHash": "sha256-Q3+fRlnCd8k0VODGJn+mFsjXrKVkRUWdAsI/DxYdr8Q=",
+        "lastModified": 1698385090,
+        "narHash": "sha256-YtFoVlmrNYQi4SFxZAEnW4ZdPXs87fqGkFE3clWSVjo=",
         "ref": "refs/heads/master",
-        "rev": "e8fcba60777516bab06b73d5f7577026124c3559",
-        "revCount": 1851,
+        "rev": "fa6a0c6ed0d34f6af5c7a3f873f422786f1fb376",
+        "revCount": 1853,
         "type": "git",
         "url": "https://codeberg.org/xfix/pastebinrun.git"
       },
