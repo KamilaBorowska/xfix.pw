@@ -92,11 +92,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1699882182,
-        "narHash": "sha256-6RVUYyMPdKFrNFHTDfzH6p90+8mG5dXIavlF95pl7A4=",
+        "lastModified": 1700038434,
+        "narHash": "sha256-pVmDtrwlTwv32av5siY7a4pArIBQaqYgOcdhnmYxO1c=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "5e68ba52abc572bd570b80503cdca5b137b5a594",
+        "rev": "d94345e8a9b200123ef25c4bab595f456e4f2359",
         "type": "github"
       },
       "original": {
@@ -109,11 +109,11 @@
     "pastebinrun-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1699929116,
-        "narHash": "sha256-kAAbovHs5NkH5QH8P0KqfN8otM9OHciDcpUpjPXDi7E=",
+        "lastModified": 1700027104,
+        "narHash": "sha256-5HbuXDdAC/sV0Q+wU03r+j/c9eo14oEfCa1kPLBjZoM=",
         "ref": "refs/heads/master",
-        "rev": "3e4528b72e372f648a136f22b24fe2110222f27c",
-        "revCount": 1881,
+        "rev": "13f3509c08b2503e6d2f045299140738e9cb3ad1",
+        "revCount": 1885,
         "type": "git",
         "url": "https://codeberg.org/xfix/pastebinrun.git"
       },
@@ -125,11 +125,11 @@
     "pulldown-cmark-babelmark-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1699453478,
-        "narHash": "sha256-nHaAlsDgBhgZBbpAqWNHNhxZnotQzquGO9Nbhg2Q8Qw=",
+        "lastModified": 1700027126,
+        "narHash": "sha256-944Il10JtEniRkaC2FmhG6lKeGe+15BEAxv/EIKSS1w=",
         "ref": "refs/heads/master",
-        "rev": "cac130d345ca23767665a090fe340ccdd4c58d1c",
-        "revCount": 118,
+        "rev": "32fa076a7017144dc2f7c688ee462fa40d5158f7",
+        "revCount": 120,
         "type": "git",
         "url": "https://codeberg.org/xfix/pulldown-cmark-babelmark.git"
       },
@@ -158,11 +158,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1700014539,
-        "narHash": "sha256-YF+AoCicGzsrlNDrXZYCymfVyYwrMBox+6vbLBsrEQM=",
+        "lastModified": 1700084394,
+        "narHash": "sha256-ZPvcR/TBpKTDXtjVfuQP3ntHnRl1ZX8DUYJX+/qTzcc=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "ed9fd98b28da90b1b28340f3230d35b2061b9752",
+        "rev": "c1125ef3963884cc5bc534ba752baaf2af835dac",
         "type": "github"
       },
       "original": {
