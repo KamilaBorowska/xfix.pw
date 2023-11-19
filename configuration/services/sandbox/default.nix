@@ -72,13 +72,13 @@
 
       # Python
       black
-      python311
+      python312
 
       # Rust
       rust-bin.stable.latest.default
 
       # Programs used by xbot
-      python311Packages.ftfy
+      python312Packages.ftfy
     ];
 
     environment = {
