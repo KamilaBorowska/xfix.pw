@@ -6,7 +6,7 @@
   naersk,
   src,
   stdenv,
-  pkgconfig,
+  pkg-config,
   openssl,
   postgresql_14,
   symlinkJoin,
@@ -31,7 +31,7 @@
       paths = [client-js src];
     };
     root = src;
-    nativeBuildInputs = [pkgconfig];
+    nativeBuildInputs = [pkg-config];
     buildInputs = [openssl postgresql_14.lib];
     doCheck = true;
     checkInputs = [postgresql_14];

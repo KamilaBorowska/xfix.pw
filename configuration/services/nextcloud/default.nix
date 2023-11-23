@@ -19,7 +19,6 @@
       adminpassFile = toString (pkgs.writeText "password" "password");
     };
     package = pkgs.nextcloud27;
-    enableBrokenCiphersForSSE = false;
   };
 
   services.postgresql = {
@@ -28,7 +27,7 @@
     ensureUsers = [
       {
         name = "nextcloud";
-        ensurePermissions."DATABASE nextcloud" = "ALL PRIVILEGES";
+        ensureDBOwnership = true;
       }
     ];
   };
