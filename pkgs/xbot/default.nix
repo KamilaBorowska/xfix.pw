@@ -4,13 +4,13 @@
 {
   naersk,
   src,
-  pkgconfig,
+  pkg-config,
   cairo,
   pango,
   openssl,
 }:
 naersk.buildPackage {
   inherit src;
-  nativeBuildInputs = [pkgconfig];
+  nativeBuildInputs = [pkg-config];
   buildInputs = [cairo pango openssl];
 }

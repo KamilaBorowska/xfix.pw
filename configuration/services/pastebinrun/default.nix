@@ -42,7 +42,7 @@
     ensureUsers = [
       {
         name = "pastebinrun";
-        ensurePermissions."DATABASE pastebinrun" = "ALL PRIVILEGES";
+        ensureDBOwnership = true;
       }
     ];
   };

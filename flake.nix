@@ -31,7 +31,7 @@
       url = "git+https://codeberg.org/xfix/xbot.git";
       flake = false;
     };
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.05-small";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11-small";
   };
   outputs = {
     nixpkgs,
