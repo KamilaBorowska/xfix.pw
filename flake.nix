@@ -43,33 +43,35 @@
     pulldown-cmark-babelmark-src,
     xbot-src,
     ...
-  }: {
+  }: let
+    nixpkgs' = import nixpkgs {
+      system = "x86_64-linux";
+      overlays = [
+        rust-overlay.overlays.default
+        (final: prev: {
+          naersk = prev.callPackage naersk {
+            rustc = prev.rust-bin.stable.latest.minimal;
+            cargo = prev.rust-bin.stable.latest.minimal;
+          };
+          napalm = prev.callPackage napalm {};
+          nix-based-sandbox = prev.callPackage pkgs/nix-based-sandbox {
+            src = nix-based-sandbox-src;
+          };
+          pulldown-cmark-babelmark = prev.callPackage pkgs/pulldown-cmark-babelmark {
+            src = pulldown-cmark-babelmark-src;
+          };
+          pastebinrun = prev.callPackage pkgs/pastebinrun {
+            src = pastebinrun-src;
+          };
+          xbot = prev.callPackage pkgs/xbot {
+            src = xbot-src;
+          };
+        })
+      ];
+    };
+  in {
     colmena = {
-      meta.nixpkgs = import nixpkgs {
-        system = "x86_64-linux";
-        overlays = [
-          rust-overlay.overlays.default
-          (final: prev: {
-            naersk = prev.callPackage naersk {
-              rustc = prev.rust-bin.stable.latest.minimal;
-              cargo = prev.rust-bin.stable.latest.minimal;
-            };
-            napalm = prev.callPackage napalm {};
-            nix-based-sandbox = prev.callPackage pkgs/nix-based-sandbox {
-              src = nix-based-sandbox-src;
-            };
-            pulldown-cmark-babelmark = prev.callPackage pkgs/pulldown-cmark-babelmark {
-              src = pulldown-cmark-babelmark-src;
-            };
-            pastebinrun = prev.callPackage pkgs/pastebinrun {
-              src = pastebinrun-src;
-            };
-            xbot = prev.callPackage pkgs/xbot {
-              src = xbot-src;
-            };
-          })
-        ];
-      };
+      meta.nixpkgs = nixpkgs';
       xfix-pw = {modulesPath, ...}: {
         deployment = {
           targetHost = "xfix.pw";
@@ -83,8 +85,19 @@
     };
     apps.x86_64-linux.colmena = {
       type = "app";
-      program = "${nixpkgs.legacyPackages.x86_64-linux.colmena}/bin/colmena";
+      program = "${nixpkgs'.colmena}/bin/colmena";
     };
-    formatter.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.alejandra;
+    formatter.x86_64-linux = nixpkgs'.alejandra;
+    checks.x86_64-linux.pastebinrun = nixpkgs'.testers.nixosTest {
+      name = "pastebinrun";
+      nodes.machine = ./configuration/services/pastebinrun;
+      testScript = ''
+        machine.wait_for_open_port(8080)
+        id = machine.succeed(
+            "curl -X POST 127.0.0.1:8080/api/v1/pastes --data 'code=Hello, world!'"
+        )
+        assert "Hello, world!" in machine.succeed("curl 127.0.0.1:8080/{}.txt".format(id))
+      '';
+    };
   };
 }
