@@ -88,16 +88,32 @@
       program = "${nixpkgs'.colmena}/bin/colmena";
     };
     formatter.x86_64-linux = nixpkgs'.alejandra;
-    checks.x86_64-linux.pastebinrun = nixpkgs'.testers.nixosTest {
-      name = "pastebinrun";
-      nodes.machine = ./configuration/services/pastebinrun;
-      testScript = ''
-        machine.wait_for_open_port(8080)
-        id = machine.succeed(
-            "curl -X POST 127.0.0.1:8080/api/v1/pastes --data 'code=Hello, world!'"
-        )
-        assert "Hello, world!" in machine.succeed("curl 127.0.0.1:8080/{}.txt".format(id))
-      '';
+    checks.x86_64-linux = {
+      pastebinrun = nixpkgs'.testers.nixosTest {
+        name = "pastebinrun";
+        nodes.machine = ./configuration/services/pastebinrun;
+        testScript = ''
+          machine.wait_for_open_port(8080)
+          id = machine.succeed(
+              "curl -X POST 127.0.0.1:8080/api/v1/pastes --data 'code=Hello, world!'"
+          )
+          assert "Hello, world!" in machine.succeed("curl 127.0.0.1:8080/{}.txt".format(id))
+        '';
+      };
+      sandbox = nixpkgs'.testers.nixosTest {
+        name = "sandbox";
+        nodes.machine = ./configuration/services/sandbox;
+        testScript = ''
+          import json
+
+          params = json.dumps(
+              {"files": {"abc": {"contents": "def"}}, "stdin": "ghi", "code": "cat abc -"}
+          )
+          machine.wait_for_open_port(8082)
+          output = machine.succeed(f"curl 127.0.0.1:8082 --json '{params}'")
+          assert output == '{"status":0,"output":"defghi"}'
+        '';
+      };
     };
   };
 }
