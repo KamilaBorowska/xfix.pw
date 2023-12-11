@@ -5,6 +5,9 @@
 name: Build
 
 on:
+  push:
+    branches:
+      - renovate/lock-file-maintenance
   pull_request:
     branches:
       - master
