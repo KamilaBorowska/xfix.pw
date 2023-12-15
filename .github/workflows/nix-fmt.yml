@@ -5,10 +5,12 @@
 name: Check formatting
 
 on:
+  push:
+    branches:
+      - renovate/lock-file-maintenance
   pull_request:
     branches:
       - master
-      - renovate/lock-file-maintenance
 
 jobs:
   alejandra:
