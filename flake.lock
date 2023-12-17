@@ -109,11 +109,11 @@
     "pastebinrun-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1702623133,
-        "narHash": "sha256-VDZg/EMnyJv6YdolF/OTxTz48bMK54KRmQp6Y45U4jo=",
+        "lastModified": 1702689989,
+        "narHash": "sha256-r0wJG9+AnCiNsprG69WUwjJ+0cBuIBcejTcEnESPZ9w=",
         "ref": "refs/heads/master",
-        "rev": "964039f66daa84aed77526a1f2769b792fceeba0",
-        "revCount": 1965,
+        "rev": "8cd9d8c5224255935079ffc78fae34282f46679e",
+        "revCount": 1966,
         "type": "git",
         "url": "https://codeberg.org/xfix/pastebinrun.git"
       },
@@ -158,11 +158,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1702692877,
-        "narHash": "sha256-apUL3DgWZGzWQNo13o7Cv4BfwpvXyD00rGWlp7wJyhw=",
+        "lastModified": 1702779466,
+        "narHash": "sha256-IZeGwmm5n6bn+f4aEwMdbzFsJaa219efYZass7pdNdg=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "2a186e207c9ef8e3eef114259044fc2f92043d59",
+        "rev": "d74fd31da8994c7e60850561a64379324c1c77dd",
         "type": "github"
       },
       "original": {
