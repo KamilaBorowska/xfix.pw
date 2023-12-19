@@ -109,11 +109,11 @@
     "pastebinrun-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1702800304,
-        "narHash": "sha256-DTettqNtd3WDy+0p/YmxWmlJUa8RaOFBYQ8t+0/Lj5A=",
+        "lastModified": 1702945223,
+        "narHash": "sha256-ZCO2s2otE0tUD0roo2ZEKP88XVs+JklfJQQbvo8FAPU=",
         "ref": "refs/heads/master",
-        "rev": "f8dc33aeab1d89007d2b9257ebde22d52e925c43",
-        "revCount": 1968,
+        "rev": "8ebcf06690330d3d91517fce098996e3048bcd6d",
+        "revCount": 1971,
         "type": "git",
         "url": "https://codeberg.org/xfix/pastebinrun.git"
       },
@@ -189,11 +189,11 @@
     "xbot-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1702107977,
-        "narHash": "sha256-P19hmq7FharDD3bN6UtzO65p56LhHEe0zx+Ag5p0dCE=",
+        "lastModified": 1702945308,
+        "narHash": "sha256-o2jQN9tIyj6Uao6IpIFDJjK61yd28yZ6fcoGjZUj+Vw=",
         "ref": "refs/heads/master",
-        "rev": "5286b507151a0c73c949621b42dec4e89a02c0f4",
-        "revCount": 398,
+        "rev": "2f68a1ee4e858ea070750991ccc02da88967f1a1",
+        "revCount": 400,
         "type": "git",
         "url": "https://codeberg.org/xfix/xbot.git"
       },
