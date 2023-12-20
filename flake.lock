@@ -77,11 +77,11 @@
     "nix-based-sandbox-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1702106821,
-        "narHash": "sha256-m9Wa+UfWpmfXv/aovDCBNTzkg04Aloif6a3K1Og06Lg=",
+        "lastModified": 1703018702,
+        "narHash": "sha256-67TZ8F6Ch+9hATtJ23gTJ8rPbLwWtDpCyD7KvEQUr00=",
         "ref": "refs/heads/master",
-        "rev": "92b29ae9c243fc9e35a6c8d556da2122439b12da",
-        "revCount": 193,
+        "rev": "28a45bb9d4172678178e932024fbf6481b531964",
+        "revCount": 195,
         "type": "git",
         "url": "https://codeberg.org/xfix/nix-based-sandbox.git"
       },
@@ -92,11 +92,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1702846620,
-        "narHash": "sha256-45K8VhHgE8cSPUgm5ixOTtmplWGXJN4ozNvjmEVSYGc=",
+        "lastModified": 1702982572,
+        "narHash": "sha256-IlpMK/1fNRgGzcMr5KUfyBDqoviyIAqTPA2dsWL/jT4=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "50b80afb13c6bcf8cc4be7e1fbd7719a85c487cb",
+        "rev": "ca145534ebd23811ba134772592fedc2f9a17a95",
         "type": "github"
       },
       "original": {
@@ -109,11 +109,11 @@
     "pastebinrun-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1702945223,
-        "narHash": "sha256-ZCO2s2otE0tUD0roo2ZEKP88XVs+JklfJQQbvo8FAPU=",
+        "lastModified": 1702999438,
+        "narHash": "sha256-Z8zThOU/Q0O+Ph79K/+I9RaZpvmKpUSd6qCXPqn0Q4U=",
         "ref": "refs/heads/master",
-        "rev": "8ebcf06690330d3d91517fce098996e3048bcd6d",
-        "revCount": 1971,
+        "rev": "36bb186177ef10c109bd34beee0509256a14da0b",
+        "revCount": 1973,
         "type": "git",
         "url": "https://codeberg.org/xfix/pastebinrun.git"
       },
@@ -189,11 +189,11 @@
     "xbot-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1702945308,
-        "narHash": "sha256-o2jQN9tIyj6Uao6IpIFDJjK61yd28yZ6fcoGjZUj+Vw=",
+        "lastModified": 1703018847,
+        "narHash": "sha256-k1oXOVpI1z1zjrRjOcZqYbC+KOdpG5u1JF0Gj9REiF8=",
         "ref": "refs/heads/master",
-        "rev": "2f68a1ee4e858ea070750991ccc02da88967f1a1",
-        "revCount": 400,
+        "rev": "2cca01934d23dcdb9b59753969adabcc87fd05e4",
+        "revCount": 402,
         "type": "git",
         "url": "https://codeberg.org/xfix/xbot.git"
       },
