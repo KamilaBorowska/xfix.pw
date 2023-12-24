@@ -95,11 +95,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1703079295,
-        "narHash": "sha256-+K+iytuMiMaKL4yE2LRjMWFm7sLNMZwylvVi20h7CxI=",
+        "lastModified": 1703282378,
+        "narHash": "sha256-n7JHJzRqMHpoVIGqfk2F/kcJH5TUtJA2dKvFjrM8AU4=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "cd2fef8ebbf47c315ff6b774a11fdd910504de8d",
+        "rev": "1d2703291de6b232a1176bce4a5301d112df49f3",
         "type": "github"
       },
       "original": {
@@ -128,11 +128,11 @@
     "pulldown-cmark-babelmark-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1700285905,
-        "narHash": "sha256-p7J7r1GH6WhY8+KTc25Lvhi7l/I+ho94G2docU3f3rg=",
+        "lastModified": 1703348539,
+        "narHash": "sha256-VEmtqkTM32JCYPci6NV3101GqncxGsJgk5KWx6Z2h50=",
         "ref": "refs/heads/master",
-        "rev": "3851e5e5ad0e8a339d519e00de994ae47e082eaf",
-        "revCount": 122,
+        "rev": "ae8cbfa87923bd9562df66d47c1b366978259bd2",
+        "revCount": 124,
         "type": "git",
         "url": "https://codeberg.org/xfix/pulldown-cmark-babelmark.git"
       },
