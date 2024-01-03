@@ -11,28 +11,23 @@
   postgresql_14,
   symlinkJoin,
 }: let
-  client-js-base = napalm.buildPackage src {};
-  client-js = stdenv.mkDerivation {
+  client-js = napalm.buildPackage src {
     name = "client-js";
     inherit src;
-    buildPhase = ''
-      ln -s ${client-js-base}/_napalm-install/node_modules .
-      node_modules/.bin/vite build
-    '';
     installPhase = ''
+      npx vite build
       mkdir $out
       mv dist languages.json migrations templates $out
     '';
   };
   pastebinrun = naersk.buildPackage {
     name = "pastebinrun";
-    src = symlinkJoin {
-      name = "src";
-      paths = [client-js src];
-    };
-    root = src;
+    src = src;
     nativeBuildInputs = [pkg-config];
     buildInputs = [openssl postgresql_14.lib];
+    prePatch = ''
+      cp -r ${client-js}/dist .
+    '';
     doCheck = true;
     checkInputs = [postgresql_14];
     preCheck = ''
