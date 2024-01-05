@@ -112,11 +112,11 @@
     "pastebinrun-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1704346593,
-        "narHash": "sha256-drQyQ6VowLDvak8RuHuSDRBYLTBnQZgJr+LZ3DzCo+A=",
+        "lastModified": 1704417785,
+        "narHash": "sha256-yiaaaqPqliOjB/JKf0V9eOX7ztByfmdRE9GvvvamMZg=",
         "ref": "refs/heads/master",
-        "rev": "5f8ef8abd1e0ce57cfa49b1f3e054ae022ba3c69",
-        "revCount": 1998,
+        "rev": "5ef7269daa60dc8f587acc763a9f9152f317a7fd",
+        "revCount": 1999,
         "type": "git",
         "url": "https://codeberg.org/xfix/pastebinrun.git"
       },
