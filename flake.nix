@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2023 Kamila Borowska <kamila@borowska.pw>
+# SPDX-FileCopyrightText: 2023 - 2024 Kamila Borowska <kamila@borowska.pw>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 {
@@ -44,8 +44,9 @@
     xbot-src,
     ...
   }: let
-    nixpkgs' = import nixpkgs {
-      system = "x86_64-linux";
+    system = "x86_64-linux";
+    pkgs = import nixpkgs {
+      inherit system;
       overlays = [
         rust-overlay.overlays.default
         (final: prev: {
@@ -71,7 +72,7 @@
     };
   in {
     colmena = {
-      meta.nixpkgs = nixpkgs';
+      meta.nixpkgs = pkgs;
       xfix-pw = {modulesPath, ...}: {
         deployment = {
           targetHost = "xfix.pw";
@@ -83,13 +84,13 @@
         ];
       };
     };
-    apps.x86_64-linux.colmena = {
+    apps.${system}.colmena = {
       type = "app";
-      program = "${nixpkgs'.colmena}/bin/colmena";
+      program = "${pkgs.colmena}/bin/colmena";
     };
-    formatter.x86_64-linux = nixpkgs'.alejandra;
-    checks.x86_64-linux = {
-      pastebinrun = nixpkgs'.testers.nixosTest {
+    formatter.${system} = pkgs.alejandra;
+    checks.${system} = {
+      pastebinrun = pkgs.testers.nixosTest {
         name = "pastebinrun";
         nodes.machine = ./configuration/services/pastebinrun;
         testScript = ''
@@ -100,7 +101,7 @@
           assert "Hello, world!" in machine.succeed("curl 127.0.0.1:8080/{}.txt".format(id))
         '';
       };
-      sandbox = nixpkgs'.testers.nixosTest {
+      sandbox = pkgs.testers.nixosTest {
         name = "sandbox";
         nodes.machine = ./configuration/services/sandbox;
         testScript = ''
