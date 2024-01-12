@@ -19,7 +19,7 @@ jobs:
       - uses: webfactory/ssh-agent@d4b9b8ff72958532804b70bbe600ad43b36d5f2e # v0.8.0
         with:
           ssh-private-key: ${{ secrets.PRIVATE_KEY }}
-      - uses: cachix/install-nix-action@7ac1ec25491415c381d9b62f0657c7a028df52a7 # v24
+      - uses: cachix/install-nix-action@6004951b182f8860210c8d6f0d808ec5b1a33d28 # v25
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
       - run: echo User github-actions > ~/.ssh/config
       - run: nix run .#colmena apply -- --build-on-target
