@@ -23,11 +23,11 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1681202837,
-        "narHash": "sha256-H+Rh19JDwRtpVPAWp64F+rlEtxUWBAQW28eAi3SRSzg=",
+        "lastModified": 1705309234,
+        "narHash": "sha256-uNRRNRKmJyCRC/8y1RqBkqWBLM034y4qN7EprSdmgyA=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "cfacdce06f30d2b68473a46042957675eebb3401",
+        "rev": "1ef2e671c3b0c19053962c07dbda38332dcebf26",
         "type": "github"
       },
       "original": {
@@ -95,11 +95,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1706494836,
-        "narHash": "sha256-uP9Sl2MRDIg3ew1pOUujpcQdyZvbSseLwLjGaptcu0g=",
+        "lastModified": 1706625233,
+        "narHash": "sha256-DLlMXRloZm22UvHa1F3K1Perd0PhSmtlCUglyjIwlek=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "da33deae34a869896c1dfd052608f9001cfb73a5",
+        "rev": "5b8cd3c2523ab08051ef5d5a5f8164aee3e67410",
         "type": "github"
       },
       "original": {
@@ -112,11 +112,11 @@
     "pastebinrun-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1706521013,
-        "narHash": "sha256-AF807Fks4cnsEx13iZsmI5ubzpxMp6audzmc266Rc5Y=",
+        "lastModified": 1706605935,
+        "narHash": "sha256-JV7TX/Bj+JadgVhFlJsLbkHOE6JbsUDJRSZ134UgCKw=",
         "ref": "refs/heads/master",
-        "rev": "1b5df7caa9855879ec38a1cae7d75885511cc618",
-        "revCount": 2074,
+        "rev": "a3d7f24110b2ed94ceb0ab4f726b87e5cd7eaaf9",
+        "revCount": 2078,
         "type": "git",
         "url": "https://codeberg.org/xfix/pastebinrun.git"
       },
@@ -128,11 +128,11 @@
     "pulldown-cmark-babelmark-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1706521010,
-        "narHash": "sha256-TCHqxd3LvatzAILKB4vzg+Oz7b3Uya5fCuBdchLOF78=",
+        "lastModified": 1706605939,
+        "narHash": "sha256-UTd+y9nRN1FqGAQvitu7J0LuqmqDa8ZV0DFNo7SFEd0=",
         "ref": "refs/heads/master",
-        "rev": "828622110adff910a180df7c7cbbf7ebe076e7f9",
-        "revCount": 144,
+        "rev": "45770c54515b56f371fa07650ae2287c0a5abd1a",
+        "revCount": 146,
         "type": "git",
         "url": "https://codeberg.org/xfix/pulldown-cmark-babelmark.git"
       },
@@ -161,11 +161,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1706580650,
-        "narHash": "sha256-e6q4Pn1dp3NoQJdMYdyNdDHU5IRBW9i3bHSJ3jThEL0=",
+        "lastModified": 1706634984,
+        "narHash": "sha256-xn7lGPE8gRGBe3Lt8ESoN/uUHm7IrbiV7siupwjHX1o=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "39e20b3c02caa91c9970beef325a04975d83d77f",
+        "rev": "883b84c426107a8ec020e7124f263d7c35a5bb9f",
         "type": "github"
       },
       "original": {
