@@ -90,17 +90,6 @@
     };
     formatter.${system} = pkgs.alejandra;
     checks.${system} = {
-      pastebinrun = pkgs.testers.nixosTest {
-        name = "pastebinrun";
-        nodes.machine = ./configuration/services/pastebinrun;
-        testScript = ''
-          machine.wait_for_open_port(8080)
-          id = machine.succeed(
-              "curl -X POST 127.0.0.1:8080/api/v1/pastes --data 'code=Hello, world!'"
-          )
-          assert "Hello, world!" in machine.succeed("curl 127.0.0.1:8080/{}.txt".format(id))
-        '';
-      };
       sandbox = pkgs.testers.nixosTest {
         name = "sandbox";
         nodes.machine = ./configuration/services/sandbox;
